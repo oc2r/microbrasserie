@@ -2874,4 +2874,6 @@ details-disclosure > details {
   font-weight: var(--font-body-weight-bold);
 }
 
+  body{font-family: 'League Spartan', sans-serif;}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { font-family: 'League Spartan', sans-serif; }
