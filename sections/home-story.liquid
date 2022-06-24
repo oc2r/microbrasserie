@@ -1,11 +1,13 @@
 {%for block in section.blocks %}
     <div class="section-story" >
     <img class ="section-story-image" src="{{block.settings.section-story-image | img_url:'master'}}"/>
+        <div class="section-story-container">
 
-    <h2 class ="section-story-title" >{{block.settings.section-story-title}}</h2>
-    <div class ="section-story-chapo" >{{block.settings.section-story-chapo}}</div>
-    <div class ="section-story-content" >{{block.settings.section-story-content}}</div>
-    <div class ="section-story-author" >{{block.settings.section-story-author}}</div>
+            <h2 class ="section-story-title" >{{block.settings.section-story-title}}</h2>
+            <div class ="section-story-chapo" >{{block.settings.section-story-chapo}}</div>
+            <div class ="section-story-content" >{{block.settings.section-story-content}}</div>
+            <div class ="section-story-author" >{{block.settings.section-story-author}}</div>
+        </div>
 
     </div>
 {%endfor%}
@@ -14,8 +16,14 @@
 
 .section-story {
     height: 100vh;
+    width: 100vw;
     text-align: center;
 }
+
+.section-story-container {
+    position:relative;
+}
+
 
 {% endstyle %}
 
