@@ -56,10 +56,39 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "165606571751605f6b": {
+      "type": "test-page-produit",
+      "blocks": {
+        "6fe5f05b-5b67-4334-8060-1a8c9c629f78": {
+          "type": "text",
+          "settings": {
+            "heading": "Bière 2",
+            "image-title": "shopify:\/\/shop_images\/accueil-banniere1.png",
+            "link-1": ""
+          }
+        },
+        "297bca35-7d07-4ca1-86d2-02889ab1ab7a": {
+          "type": "text",
+          "settings": {
+            "heading": "Bière 1",
+            "image-title": "shopify:\/\/shop_images\/section_univers.png",
+            "link-1": ""
+          }
+        }
+      },
+      "block_order": [
+        "6fe5f05b-5b67-4334-8060-1a8c9c629f78",
+        "297bca35-7d07-4ca1-86d2-02889ab1ab7a"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "image_banner",
-    "1656060166c33700fd"
+    "1656060166c33700fd",
+    "165606571751605f6b"
   ]
 }
