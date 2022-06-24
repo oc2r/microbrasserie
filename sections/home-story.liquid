@@ -1,10 +1,11 @@
 {%for block in section.blocks %}
     <div class="section-story" >
+    <img class ="section-story-image" src="{{block.settings.section-story-image | img_url:'master'}}"/>
 
-      <h2 class ="section-story-title" >{{block.settings.section-story-title}}</h2>
-      <div class ="section-story-chapo" >{{block.settings.section-story-chapo}}</div>
-      <div class ="section-story-content" >{{block.settings.section-story-content}}</div>
-      <div class ="section-story-author" >{{block.settings.section-story-author}}</div>
+    <h2 class ="section-story-title" >{{block.settings.section-story-title}}</h2>
+    <div class ="section-story-chapo" >{{block.settings.section-story-chapo}}</div>
+    <div class ="section-story-content" >{{block.settings.section-story-content}}</div>
+    <div class ="section-story-author" >{{block.settings.section-story-author}}</div>
 
     </div>
 {%endfor%}
@@ -12,7 +13,7 @@
 {% style %}
 
 .section-story {
-    heigth:100vh;
+    height: 100vh;
     text-align: center;
 }
 
@@ -34,6 +35,11 @@
             "type":"text",
             "name":"home story",
             "settings":[
+            {
+                "type":"image_picker",
+                "label":"section story image",
+                "id":"section-story-image"
+            },
                         {
                             "type":"text",
                             "label":"section story title",
