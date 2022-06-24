@@ -8,40 +8,23 @@
         "padding_bottom": 28
       }
     },
-    "16559797695800b6b6": {
-      "type": "image-banner",
+    "16560837878a6df2f5": {
+      "type": "brasserie-header",
       "blocks": {
-        "1655979769053ca720-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Notre Brasserie",
-            "heading_size": "h1"
-          }
-        },
-        "1655979769053ca720-1": {
+        "70e26ef7-c050-4ac1-b308-6dcd9bc5a7ea": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "heading": "Notre brasserie",
+            "presentation": "la Brasserie Artisanale Autre Monde ouvre Ses portes au Creusot !  entrez avec nous dans cet univers fantastique !",
+            "image-bg": "shopify:\/\/shop_images\/page-brasserie-header_d5a171f1-4ef6-479c-b1b4-b12d36fe9b85.png"
           }
         }
       },
       "block_order": [
-        "1655979769053ca720-0",
-        "1655979769053ca720-1"
+        "70e26ef7-c050-4ac1-b308-6dcd9bc5a7ea"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/AdobeStock_414689346_1.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "heading": ""
       }
     },
     "1655995243371492ce": {
@@ -74,7 +57,7 @@
   },
   "order": [
     "main",
-    "16559797695800b6b6",
+    "16560837878a6df2f5",
     "1655995243371492ce"
   ]
 }
