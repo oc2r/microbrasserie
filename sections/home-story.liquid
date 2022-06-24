@@ -1,5 +1,6 @@
 
     <div class="section-story" >
+        <img class ="image-title-story" src="{{block.settings.image-title-story | img_url:'master'}}"/>
 
         <h2 class ="section-story-heading" >{{block.settings.section-story-title}}</h2>
         <h3 class ="section-story-chapo" >{{block.settings.section-story-chapo}}</h3>
@@ -31,6 +32,11 @@ section-story{
             "type":"text",
             "name":"title home story",
             "settings":[
+                {
+                    "type":"image_picker",
+                    "label":"your image",
+                    "id":"image-title-story"
+                },
                 {
                     "type":"text",
                     "label":"title story",
