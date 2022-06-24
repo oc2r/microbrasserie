@@ -25,25 +25,6 @@
         "heading": ""
       }
     },
-    "16560756417a478090": {
-      "type": "test",
-      "blocks": {
-        "ac596ee2-3211-455c-a01e-aa33eebf43f4": {
-          "type": "text",
-          "settings": {
-            "heading": "Biere 1",
-            "image-title": "shopify:\/\/shop_images\/section_univers.png",
-            "link-1": ""
-          }
-        }
-      },
-      "block_order": [
-        "ac596ee2-3211-455c-a01e-aa33eebf43f4"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
     "1656082672d8548305": {
       "type": "home-story",
       "blocks": {
@@ -111,7 +92,6 @@
   "order": [
     "16560784216f86247c",
     "165607810377f0b2a1",
-    "16560756417a478090",
     "1656082672d8548305",
     "16560778072b054bdb",
     "1656082475472c236d"
