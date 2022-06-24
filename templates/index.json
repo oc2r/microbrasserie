@@ -87,21 +87,14 @@
     },
     "1656082475472c236d": {
       "type": "home-nosbieres",
-      "blocks": {
-        "34aefd8c-6926-4eac-be98-a441bb2600c7": {
-          "type": "image_picker",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "34aefd8c-6926-4eac-be98-a441bb2600c7"
-      ],
       "settings": {
         "heading-1": "Découvrez",
         "heading-2": "Nos bières",
+        "heading-3": "",
         "description": "kgdsqjhvdhjvzsefvhzesjn,",
-        "lien-1": ""
+        "bouton-texte": "Achete-moi",
+        "lien-1": "",
+        "image-produit": "shopify:\/\/shop_images\/banner-homepage.png"
       }
     }
   },
