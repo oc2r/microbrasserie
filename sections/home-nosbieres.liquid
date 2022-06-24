@@ -13,9 +13,11 @@
 </div>
 
 {% stylesheet %}
+
 .section-nosbieres-image-produit{
     width: 200px;
 }
+
 {% endstylesheet %}
 
 {% schema %}
@@ -47,19 +49,11 @@
             "type": "url",            
             "label": "Lien vers la page Nos bières",
             "id": "lien-1"
-        }
-    ],
-    "blocks": [
+        },
         {
             "type":"image_picker",
-            "name":"Image du produit",
-            "settings": [
-                {
-                    "type":"image_picker",
-                    "label":"Image du produit",
-                    "id":"image-produit"
-                }
-            ]
+            "label":"Image du produit",
+            "id":"image-produit"
         }
     ],
 "presets" : [
