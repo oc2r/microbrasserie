@@ -1,12 +1,92 @@
+{%for block in section.blocks %}
+    <div class="coeur-bourgogne_container" >
+        <div class="coeur-bourgogne_text">
+            <h2 class ="titre-bourgogne" >{{block.settings.titre-bourgogne}}</h2>
+            <h3 class ="sous-titre-bourgogne">{{block.settings.sous-titre-bourgogne}}</h3>
+            <p class ="p_bourgogne">{{block.settings.p_bourgogne}}</p>
+
+        </div>
+
+      <img class ="bourgogne-ble_img" src="{{block.settings.image-title | img_url:'master'}}"/>
+      <img class ="bourgogne-village_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.coeur-bourgogne_container {
+    width: 100%;
+    height: auto;
+}
+.coeur-bourgogne_text {
+    width: fit-content;
+    height: fit-content;
+}
+
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "coeur-bourgogne",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"titre-bourgogne",
+                            "id":"titre-bourgogne"
+                        },
+
+                        {
+                            "type":"text",
+                            "label":"sous-titre-bourgogne",
+                            "id":"sous-titre-bourgogne"
+
+                        },
+
+                        {
+                            "type":"text",
+                            "label":"text-bourgogne",
+                            "id":"p_bourgogne"
+
+                        },
+
+                        {
+                            "type":"image_picker",
+                            "label":"main image",
+                            "id":"image-title"
+                        },
+
+                        {
+                            "type":"image_picker",
+                            "label":"second image",
+                            "id":"image-catalog"
+                        }
+
+
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "coeur-bourgogne" 
+                    }
+                    ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
