@@ -3,6 +3,7 @@
     "16560784216f86247c": {
       "type": "home-story",
       "settings": {
+        "heading": ""
       }
     },
     "165607810377f0b2a1": {
@@ -82,6 +83,26 @@
         "description": "kgdsqjhvdhjvzsefvhzesjn,",
         "lien-1": ""
       }
+    },
+    "1656082672d8548305": {
+      "type": "home-story",
+      "blocks": {
+        "f0078c73-6da4-42a6-96a9-62f25f0b2403": {
+          "type": "text",
+          "settings": {
+            "section-story-title": "L’univers d’Autre Monde",
+            "section-story-chapo": "Un autre monde s’ouvre devant vous",
+            "section-story-content": "“Henri m’avait pris pour un fou d’entreprendre une telle aventure. J’avoue lui avoir donné raison durant les premiers kilomètres de terre et de roche que nous traversâmes, dans notre tunnelier surnommé affectueusement “magma-mobile”. A cette profondeur, je pensais que nous aurions déjà atteint les précieux minerais qui nous permettraient de faire fortune à la surface.  Quelle ne fût pas ma surprise, alors que je pensais que la pression allait nous écraser, de constater qu’une vive lumière et un horizon s’ouvrait devant nous.”",
+            "section-story-author": "1876, Autre Monde Eustache Schneider, explorateur et naturaliste."
+          }
+        }
+      },
+      "block_order": [
+        "f0078c73-6da4-42a6-96a9-62f25f0b2403"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -89,6 +110,7 @@
     "165607810377f0b2a1",
     "16560756417a478090",
     "16560778072b054bdb",
-    "1656082475472c236d"
+    "1656082475472c236d",
+    "1656082672d8548305"
   ]
 }
