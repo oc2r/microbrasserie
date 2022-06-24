@@ -82,7 +82,9 @@
           "settings": {
             "titre-bourgogne": "Une Brasserie Au coeur de la Bourgonge",
             "sous-titre-bourgogne": "Le creusot acceuille un petit coin de paradis",
-            "p_bourgogne": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "p_bourgogne": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image-title": "shopify:\/\/shop_images\/AdobeStock_114319126.png",
+            "image-catalog": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png"
           }
         }
       },
@@ -92,33 +94,12 @@
       "settings": {
         "heading": ""
       }
-    },
-    "16560784216f86247c": {
-      "type": "home-story",
-      "blocks": {
-        "31d58381-7d4d-4238-9f23-8281a9bbe1b4": {
-          "type": "text",
-          "settings": {
-            "section-story-title": "L’univers d’Autre Monde",
-            "section-story-chapo": "Un autre monde s'ouvre à vous devant vous",
-            "section-story-content": "lksdfjsdlkjfdlksjfdlks",
-            "section-story-author": "fjsdlkjfdlksjlkfdsjflksdjsfdl"
-          }
-        }
-      },
-      "block_order": [
-        "31d58381-7d4d-4238-9f23-8281a9bbe1b4"
-      ],
-      "settings": {
-        "section-story-heading": ""
-      }
     }
   },
   "order": [
     "image_banner",
     "165607810377f0b2a1",
     "16560756417a478090",
-    "16560778072b054bdb",
-    "16560784216f86247c"
+    "16560778072b054bdb"
   ]
 }
