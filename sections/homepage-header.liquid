@@ -12,7 +12,11 @@
 
 {% style %}
 
-
+.catalog-category_container {
+	background-image: url({{block.settings.image-bg | img_url:'master'}});
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .bg_homepage_intro_img {
 	width: 100vw;
