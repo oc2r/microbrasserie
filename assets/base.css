@@ -2314,7 +2314,7 @@ input[type='checkbox'] {
 /* Header icons */
 .header__icons {
  	  /* position: relative; */
-    top: 24px;
+    top: 31px;
     /* position: fixed; */
     right: 10px;
     position: absolute;
