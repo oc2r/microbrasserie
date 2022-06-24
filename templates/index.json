@@ -2,23 +2,7 @@
   "sections": {
     "16560784216f86247c": {
       "type": "home-story",
-      "blocks": {
-        "31d58381-7d4d-4238-9f23-8281a9bbe1b4": {
-          "type": "text",
-          "settings": {
-            "image-title-story": "shopify:\/\/shop_images\/AdobeStock_114319126.png",
-            "section-story-title": "L’univers d’Autre Monde",
-            "section-story-chapo": "Un autre monde s'ouvre à vous devant vous",
-            "section-story-content": "lksdfjsdlkjfdlksjfdlks",
-            "section-story-author": "fjsdlkjfdlksjlkfdsjflksdjsfdl"
-          }
-        }
-      },
-      "block_order": [
-        "31d58381-7d4d-4238-9f23-8281a9bbe1b4"
-      ],
       "settings": {
-        "section-story-heading": ""
       }
     },
     "165607810377f0b2a1": {
@@ -79,12 +63,32 @@
       "settings": {
         "heading": "coeur-bourgogne"
       }
+    },
+    "1656082475472c236d": {
+      "type": "home-nosbieres",
+      "blocks": {
+        "34aefd8c-6926-4eac-be98-a441bb2600c7": {
+          "type": "image_picker",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "34aefd8c-6926-4eac-be98-a441bb2600c7"
+      ],
+      "settings": {
+        "heading-1": "Découvrez",
+        "heading-2": "Nos bières",
+        "description": "kgdsqjhvdhjvzsefvhzesjn,",
+        "lien-1": ""
+      }
     }
   },
   "order": [
     "16560784216f86247c",
     "165607810377f0b2a1",
     "16560756417a478090",
-    "16560778072b054bdb"
+    "16560778072b054bdb",
+    "1656082475472c236d"
   ]
 }
