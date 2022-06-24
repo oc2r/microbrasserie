@@ -2,6 +2,7 @@
     <div class="section-nosbieres-container-secondaire-texte">
         <h2 class="section-nosbieres-titre-petit">{{block.settings.heading-1}}</h2>
         <h2 class="section-nosbieres-titre-normal">{{block.settings.heading-2}}</h2>
+        <h2 class="section-nosbieres-sous-titre">{{block.settings.heading-3}}</h2>
         <p class="section-nosbieres-description">{{block.settings.description}}</p>
         <button class="section-nosbieres-button">{{block.settings.lien-1}}</button>
     </div>    
@@ -12,6 +13,7 @@
 </div>
 
 {% stylesheet %}
+
 {% endstylesheet %}
 
 {% schema %}
@@ -28,6 +30,11 @@
             "type":"text",
             "label":"Titre normal",
             "id":"heading-2"
+        },
+        {
+            "type":"text",
+            "label":"Sous-titre",
+            "id":"heading-3"
         },
         {
             "type":"text",
