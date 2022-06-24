@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
     <div class="catalog-category_container" >
 
-        <img class ="catalog-category_img" src="{{block.settings.image-bg | img_url:'master'}}"/>
+        <img class ="bg_homepage_intro_img" src="{{block.settings.image-bg | img_url:'master'}}"/>
         <div class="text-content">
             <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
             <p class="presentation_text">{{block.settings.presentation}}</p>
@@ -12,7 +12,7 @@
 
 {% style %}
 
-.catalog-category_img {
+.bg_homepage_intro_img {
 	witdh: 100%;
 }
 
