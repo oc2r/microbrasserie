@@ -1,12 +1,65 @@
+
+    <div class="section-story" >
+
+        <h2 class ="section-story-heading" >{{blocks.settings.section-story-heading}}</h2>
+        <h3 class ="section-story-chapo" >{{blocks.settings.section-story-chapo}}</h3>
+        <div class ="section-story-content" >{{blocks.settings.section-story-content}}</div>
+        <div class ="section-story-author" >{{blocks.settings.section-story-author}}</div>  
+    </div>
+
+{% style %}
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "home story",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title home story",
+            "id":"section-story-heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title home story",
+            "settings":[
+                {
+                    "type":"text",
+                    "label":"title story",
+                    "id":"section-story-title"
+                },
+                {
+                    "type":"text",
+                    "label":"title chapo",
+                    "id":"section-story-chapo"
+                },
+
+                {
+                    "type": "text",
+                    "id": "section-story-content",
+                    "label": "Story content"
+                    },
+                    {
+                    "type": "text",
+                    "id": "section-story-author",
+                    "label": "author"
+
+                }
+            ]
+    } 
+],
+"presets" : [
+                {
+                    "category":"text",
+                    "name": "home story" 
+                }
+                ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
