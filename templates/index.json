@@ -36,6 +36,25 @@
         "show_text_below": false
       }
     },
+    "165607810377f0b2a1": {
+      "type": "homepage-header",
+      "blocks": {
+        "8cf623e6-fe93-418b-9e92-0701553b3ae0": {
+          "type": "text",
+          "settings": {
+            "heading": "DECOUVREZ LA BRASSERIE ANCREE DANS UN UNIVERS FANTASTIQUE",
+            "presentation": "Des fées et créatures mythologiques, des hommes issus de cultures oubliées, des visions futuristes, entrez dans le multivers d’Autre Monde. Chaque gamme de bière le mettra en lumière sous un de ses multiples aspects.",
+            "image-bg": "shopify:\/\/shop_images\/banner-homepage.png"
+          }
+        }
+      },
+      "block_order": [
+        "8cf623e6-fe93-418b-9e92-0701553b3ae0"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "16560756417a478090": {
       "type": "test",
       "blocks": {
@@ -77,6 +96,7 @@
   },
   "order": [
     "image_banner",
+    "165607810377f0b2a1",
     "16560756417a478090",
     "16560778072b054bdb"
   ]
