@@ -1,0 +1,71 @@
+<!-- {%for block in section.blocks %}
+    <div class="catalog-category_container" >
+
+      <h2 class ="catalog-category_title" >{{block.settings.heading}}</h2>
+      <img class ="catalog-category_img" src="{{block.settings.image-title | img_url:'master'}}"/>
+      <img class ="catalog-category_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
+
+    </div>
+{%endfor%} -->
+
+{% style %}
+
+.catalog-category_container {
+text-align: center
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "home story",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title home story",
+            "id":"section-story-heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title home story",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"title story",
+                            "id":"section-story-title"
+                        },
+                        {
+                            "type":"text",
+                            "label":"title chapo",
+                            "id":"section-story-chapo"
+                        },
+
+{
+                            "type": "text",
+                            "id": "section-story-content",
+                            "label": "Story content"
+
+                        },
+                        {
+                        "type": "text",
+                        "id": "section-story-author",
+                        "label": "author"
+
+                    },
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "home story" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+
