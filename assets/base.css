@@ -2285,6 +2285,8 @@ input[type='checkbox'] {
 .header__heading-logo {
   height: auto;
   width: 100%;
+  postion: absolute;
+  left: 50%; 
 }
 
 @media screen and (max-width: 989px) {
