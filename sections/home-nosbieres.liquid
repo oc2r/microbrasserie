@@ -1,12 +1,61 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+<div class="section-nosbieres-container-principal">
+    <div class="section-nosbieres-container-secondaire-texte">
+        <h2 class="section-nosbieres-titre-petit"></h2>
+        <h2 class="section-nosbieres-titre-normal"></h2>
+        <p class="section-nosbieres-description"></p>
+        <button class="section-nosbieres-button"></button>
+    </div>    
+
+    <div class="section-nosbieres-container-secondaire-image">
+        <img class="" src="" alt="">
+    </div>
+</div>
 
 {% stylesheet %}
 {% endstylesheet %}
+
+{% schema %}
+{
+    "name": "Section Nos Bières",
+    "class": "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"Titre petit",
+            "id":"heading-1"
+        },
+        {
+            "type":"text",
+            "label":"Titre normal",
+            "id":"heading-2"
+        },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"description"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"Image du produit",
+            "settings": [
+                {
+                    "type":"image_picker",
+                    "label":"Image du produit",
+                    "id":"image-produit"
+                }
+            ]
+        }
+    ],
+"presets" : [
+    {
+        "category":"image",
+        "name": "Section Nos Bières" 
+    }
+]
+}
+{% endschema %}
 
 {% javascript %}
 {% endjavascript %}
