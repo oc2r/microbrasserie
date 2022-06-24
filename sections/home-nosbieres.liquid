@@ -1,3 +1,4 @@
+{%for block in section.blocks %}
 <div class="section-nosbieres-container-principal">
     <div class="section-nosbieres-container-secondaire-texte">
         <h2 class="section-nosbieres-titre-petit">{{block.settings.heading-1}}</h2>
@@ -11,6 +12,7 @@
         <img class="section-nosbieres-image-produit" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
     </div>
 </div>
+{%endfor%}
 
 {% stylesheet %}
 
