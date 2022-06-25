@@ -1,9 +1,9 @@
 {%for block in section.blocks %}
     <div class="reseaux-sociaux_container" >
         <h2 class ="titre-reseaux-sociaux" >{{block.settings.titre-reseaux-sociaux}}</h2>
-      <div class="trait">
+<!--       <div class="trait">
       	<hr>
-      </div>
+      </div> -->
         <div class="reseaux-sociaux_img">
 
             <img class ="insta_img_1" src="{{block.settings.insta_img_1 | img_url:'master'}}"/>
@@ -43,9 +43,11 @@ h2 {
 	font-weight: bold;
 	color: white;
 	margin-top: 0px;
+	text-decoration: underline white;
+
 }
 
-.trait {
+<!-- .trait {
 background-color: white;
 }
 hr {
@@ -53,7 +55,7 @@ margin-block: 0px;
 border-width: 10px;
 
 }
-
+ -->
 
 h3 {
 	font-size: 30px;
