@@ -1,9 +1,7 @@
 {%for block in section.blocks %}
     <div class="reseaux-sociaux_container" >
         <h2 class ="titre-reseaux-sociaux" >{{block.settings.titre-reseaux-sociaux}}</h2>
-<!--       <div class="trait">
-      	<hr>
-      </div> -->
+
         <div class="reseaux-sociaux_img">
 
             <img class ="insta_img_1" src="{{block.settings.insta_img_1 | img_url:'master'}}"/>
@@ -42,21 +40,11 @@
 	font-size: 45px;
 	font-weight: bold;
 	color: white;
-	text-decoration: underline white;
-	text-decoration-thickness: 2px;
-	text-underline-offset: 1rem;
+	border-bottom: solid 2px white;
+	
 
 }
 
-<!-- .trait {
-background-color: white;
-}
-hr {
-margin-block: 0px;
-border-width: 10px;
-
-}
- -->
 
 .reseaux-sociaux_container h3 {
 	font-size: 30px;
