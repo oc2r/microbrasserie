@@ -115,12 +115,6 @@
         "heading-1": ""
       }
     },
-    "16561902946dab506c": {
-      "type": "multicolonne-reassurance",
-      "settings": {
-        "heading-1": ""
-      }
-    },
     "16561708686a030ac1": {
       "type": "reseaux-sociaux-insta-fb",
       "blocks": {
@@ -151,7 +145,6 @@
     "1656082672d8548305",
     "16560778072b054bdb",
     "1656168897bc476cf1",
-    "16561902946dab506c",
     "16561708686a030ac1"
   ]
 }
