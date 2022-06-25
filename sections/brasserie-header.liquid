@@ -1,0 +1,89 @@
+{%for block in section.blocks %}
+    <div class="catalog-category_container" >
+
+        <img class ="catalog-category_img" src="{{block.settings.image-bg | img_url:'master'}}"/>
+        <div class="text-content">
+            <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
+            <p class="presentation_text">{{block.settings.presentation}}</p>
+        </div>
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.catalog-category_container {
+	height: fit-content;
+}
+
+.catalog-category_img {
+	width: 100vw;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+.text-content {
+    position: relative;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: green;
+
+}
+
+.presentation_text {
+    font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "brasserie header",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"H1 homepage",
+                            "id":"heading"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text_presentation",
+                            "id":"presentation"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your image",
+                            "id":"image-bg"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "brasserie header" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

@@ -1,0 +1,65 @@
+{%for block in section.blocks %}
+    <div class="catalog-category_container" >
+
+      <h2 class ="catalog-category_title" >{{block.settings.heading}}</h2>
+      <img class ="catalog-category_img" src="{{block.settings.image-title | img_url:'master'}}"/>
+      <img class ="catalog-category_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.catalog-category_container {
+text-align: center
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "category catalog",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"your image",
+                            "id":"heading"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your image",
+                            "id":"image-title"
+                        },
+
+{
+                            "type": "url",
+                            "id": "link-1",
+                            "label": "Link URL 1"
+
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "catalog category" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

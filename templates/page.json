@@ -1,1 +1,63 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "16560837878a6df2f5": {
+      "type": "brasserie-header",
+      "blocks": {
+        "70e26ef7-c050-4ac1-b308-6dcd9bc5a7ea": {
+          "type": "text",
+          "settings": {
+            "heading": "Notre brasserie",
+            "presentation": "la Brasserie Artisanale Autre Monde ouvre Ses portes au Creusot !  entrez avec nous dans cet univers fantastique !",
+            "image-bg": "shopify:\/\/shop_images\/page-brasserie-header_ba49d3cc-6232-438d-ace3-1b6827d6b35e.png"
+          }
+        }
+      },
+      "block_order": [
+        "70e26ef7-c050-4ac1-b308-6dcd9bc5a7ea"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "1655995243371492ce": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Nos bières",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "biere-blonde",
+        "products_to_show": 6,
+        "columns_desktop": 2,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16560837878a6df2f5",
+    "1655995243371492ce"
+  ]
+}

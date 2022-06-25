@@ -1,0 +1,96 @@
+{%for block in section.blocks %}
+    <div class="catalog-category_container" >
+
+        <img class ="bg_homepage_intro_img" src="{{block.settings.image-bg | img_url:'master'}}"/>
+        <div class="text-content">
+            <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
+            <p class="presentation_text">{{block.settings.presentation}}</p>
+        </div>
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.catalog-category_container {
+	background-image: url({{block.settings.image-bg-header | img_url:'master'}});
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_homepage_intro_img {
+	width: 100vw;
+}
+
+.text-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 52%;
+	background: green;
+	width: 45%;
+	top: -600px;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-weight: 700;
+	color: #FFFFFF;
+}
+
+.presentation_text {
+    font-style: italic;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "homepage header",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"H1 homepage",
+                            "id":"heading"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text_presentation",
+                            "id":"presentation"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your image",
+                            "id":"image-bg"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your image bg",
+                            "id":"image-bg-header"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "homepage header" 
+                    }
+                    ]
+
+}
+{% endschema %}
