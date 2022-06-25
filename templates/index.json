@@ -98,7 +98,7 @@
         "bbfa2299-6e65-46e3-b00e-0d741e66ec9c": {
           "type": "text",
           "settings": {
-            "image-1": "shopify:\/\/shop_images\/insta4.png",
+            "reassurance-1-image": "shopify:\/\/shop_images\/insta4.png",
             "heading-1": "premier element",
             "description-1": "pezdqsklffzesnkdnfaezksql",
             "heading-2": "",
@@ -112,7 +112,7 @@
         "bbfa2299-6e65-46e3-b00e-0d741e66ec9c"
       ],
       "settings": {
-        "heading-1": ""
+        "heading": ""
       }
     },
     "16561708686a030ac1": {
