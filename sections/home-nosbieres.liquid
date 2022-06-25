@@ -10,7 +10,7 @@
     </div>    
 
     <div class="section-nosbieres-container-secondaire-image">
-        <img class="section-nosbieres-image-personnage" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
+        <img class="section-nosbieres-image-personnage" src="{{block.settings.image-personnage | img_url:'master'}}" alt="">
         <img class="section-nosbieres-image-produit" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
     </div>
   
@@ -57,16 +57,13 @@
     font-size: 20px;
 }
 
-.section-nosbieres-image-personnage{
-	
-}
 
 .section-nosbieres-container-secondaire-image{
 	max-width: 100%;
 	align-items: center;
 }
 
-.section-nosbieres-container-secondaire-image, .section-nosbieres-image-produit{
+.section-nosbieres-container-secondaire-image, .section-nosbieres-image-produit, .section-nosbieres-image-personnage{
     max-height: 300px;
 }
 
@@ -173,6 +170,11 @@
                     "type":"image_picker",
                     "label":"image-produit",
                     "id":"image-produit"
+                },
+{
+                    "type":"image_picker",
+                    "label":"image-personnage",
+                    "id":"image-personnage"
                 },
 				{
                     "type":"image_picker",
