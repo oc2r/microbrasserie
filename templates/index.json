@@ -32,11 +32,10 @@
         "3aeb2a29-e81b-41ce-9a10-4528f8001ba3": {
           "type": "text",
           "settings": {
-            "image-bg": "shopify:\/\/shop_images\/grunge-texture-dark.png",
             "heading-2": "Nos bières",
-            "heading-3": "",
-            "description": "",
-            "bouton-texte": "",
+            "heading-3": "6 saveurs créés pour vous",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "bouton-texte": "Nos bières",
             "lien-1": ""
           }
         }
