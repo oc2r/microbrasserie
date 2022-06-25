@@ -19,7 +19,7 @@
 {% stylesheet %}
 
 .section-nosbieres-container-principal {
-	background-image: url({{block.settings.nos-bieres-image-bg | img_url:'master'}});
+	background-image: url({{block.settings.image-nos-bieres-bg | img_url:'master'}});
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -125,8 +125,8 @@ section-nosbieres-container-principal{
                 },
 				{
                     "type":"image_picker",
-                    "label":"nos-bieres-image-bg",
-                    "id":"nos-bieres-image-bg"
+                    "label":"image-nos-bieres-bg",
+                    "id":"image-nos-bieres-bg"
                 }
             ]
         }        
