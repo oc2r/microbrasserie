@@ -19,6 +19,7 @@
 {% stylesheet %}
 
 .section-nosbieres-container-principal {
+	max-height:900px;
 	background-image: url({{block.settings.image-nos-bieres-bg | img_url:'master'}});
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,11 +27,6 @@
 	padding-right: 50px;
 	display:flex;
 	flex-direction: column;
-	gap: 50px;
-}
-
-section-nosbieres-container-principal{
-	max-height:900px;
 }
 
 .section-nosbieres-container-secondaire-texte{
