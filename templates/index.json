@@ -92,10 +92,20 @@
         "heading": "coeur-bourgogne"
       }
     },
-    "1656163351f296b4ce": {
-      "type": "multicolumn",
+    "1656168897bc476cf1": {
+      "type": "multicolonne-reassurance",
       "blocks": {
-        "1656163351d80a66ea-0": {
+        "165616889785b97935-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/griffon.png",
+            "title": "paiement",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165616889785b97935-1": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -104,16 +114,7 @@
             "link": ""
           }
         },
-        "1656163351d80a66ea-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1656163351d80a66ea-2": {
+        "165616889785b97935-2": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -124,9 +125,9 @@
         }
       },
       "block_order": [
-        "1656163351d80a66ea-0",
-        "1656163351d80a66ea-1",
-        "1656163351d80a66ea-2"
+        "165616889785b97935-0",
+        "165616889785b97935-1",
+        "165616889785b97935-2"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -152,6 +153,6 @@
     "1656082475472c236d",
     "1656082672d8548305",
     "16560778072b054bdb",
-    "1656163351f296b4ce"
+    "1656168897bc476cf1"
   ]
 }
