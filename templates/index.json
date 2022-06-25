@@ -37,7 +37,8 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "bouton-texte": "Nos bières",
             "lien-1": "",
-            "image-produit": "shopify:\/\/shop_images\/Bieres.png"
+            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
+            "image-nos-bieres-bg": "shopify:\/\/shop_images\/grunge-texture-dark.png"
           }
         }
       },
