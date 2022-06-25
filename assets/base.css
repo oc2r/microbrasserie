@@ -2884,4 +2884,25 @@ details-disclosure > details {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { font-family: 'League Spartan', sans-serif; }
   
   .banner__media media span { font-family: 'League Spartan', sans-serif;}
+
+  
+ h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	margin-top: 0px;
+}
+
+h3 {
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+  
+p {
+	font-size: 15px;
+	font-style: italic;
+	color: white;
+	margin-top: 0 px;
+}
   
