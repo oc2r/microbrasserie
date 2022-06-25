@@ -1,12 +1,89 @@
+<div class="reassurance-container">
+    <div class="reassurance-1">
+        <img class="reassurance-1-image" src="{{block.settings.image-1}}" alt="">
+        <h3 class="reassurance-1-titre"></h3>
+        <p class="reassurance-1-description"></p>
+    </div>
+    <div class="reassurance-2">
+        <img class="reassurance-2-image" src="" alt="">
+        <h3 class="reassurance-2-titre"></h3>
+        <p class="reassurance-2-description"></p>
+    </div>
+    <div class="reassurance-3">
+        <img class="reassurance-3-image" src="" alt="">
+        <h3 class="reassurance-3-titre"></h3>
+        <p class="reassurance-3-description"></p>
+    </div>
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "section nos bieres",
+    "class": "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"section nos bieres",
+            "id":"heading-1"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"text",
+            "name":"section nos bieres",
+            "settings":[
+                {
+                    "type":"text",
+                    "label":"heading-2",
+                    "id":"heading-2"
+                },
+                {
+                    "type":"text",
+                    "label":"heading-3",
+                    "id":"heading-3"
+                },
+                {
+                    "type":"text",
+                    "label":"description",
+                    "id":"description"
+                },
+                {
+                    "type": "text",            
+                    "label": "bouton-texte",
+                    "id": "bouton-texte"
+                },
+                {
+                    "type": "url",            
+                    "label": "lien-1",
+                    "id": "lien-1"
+                },
+                {
+                    "type":"image_picker",
+                    "label":"image-produit",
+                    "id":"image-produit"
+                },
+{
+                    "type":"image_picker",
+                    "label":"image-personnage",
+                    "id":"image-personnage"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-nos-bieres-bg",
+                    "id":"image-nos-bieres-bg"
+                }
+            ]
+        }        
+    ],
+"presets" : [
+    {
+        "category":"image",
+        "name": "section nos bieres" 
+    }
+]
+}
 {% endschema %}
 
 {% stylesheet %}
 {% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
