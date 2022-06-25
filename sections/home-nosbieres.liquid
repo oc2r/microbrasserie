@@ -30,11 +30,8 @@
 }
 
 .section-nosbieres-container-secondaire-texte{
-	width: calc(30%-150px);
-}
-
-.section-nosbieres-container-secondaire-image{
-	width: calc(60%-150px);
+	display:flex;
+	flex-direction: column;
 }
 
 .section-nosbieres-titre-petit{
@@ -76,13 +73,26 @@
 }
 
 @media (min-width:640px){
+
+.section-nosbieres-container-principal {
 	padding-left: 50px;
 	padding-right: 50px;
 }
+}
 
 @media (min-width:1040px){
+
+.section-nosbieres-container-principal {
 	padding-left: 150px;
 	padding-right: 150px;
+}
+.section-nosbieres-container-secondaire-texte{
+	width: calc(30%-150px);
+}
+.section-nosbieres-container-secondaire-image{
+	width: calc(60%-150px);
+}
+
 }
 
 @media (min-width: 1920px){
