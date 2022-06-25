@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="reassurance-container">
     <div class="reassurance-1">
-        <img class="image-1" src="{{block.settings.image-1}}" alt="">
+        <img class="reassurance-1-image" src="{{block.settings.image-1}}" alt="">
         <h3 class="reassurance-1-titre">{{block.settings.heading-1}}</h3>
         <p class="reassurance-1-description">{{block.settings.description-1}}</p>
     </div>
@@ -21,7 +21,7 @@
 
 {% stylesheet %}
 
-.image-1{
+.reassurance-1-image{
 	width: 300px;
 	height: 300px;
 	object-fit: contain;    
