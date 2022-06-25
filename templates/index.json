@@ -145,6 +145,28 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16561708686a030ac1": {
+      "type": "reseaux-sociaux-insta-fb",
+      "blocks": {
+        "5b0e7710-2582-407a-af81-9cb7da9ea6cb": {
+          "type": "text",
+          "settings": {
+            "titre-reseaux-sociaux": "Suivez nous sur Instagram et Facebook",
+            "insta-reseaux-sociaux": "@Brasserieautremonde",
+            "insta_img_1": "shopify:\/\/shop_images\/insta1.png",
+            "insta_img_2": "shopify:\/\/shop_images\/insta2.png",
+            "insta_img_3": "shopify:\/\/shop_images\/insta3.png",
+            "insta_img_4": "shopify:\/\/shop_images\/insta4.png"
+          }
+        }
+      },
+      "block_order": [
+        "5b0e7710-2582-407a-af81-9cb7da9ea6cb"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -153,6 +175,7 @@
     "1656082475472c236d",
     "1656082672d8548305",
     "16560778072b054bdb",
-    "1656168897bc476cf1"
+    "1656168897bc476cf1",
+    "16561708686a030ac1"
   ]
 }
