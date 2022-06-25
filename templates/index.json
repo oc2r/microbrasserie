@@ -32,6 +32,7 @@
         "3aeb2a29-e81b-41ce-9a10-4528f8001ba3": {
           "type": "text",
           "settings": {
+            "image-bg": "shopify:\/\/shop_images\/grunge-texture-dark.png",
             "heading-2": "Nos bières",
             "heading-3": "",
             "description": "",
