@@ -1,6 +1,9 @@
 {%for block in section.blocks %}
 <div class="section-nosbieres-container-principal">
-    <div class="section-nosbieres-container-secondaire-texte">
+  
+    <img class ="bg_section-nosbieres_img" src="{{block.settings.image-bg | img_url:'master'}}"/>
+    
+  	<div class="section-nosbieres-container-secondaire-texte">
         <h2 class="section-nosbieres-titre-petit">{{block.settings.heading-1}}</h2>
         <h2 class="section-nosbieres-titre-normal">{{block.settings.heading-2}}</h2>
         <h2 class="section-nosbieres-sous-titre">{{block.settings.heading-3}}</h2>
@@ -11,6 +14,7 @@
     <div class="section-nosbieres-container-secondaire-image">
         <img class="section-nosbieres-image-produit" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
     </div>
+  
 </div>
 {%endfor%}
 
@@ -83,6 +87,11 @@
             "name":"section nos bieres",
             "settings":[
                 {
+                    "type":"image_picker",
+                    "label":"your image",
+                    "id":"image-bg"
+                },
+				{
                     "type":"text",
                     "label":"heading-2",
                     "id":"heading-2"
