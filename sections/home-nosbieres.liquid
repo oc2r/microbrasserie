@@ -20,12 +20,14 @@
 
 {% stylesheet %}
 
-section-nosbieres-container-principal{
-	max-height:900px;
+.section-nosbieres-container-principal {
+	background-image: url({{block.settings.image-bg-header | img_url:'master'}});
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bg_section-nosbieres_img {
-	object-fit:fill;
+section-nosbieres-container-principal{
+	max-height:900px;
 }
 
 .section-nosbieres-titre-petit{
