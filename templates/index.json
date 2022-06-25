@@ -90,6 +90,59 @@
       "settings": {
         "heading": "coeur-bourgogne"
       }
+    },
+    "1656163351f296b4ce": {
+      "type": "multicolumn",
+      "blocks": {
+        "1656163351d80a66ea-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1656163351d80a66ea-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1656163351d80a66ea-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656163351d80a66ea-0",
+        "1656163351d80a66ea-1",
+        "1656163351d80a66ea-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -97,6 +150,7 @@
     "165607810377f0b2a1",
     "1656082475472c236d",
     "1656082672d8548305",
-    "16560778072b054bdb"
+    "16560778072b054bdb",
+    "1656163351f296b4ce"
   ]
 }
