@@ -16,7 +16,9 @@
           "settings": {
             "heading": "NOTRE BRASSERIE",
             "presentation": "la Brasserie Artisanale Autre Monde ouvre Ses portes au Creusot !  entrez avec nous dans cet univers fantastique !",
-            "image-bg": "shopify:\/\/shop_images\/page-brasserie-header_ba49d3cc-6232-438d-ace3-1b6827d6b35e.png"
+            "image-bg": "shopify:\/\/shop_images\/page-brasserie-header_ba49d3cc-6232-438d-ace3-1b6827d6b35e.png",
+            "weare": "QUI SOMMES NOUS ?",
+            "weare_text": "Amis passionnés de houblons, de malts, de petites levures de tous horizons, de bière artisanale brassée avec amour, préparez vous pour ce grand périple : celui de la Brasserie Artisanale Autre Monde. Cela fait maintenant 2 ans que nous nous préparons pour ce voyage, et nous travaillons chaque jour pour le grand départ !"
           }
         }
       },
