@@ -145,7 +145,8 @@
           "type": "text",
           "settings": {
             "titre": "Notre proccessus",
-            "image-1": "shopify:\/\/shop_images\/processus-fabrication.png"
+            "image-1": "shopify:\/\/shop_images\/processus-fabrication.png",
+            "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
           }
         }
       },
