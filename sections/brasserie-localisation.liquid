@@ -6,7 +6,7 @@
             <img src="" alt="">
         </div>
         <div class="brasserie-localisation-container-coordonnees">
-            <p class="brasserie-localisation-adresse">Adresse : {{block.settings.adresse}} - {{block.settings.ville}}</p>
+            <p class="brasserie-localisation-adresse">Adresse : {{block.settings.adresse}} - {{block.settings.code-postal}} {{block.settings.ville}}</p>
             <p class="brasserie-localisation-horaires">Horaires : {{block.settings.horaires}}</p>
             <p class="brasserie-localisation-tel">Tel : {{block.settings.telephone-1}} / {{block.settings.telephone-2}}</p>
         </div>
@@ -74,18 +74,18 @@
                   },
 				{
                   	"type":"text",
-                  	"label":"texte-1",
-                  	"id":"texte-1"
-                  },
-				{
-                  	"type":"image_picker",
-                  	"label":"image-1",
-                  	"id":"image-1"
+                  	"label":"adresse",
+                  	"id":"adresse"
                   },
 				{
                   	"type":"text",
-                  	"label":"texte-2",
-                  	"id":"texte-2"
+                  	"label":"code-postal",
+                  	"id":"code-postal"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"ville",
+                  	"id":"ville"
                   },				
 				{
                   	"type":"image_picker",
