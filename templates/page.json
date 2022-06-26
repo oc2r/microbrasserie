@@ -62,19 +62,19 @@
         "c4d2e39b-b769-46d1-b10f-31f522cf880d": {
           "type": "text",
           "settings": {
-            "titre": "C le titre",
+            "titre": "NOS ENGAGEMENTS",
             "image-1": "shopify:\/\/shop_images\/bouclier-verification_1.png",
-            "text-1": "djsnjcjesdn",
+            "text-1": "Des brassages de qualité",
             "image-2": "shopify:\/\/shop_images\/ampoule_1.png",
-            "engagements-2-texte": "",
+            "engagements-2-texte": "Favoriser la maillage artisanal et local",
             "image-3": "shopify:\/\/shop_images\/Vector.png",
-            "engagements-3-texte": "",
+            "engagements-3-texte": "Assurer le bien-être des salariés",
             "image-4": "shopify:\/\/shop_images\/monde_1.png",
-            "engagements-4-texte": "",
+            "engagements-4-texte": "Promouvoir la consommation responsable",
             "image-5": "shopify:\/\/shop_images\/marqueur-de-carte_1.png",
-            "engagements-5-texte": "",
+            "engagements-5-texte": "Une production créative et passionnée",
             "image-6": "shopify:\/\/shop_images\/biere_1.png",
-            "engagements-6-texte": ""
+            "engagements-6-texte": "Limiter notre impact environnemental"
           }
         }
       },
