@@ -4,6 +4,10 @@
             <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
             <p class="presentation_text">{{block.settings.presentation}}</p>
         </div>
+      	<div class="qui-sommes-nous-container">
+            <h2 class ="catalog-category_title" >{{block.settings.weare}}</h2>
+            <p class="presentation_text">{{block.settings.werare_text}}</p>
+        </div>
 
     </div>
 {%endfor%}
@@ -68,6 +72,16 @@ h1 {
                             "type":"image_picker",
                             "label":"your image",
                             "id":"image-bg"
+                        },
+						{
+                            "type":"text",
+                            "label":"qui_sommes_nous",
+                            "id":"weare"
+                        },
+						{
+                            "type":"text",
+                            "label":"weare_text",
+                            "id":"weare_text"
                         }
                     ]
      } 
