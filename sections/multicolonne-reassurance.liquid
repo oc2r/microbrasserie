@@ -1,3 +1,4 @@
+{%for block in section.blocks %}
 <div class="reassurance-container">
     <div class="reassurance-1">
         <img class="reassurance-1-image" src="{{block.settings.reassurance-1-image | img_url:'master'}}" alt="">
@@ -15,6 +16,7 @@
         <p class="reassurance-3-description">{{block.settings.description-3}}</p>
     </div>
 </div>
+{%endfor%}
 
 
 {% stylesheet %}
