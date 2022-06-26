@@ -1,4 +1,19 @@
 {%for block in section.blocks %}
+<div class="founder-container">
+   <div class="founder">
+    <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
+    <p>{{block.settings.foundertext-1}}</p>
+   </div>
+   <div class="founder">
+    <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
+    <p>{{block.settings.foundertext-2}}</p>
+   </div>
+   <div class="founder">
+    <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
+    <p>{{block.settings.foundertext-3}}</p>
+   </div>
+</div>
+
 <div class="brasserie-engagements-container-master" >  
 	<h2 class="brasserie-engagements-container-master-titre" >{{block.settings.titre}}</h2>
   	<span></span>
@@ -116,11 +131,41 @@
             "name":"engagements",
             "settings":[
                   {
+                  "type":"image_picker",
+                  "label":"founderimage-1",
+                  "id":"founderimage-1"
+                  },
+                  {
+                    "type":"text",
+                    "label":"foundertext-1",
+                    "id":"foundertext-1"
+                  },
+				  {
+                  	"type":"image_picker",
+                  	"label":"founderimage-2",
+                  	"id":"founderimage-2"
+                  },
+				  {
+                    "type":"text",
+                    "label":"foundertext-2",
+                    "id":"foundertext-2"
+                  },
+				  {
+                  	"type":"image_picker",
+                  	"label":"founderimage-3",
+                  	"id":"founderimage-3"
+                  },
+				  {
+                    "type":"text",
+                    "label":"foundertext-3",
+                    "id":"foundertext-3"
+                  },
+                  {
                   	"type":"text",
                   	"label":"titre",
                   	"id":"titre"
                   },
-				{
+				  {
                   	"type":"image_picker",
                   	"label":"image-1",
                   	"id":"image-1"
