@@ -85,12 +85,19 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656273062ad40b9b1": {
+      "type": "brasserie-notrehistoire",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
     "16560837878a6df2f5",
     "1655995243371492ce",
-    "16562535443610698a"
+    "16562535443610698a",
+    "1656273062ad40b9b1"
   ]
 }
