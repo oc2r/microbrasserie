@@ -136,6 +136,12 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656277792713d9bba": {
+      "type": "brasserie-processus-fabrication",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -144,6 +150,7 @@
     "1655995243371492ce",
     "16562535443610698a",
     "1656273062ad40b9b1",
-    "16562757822c7bfe90"
+    "16562757822c7bfe90",
+    "1656277792713d9bba"
   ]
 }
