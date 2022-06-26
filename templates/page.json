@@ -140,6 +140,18 @@
     },
     "1656277792713d9bba": {
       "type": "brasserie-processus-fabrication",
+      "blocks": {
+        "939a7582-e081-4dca-8011-542f0bba427b": {
+          "type": "text",
+          "settings": {
+            "titre": "Notre proccessus",
+            "image-1": "shopify:\/\/shop_images\/processus-fabrication.png"
+          }
+        }
+      },
+      "block_order": [
+        "939a7582-e081-4dca-8011-542f0bba427b"
+      ],
       "settings": {
         "heading": ""
       }
