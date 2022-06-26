@@ -62,6 +62,12 @@
         "c4d2e39b-b769-46d1-b10f-31f522cf880d": {
           "type": "text",
           "settings": {
+            "founderimage-1": "shopify:\/\/shop_images\/mathieu.png",
+            "foundertext-1": "Avant de décider de brasser dans de vraies cuves, Mathieu a fait ses premiers brassins il y a de nombreuses années dans sa cuisine. En 2020 il entreprend une reconversion professionnelle et commence à travailler dans des brasseries artisanales, avec l’idée de monter sa propre brasserie dans les années suivantes : Autre Monde. Quand il ne brasse pas, il met en image l'Autre Monde avec ses talents de linograveur, et s'occupe des réseaux sociaux.",
+            "founderimage-2": "shopify:\/\/shop_images\/baptiste.png",
+            "foundertext-2": "Après 6 années passées à Lille où il développe un goût aiguisé pour les bières artisanales, Baptiste décide de revenir au Creusot et de s’associer à la brasserie Autre Monde. Futur gérant de la taproom, Baptiste est également un authentique barman et notre responsable clientèle. Capable de différencier les IPA en blind test, on le trouve généralement enfermé dans le frigo à houblons.",
+            "founderimage-3": "shopify:\/\/shop_images\/vincent.png",
+            "foundertext-3": "Originaire du Creusot, Vincent brasse en amateur depuis 2018. En 2020, il se forme au métier d’artisan-brasseur à l’ENILBIO et, après plusieurs expériences dans des brasseries artisanales de la région, il est fier aujourd'hui d'être notre Artisan Brasseur et gérant de la brasserie. Il aime nous partager sa passion pour les lambics et les sours, bières légèrement acidulées, et a toujours une recette prête à être testée !",
             "titre": "NOS ENGAGEMENTS",
             "image-1": "shopify:\/\/shop_images\/bouclier-verification_1.png",
             "text-1": "Des brassages de qualité",
