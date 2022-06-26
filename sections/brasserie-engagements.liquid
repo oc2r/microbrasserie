@@ -3,29 +3,29 @@
 	<h2 class="brasserie-engagements-container-master-titre" >{{block.settings.titre}}</h2>
     <div class="brasserie-engagements-container" >
       <div class="brasserie-engagements-container-1">
-          <div class ="brasserie-engagements-1">
+          <div class ="brasserie-engagements">
               <img class ="brasserie-engagements-1-image" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
               <p class ="brasserie-engagements-1-texte">{{block.settings.text-1}}</p>
           </div>
-          <div class ="brasserie-engagements-2">
+          <div class ="brasserie-engagements">
               <img class ="brasserie-engagements-2-image" src="{{block.settings.image-2 | img_url:'master'}}" alt="">
               <p class ="brasserie-engagements-2-texte">{{block.settings.engagement-2-texte}}</p>
           </div>
-          <div class ="brasserie-engagements-3">
+          <div class ="brasserie-engagements">
               <img class ="brasserie-engagements-3-image" src="{{block.settings.image-3 | img_url:'master'}}" alt="">
               <p class ="brasserie-engagements-3-texte">{{block.settings.engagement-3-texte}}</p>
           </div>
       </div>
       <div class="brasserie-engagements-container-2">
-          <div class ="brasserie-engagements-4">
+          <div class ="brasserie-engagements">
               <img class ="brasserie-engagements-4-image" src="{{block.settings.image-4 | img_url:'master'}}" alt="">
               <p class ="brasserie-engagements-4-texte">{{block.settings.engagement-4-texte}}</p>
           </div>
-          <div class ="brasserie-engagements-5">
+          <div class ="brasserie-engagements">
               <img class ="brasserie-engagements-5-image" src="{{block.settings.image-5 | img_url:'master'}}" alt="">
               <p class ="brasserie-engagements-5-texte">{{block.settings.engagement-5-texte}}</p>
           </div>
-          <div class ="brasserie-engagements-6">
+          <div class ="brasserie-engagements">
               <img class ="brasserie-engagements-6-image" src="{{block.settings.image-6 | img_url:'master'}}" alt="">
               <p class ="brasserie-engagements-6-texte">{{block.settings.engagement-6-texte}}</p>
           </div>
@@ -36,18 +36,44 @@
 
 {% style %}
 
-brasserie-engagements-container-master-titre, .brasserie-engagements-1-texte, .brasserie-engagements-2-texte, .brasserie-engagements-3-texte, .brasserie-engagements-4-texte,.brasserie-engagements-5-texte,.brasserie-engagements-6-texte{
-	color: #ffffff;
-}
-
 .brasserie-engagements-container-master{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	position: relative;
+    width: 90%;
+    background-color: blueviolet;
+}
+
+.brasserie-engagements-container-master p,
+.brasserie-engagements-container-master h2 {
+	color: white;
 }
 
 .brasserie-engagements-container-master-titre{
 	margin-bottom: 20px;
+}
+
+.brasserie-engagements-container {
+    display: flex;
+    margin-inline: auto;
+    background-color: green;
+}
+
+.brasserie-engagements-container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.brasserie-engagements-container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.brasserie-engagements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 {% endstyle %}
