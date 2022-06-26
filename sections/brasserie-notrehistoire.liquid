@@ -5,12 +5,12 @@
         <div class="brasserie-notrehistoire-container-1">
             <div class="brasserie-notrehistoire-container-1-texte">{{block.settings.texte-1}}</div>
             <div class="brasserie-notrehistoire-container-1-image">
-            
+            	<img class="brasserie-notrehistoire-container-1-image-1" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
             </div>
         </div>
         <div class="brasserie-notrehistoire-container-2">
             <div class="brasserie-notrehistoire-container-2-image">
-            
+            	<img class="brasserie-notrehistoire-container-2-image-2" src="{{block.settings.image-2 | img_url:'master'}}" alt="">
             </div>
             <div class="brasserie-notrehistoire-container-2-texte">{{block.settings.texte-1}}</div>
         </div>
@@ -48,9 +48,19 @@
                   	"id":"texte-1"
                   },
 				{
+                  	"type":"image_picker",
+                  	"label":"image-1",
+                  	"id":"image-1"
+                  },
+				{
                   	"type":"text",
                   	"label":"texte-2",
                   	"id":"texte-2"
+                  },				
+				{
+                  	"type":"image_picker",
+                  	"label":"image-2",
+                  	"id":"image-2"
                   },
 				{
                   	"type":"image_picker",
