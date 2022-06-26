@@ -1,12 +1,13 @@
 {%for block in section.blocks %}
     <div class="nos-bieres_container" >
+      	<img class ="nos_bieres_header_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
+
         <div class="header-nos-bieres">
             <h1 class ="nos-bieres_title" >{{block.settings.heading}}</h1>
             <p class="nos-bieres-text">{{block.settings.presentation}}</p>
           
         </div>
         
-      	<img class ="nos_bieres_header_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
 
       	
 
