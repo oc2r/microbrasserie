@@ -3,7 +3,7 @@
     <h2 class="site-gravure-titre-petit">{{block.settings.titre-petit}}</h2>
     <h2 class="site-gravure-titre-normal">{{block.settings.titre-normal}}</h2>
     <h2 class="site-gravure-ndd">{{block.settings.ndd}}</h2>
-    <div class="site-gravure-lien"></div>
+    <button class="site-gravure-lien">{{block.settings.lien-1}}</button>
 </div>
 {%endfor%}
 
@@ -46,6 +46,11 @@
                     "type":"text",
                     "label":"ndd",
                     "id":"ndd"
+                },
+				{
+                    "type": "url",            
+                    "label": "lien-1",
+                    "id": "lien-1"
                 }
             ]
         }        
