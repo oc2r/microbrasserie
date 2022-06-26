@@ -93,6 +93,10 @@
           "type": "text",
           "settings": {
             "titre": "Notre histoire",
+            "texte-1": "Notre aventure commence en 2020 lors de la rencontre entre    En mai 2022, nous brassons et embouteiillons notre première bière chez Two Dudes, un ami brasseur. C’est en juin que nous la présentons pour la première fois : l’Aventurier. C’est une blonde de type pale ale au houblon cascade. Avec ses reflets dorés et ses notes de miel, elle fut idéale pour l’été.   En juillet",
+            "image-1": "shopify:\/\/shop_images\/travaux.png",
+            "texte-2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image-2": "shopify:\/\/shop_images\/travaux.png",
             "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
           }
         }
