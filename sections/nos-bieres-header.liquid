@@ -3,7 +3,9 @@
       	<img class ="nos_bieres_header_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
 
         <div class="header-nos-bieres">
+          	<div> 
             <h1 class ="nos-bieres_title" >{{block.settings.heading}}</h1>
+            </div>
             <p class="nos-bieres-text">{{block.settings.nos-bieres-presentation}}</p>
           
         </div>
@@ -30,13 +32,14 @@
 	
 }
 
+.header-nos-bieres div {
+		border-bottom: solid 1px white;
 
+}
 .header-nos-bieres h1 {
-	width: fit-content;
 	color: #FFFFFF;
 	font-weight: 700;
 	font-size: 70 px;
-	border-bottom: solid 1px white;
 }
 
 
