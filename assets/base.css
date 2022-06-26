@@ -2285,6 +2285,8 @@ input[type='checkbox'] {
 .header__heading-logo {
   height: auto;
   width: 100%;  
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 989px) {
@@ -2301,7 +2303,7 @@ input[type='checkbox'] {
 
   .header__heading,
   .header__heading-link {
-    justify-self: center;
+    justify-self: start;
   }
 
   .header--top-center .header__heading-link,
