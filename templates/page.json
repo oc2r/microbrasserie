@@ -74,7 +74,8 @@
             "image-5": "shopify:\/\/shop_images\/marqueur-de-carte_1.png",
             "engagements-5-texte": "Une production créative et passionnée",
             "image-6": "shopify:\/\/shop_images\/biere_1.png",
-            "engagements-6-texte": "Limiter notre impact environnemental"
+            "engagements-6-texte": "Limiter notre impact environnemental",
+            "image-fond": "shopify:\/\/shop_images\/grunge-texture-dark.png"
           }
         }
       },
