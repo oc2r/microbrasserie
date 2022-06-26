@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="brasserie-engagements-container" >
 	<div class ="brasserie-engagements-1">
-        <img class ="brasserie-engagements-1-image" src="" alt="">
+        <img class ="brasserie-engagements-1-image" src="{{block.settings.engagement-1-image | img_url:'master'}}" alt="">
         <p class ="brasserie-engagements-1-texte"></p>
     </div>
     <div class ="brasserie-engagements-2">
@@ -35,17 +35,37 @@
     "blocks": [
         {
             "type":"text",
-            "name":"home story",
+            "name":"engagements",
             "settings":[
                   {
                   	"type":"text",
-                  	"label":"titre",
-                  	"id":"titre"
+                  	"label":"engagements-1-image",
+                  	"id":"engagements-1-image"
                   },
                   {
                   	"type":"text",
-                  	"label":"texte",
-                  	"id":"texte"
+                  	"label":"engagements-1-texte",
+                  	"id":"engagements-1-texte"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"engagements-2-image",
+                  	"id":"engagements-2-image"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-2-texte",
+                  	"id":"engagements-2-texte"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"engagements-3-image",
+                  	"id":"engagements-3-image"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-3-texte",
+                  	"id":"engagements-3-texte"
                   }
             ]
      } 
