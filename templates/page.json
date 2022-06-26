@@ -55,11 +55,34 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16562535443610698a": {
+      "type": "brasserie-engagements",
+      "blocks": {
+        "c4d2e39b-b769-46d1-b10f-31f522cf880d": {
+          "type": "text",
+          "settings": {
+            "engagements-1-image": "",
+            "engagements-1-texte": "",
+            "engagements-2-image": "",
+            "engagements-2-texte": "",
+            "engagements-3-image": "",
+            "engagements-3-texte": ""
+          }
+        }
+      },
+      "block_order": [
+        "c4d2e39b-b769-46d1-b10f-31f522cf880d"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
     "16560837878a6df2f5",
-    "1655995243371492ce"
+    "1655995243371492ce",
+    "16562535443610698a"
   ]
 }

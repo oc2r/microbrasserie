@@ -6,11 +6,11 @@
     </div>
     <div class ="brasserie-engagements-2">
         <img class ="brasserie-engagements-2-image" src="{{block.settings.engagement-2-image | img_url:'master'}}" alt="">
-        <p class ="brasserie-engagements-2-texte">{{block.settings.engagement-1-texte}}</p>
+        <p class ="brasserie-engagements-2-texte">{{block.settings.engagement-2-texte}}</p>
     </div>
     <div class ="brasserie-engagements-3">
         <img class ="brasserie-engagements-3-image" src="{{block.settings.engagement-3-image | img_url:'master'}}" alt="">
-        <p class ="brasserie-engagements-3-texte">{{block.settings.engagement-1-texte}}</p>
+        <p class ="brasserie-engagements-3-texte">{{block.settings.engagement-3-texte}}</p>
     </div>
 </div>
 {%endfor%}
@@ -38,7 +38,7 @@
             "name":"engagements",
             "settings":[
                   {
-                  	"type":"text",
+                  	"type":"image_picker",
                   	"label":"engagements-1-image",
                   	"id":"engagements-1-image"
                   },
@@ -48,7 +48,7 @@
                   	"id":"engagements-1-texte"
                   },
 				{
-                  	"type":"text",
+                  	"type":"image_picker",
                   	"label":"engagements-2-image",
                   	"id":"engagements-2-image"
                   },
@@ -58,7 +58,7 @@
                   	"id":"engagements-2-texte"
                   },
 				{
-                  	"type":"text",
+                  	"type":"image_picker",
                   	"label":"engagements-3-image",
                   	"id":"engagements-3-image"
                   },
