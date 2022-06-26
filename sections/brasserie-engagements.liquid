@@ -1,6 +1,7 @@
 {%for block in section.blocks %}
 <div class="brasserie-engagements-container-master" >  
 	<h2 class="brasserie-engagements-container-master-titre" >{{block.settings.titre}}</h2>
+  	<span></span>
     <div class="brasserie-engagements-container" >
       <div class="brasserie-engagements-container-1">
           <div class ="brasserie-engagements">
@@ -47,7 +48,12 @@
 }
 
 
-
+.brasserie-engagements-container-master span {
+    height: 2px;
+    width: 90%;
+    margin-inline: auto;
+    background-color: aqua;
+}
 
 .brasserie-engagements-container-master-titre{
 	margin-bottom: 20px;
