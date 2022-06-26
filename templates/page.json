@@ -63,6 +63,7 @@
           "type": "text",
           "settings": {
             "titre": "C le titre",
+            "image-1": "shopify:\/\/shop_images\/bouclier-verification_1.png",
             "engagements-1-texte": "",
             "engagements-2-texte": "",
             "engagements-3-texte": "",
