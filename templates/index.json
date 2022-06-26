@@ -158,6 +158,16 @@
       "settings": {
         "heading": ""
       }
+    },
+    "165624924816c04711": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -168,6 +178,7 @@
     "16560778072b054bdb",
     "1656168897bc476cf1",
     "16561708686a030ac1",
-    "16562470292811ad81"
+    "16562470292811ad81",
+    "165624924816c04711"
   ]
 }
