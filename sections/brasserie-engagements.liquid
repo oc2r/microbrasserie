@@ -1,5 +1,6 @@
 {%for block in section.blocks %}
 <div class="brasserie-engagements-container" >
+  <h2>{{block.settings.titre}}</h2>
   <div class="brasserie-engagements-container-1">
       <div class ="brasserie-engagements-1">
           <img class ="brasserie-engagements-1-image" src="{{block.settings.engagement-1-image | img_url:'master'}}" alt="">
@@ -58,7 +59,7 @@
     "settings": [
         {
             "type":"text",
-            "label":"home story",
+            "label":"engagements",
             "id":"heading"
         }
     ],
@@ -68,6 +69,11 @@
             "name":"engagements",
             "settings":[
                   {
+                  	"type":"text",
+                  	"label":"titre",
+                  	"id":"titre"
+                  },
+				{
                   	"type":"image_picker",
                   	"label":"engagements-1-image",
                   	"id":"engagements-1-image"
