@@ -116,7 +116,8 @@
             "titre": "Localistaion",
             "adresse": "27 bis rue du progrès",
             "code-postal": "93100",
-            "ville": "Montreuil"
+            "ville": "Montreuil",
+            "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
           }
         }
       },
