@@ -1,6 +1,6 @@
 {%for block in section.blocks %}
 <div class="brasserie-quisommesnous-container" >
-	<h2 class ="brasserie-quisommesnous-title" >{{block.settings.title}}</h2>
+	<h2 class ="brasserie-quisommesnous-title" >{{block.settings.titre}}</h2>
 	<p class ="brasserie-quisommesnous-texte" >{{block.settings.texte}}</div>
 </div>
 {%endfor%}
@@ -28,29 +28,14 @@
             "name":"home story",
             "settings":[
                   {
-                      "type":"image_picker",
-                      "label":"section story image",
-                      "id":"section-story-image"
+                  	"type":"text",
+                  	"label":"titre",
+                  	"id":"titre"
                   },
                   {
                   	"type":"text",
-                  	"label":"section story title",
-                  	"id":"section-story-title"
-                  },
-                  {
-                  	"type":"text",
-                  	"label":"chapo",
-                  	"id":"section-story-chapo"
-                  },
-                  {
-                  	"type": "text",
-                  	"id": "section-story-content",
-                  	"label": "section story content"
-                  },
-                  {
-                  	"type": "text",
-                  	"id": "section-story-author",
-                  	"label": "section story author"
+                  	"label":"texte",
+                  	"id":"texte"
                   }
             ]
      } 
