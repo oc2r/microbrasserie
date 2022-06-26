@@ -11,7 +11,7 @@
         <p class="reassurance-2-description">{{block.settings.description-2}}</p>
     </div>
     <div class="reassurance-3">
-        <img class="reassurance-3-image" src="" alt="">
+        <img class="reassurance-3-image" src="{{block.settings.reassurance-3-image | img_url:'master'}}" alt="">
         <h3 class="reassurance-3-titre"></h3>
         <p class="reassurance-3-description"></p>
     </div>
@@ -91,8 +91,8 @@
                 },
 				{
                     "type":"image_picker",
-                    "label":"image-3",
-                    "id":"image-3"
+                    "label":"reassurance-3-image",
+                    "id":"reassurance-3-image"
                 },
                 {
                     "type":"text",
