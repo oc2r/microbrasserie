@@ -1,12 +1,95 @@
+{%for block in section.blocks %}
+    <div class="nos-bieres_container" >
+        <div class="header-nos-bieres">
+            <h1 class ="nos-bieres_title" >{{block.settings.heading}}</h1>
+            <p class="nos-bieres-text">{{block.settings.presentation}}</p>
+          
+        </div>
+        
+      	<img class ="nos_bieres_header_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
+
+      	
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.nos-bieres_container {
+	position: relative;
+	width: 100%;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+
+}
+
+.header-nos-bieres {
+    position: relative;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding: 100px;
+}
+
+
+.header-notre-brasserie h1 {
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+
+.nos-bieres_text {
+    font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "brasserie header",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"H1 homepage",
+                            "id":"heading"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text_presentation",
+                            "id":"presentation"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your image",
+                            "id":"image-catalog"
+                        }
+					
+						
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "nos-bieres-header" 
+                    }
+                    ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
