@@ -2,7 +2,7 @@
 <div class="reassurance-container">
     <h2 class="site-gravure-titre-petit">{{block.settings.titre-petit}}</h2>
     <h2 class="site-gravure-titre-normal">{{block.settings.titre-normal}}</h2>
-    <h2 class="site-gravure-ndd">{{block.settings.site-gravure-titre-petit}}</h2>
+    <h2 class="site-gravure-ndd">{{block.settings.ndd}}</h2>
     <div class="site-gravure-lien"></div>
 </div>
 {%endfor%}
@@ -41,7 +41,12 @@
                     "type":"text",
                     "label":"titre-normal",
                     "id":"titre-normal"
-                }    
+                },
+				{
+                    "type":"text",
+                    "label":"ndd",
+                    "id":"ndd"
+                }
             ]
         }        
     ],
