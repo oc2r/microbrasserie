@@ -1,62 +1,20 @@
 {%for block in section.blocks %}
-    <div class="section-story" >
-    <img class ="section-story-image" src="{{block.settings.section-story-image | img_url:'master'}}"/>
-        <div class="section-story-container">
-
-            <h2 class ="section-story-title" >{{block.settings.section-story-title}}</h2>
-            <div class ="section-story-chapo" >{{block.settings.section-story-chapo}}</div>
-            <div class ="section-story-content" >{{block.settings.section-story-content}}</div>
-            <div class ="section-story-author" >{{block.settings.section-story-author}}</div>
-        </div>
-
-    </div>
+<div class="brasserie-quisommesnous-container" >
+	<h2 class ="brasserie-quisommesnous-title" >{{block.settings.title}}</h2>
+	<p class ="brasserie-quisommesnous-texte" >{{block.settings.texte}}</div>
+</div>
 {%endfor%}
 
 {% style %}
 
-.section-story {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    position:relative;
-}
-
-.section-story h2 {
-	font-size: 40px;
-	font-weight: bold;
-	color: white;
-}
-
-.section-story-chapo, .section-story-content{
-    padding-bottom:2%;
-} 
-
-.section-story-content {
-    padding: 2%;
-    width: 50%;
-    margin: auto;
-}
-.section-story-container {
-    z-index: 1;
-    position: absolute;
-    color: white;
-    top: 15%;
-}
-
-.section-story-image {
-    width: 100%;
-    height: 100%;
-    
-
-}
 
 
 {% endstyle %}
 
 {% schema %}
 {
-    "name": "home story",
-    "class" : "section",
+    "name": "qui sommes nous",
+    "class" : "qui-sommes-nous",
     "settings": [
         {
             "type":"text",
@@ -103,8 +61,8 @@
 ],
 "presets" : [
                     {
-                        "category":"image",
-                        "name": "home story" 
+                        "category":"text",
+                        "name": "qui sommes nous" 
                     }
                     ]
 
