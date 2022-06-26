@@ -2,14 +2,7 @@
 <div class="brasserie-localisation-container-master" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">  
 	<h2 class="brasserie-localisation-container-master-titre" >{{block.settings.titre}}</h2>
     <div class="brasserie-localisation-container" >
-        <div class="brasserie-localisation-container-carte">
-            <img class="brasserie-localisation-carte" src="{{block.settings.image-carte | img_url:'master'}}" alt="">
-        </div>
-        <div class="brasserie-localisation-container-coordonnees">
-            <p class="brasserie-localisation-adresse">Adresse : {{block.settings.adresse}} - {{block.settings.code-postal}} {{block.settings.ville}}</p>
-            <p class="brasserie-localisation-horaires">Horaires : {{block.settings.horaires}}</p>
-            <p class="brasserie-localisation-tel">Tel : {{block.settings.telephone-1}} / {{block.settings.telephone-2}}</p>
-        </div>
+        <img class="brasserie-localisation-carte" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
     </div>
 </div>
 {%endfor%}
