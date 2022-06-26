@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="reassurance-container">
     <h2 class="site-gravure-titre-petit">{{block.settings.site-gravure-titre-petit}}</h2>
-    <h2 class="site-gravure-titre-normal"></h2>
+    <h2 class="site-gravure-titre-normal">{{block.settings.site-gravure-titre-normal}}</h2>
     <h2 class="site-gravure-ndd"></h2>
     <div class="site-gravure-lien"></div>
 </div>
@@ -37,46 +37,11 @@
                     "label":"site-gravure-titre-petit",
                     "id":"site-gravure-titre-petit"
                 },
-                {
-                    "type":"text",
-                    "label":"heading-1",
-                    "id":"heading-1"
-                },
-                {
-                    "type":"text",
-                    "label":"description-1",
-                    "id":"description-1"
-                },
-                {
-                    "type":"image_picker",
-                    "label":"reassurance-2-image",
-                    "id":"reassurance-2-image"
-                },
-                {
-                    "type":"text",
-                    "label":"heading-2",
-                    "id":"heading-2"
-                },
-                {
-                    "type":"text",
-                    "label":"description-2",
-                    "id":"description-2"
-                },
 				{
-                    "type":"image_picker",
-                    "label":"reassurance-3-image",
-                    "id":"reassurance-3-image"
-                },
-                {
                     "type":"text",
-                    "label":"heading-3",
-                    "id":"heading-3"
-                },
-                {
-                    "type":"text",
-                    "label":"description-3",
-                    "id":"description-3"
-                }
+                    "label":"site-gravure-titre-normal",
+                    "id":"site-gravure-titre-normal"
+                }    
             ]
         }        
     ],
