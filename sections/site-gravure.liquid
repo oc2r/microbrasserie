@@ -1,12 +1,100 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+{%for block in section.blocks %}
+<div class="reassurance-container">
+    <div class="reassurance-1">
+        <img class="reassurance-1-image" src="{{block.settings.reassurance-1-image | img_url:'master'}}" alt="">
+        <h3 class="reassurance-1-titre">{{block.settings.heading-1}}</h3>
+        <p class="reassurance-1-description">{{block.settings.description-1}}</p>
+    </div>
+    <div class="reassurance-2">
+        <img class="reassurance-2-image" src="{{block.settings.reassurance-2-image | img_url:'master'}}" alt="">
+        <h3 class="reassurance-2-titre">{{block.settings.heading-2}}</h3>
+        <p class="reassurance-2-description">{{block.settings.description-2}}</p>
+    </div>
+    <div class="reassurance-3">
+        <img class="reassurance-3-image" src="{{block.settings.reassurance-3-image | img_url:'master'}}" alt="">
+        <h3 class="reassurance-3-titre">{{block.settings.heading-3}}</h3>
+        <p class="reassurance-3-description">{{block.settings.description-3}}</p>
+    </div>
+</div>
+{%endfor%}
+
 
 {% stylesheet %}
+
+
 {% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
+{% schema %}
+{
+    "name": "elements-reassurance",
+    "class": "elements-reassurance",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"text",
+            "name":"section nos bieres",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "label":"reassurance-1-image",
+                    "id":"reassurance-1-image"
+                },
+                {
+                    "type":"text",
+                    "label":"heading-1",
+                    "id":"heading-1"
+                },
+                {
+                    "type":"text",
+                    "label":"description-1",
+                    "id":"description-1"
+                },
+                {
+                    "type":"image_picker",
+                    "label":"reassurance-2-image",
+                    "id":"reassurance-2-image"
+                },
+                {
+                    "type":"text",
+                    "label":"heading-2",
+                    "id":"heading-2"
+                },
+                {
+                    "type":"text",
+                    "label":"description-2",
+                    "id":"description-2"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"reassurance-3-image",
+                    "id":"reassurance-3-image"
+                },
+                {
+                    "type":"text",
+                    "label":"heading-3",
+                    "id":"heading-3"
+                },
+                {
+                    "type":"text",
+                    "label":"description-3",
+                    "id":"description-3"
+                }
+            ]
+        }        
+    ],
+"presets" : [
+    {
+        "category":"image",
+        "name": "elements-reassurance" 
+    }
+]
+}
+{% endschema %}
+
+
