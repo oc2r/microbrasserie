@@ -88,6 +88,18 @@
     },
     "1656273062ad40b9b1": {
       "type": "brasserie-notrehistoire",
+      "blocks": {
+        "bd6c3404-fca5-49ad-8ee1-49e0352b8685": {
+          "type": "text",
+          "settings": {
+            "titre": "Notre histoire",
+            "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
+          }
+        }
+      },
+      "block_order": [
+        "bd6c3404-fca5-49ad-8ee1-49e0352b8685"
+      ],
       "settings": {
         "heading": ""
       }
