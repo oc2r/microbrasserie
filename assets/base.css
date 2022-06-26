@@ -2317,9 +2317,10 @@ input[type='checkbox'] {
  	  /* position: relative; */
     top: 31px;
     /* position: fixed; */
-    right: 10px;
+    right: 65px;
     position: absolute;
-    box-sizing: content-box;
+    right: 65px;
+    box-sizing: border-box;
 
 }
 
