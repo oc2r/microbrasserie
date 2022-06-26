@@ -141,6 +141,20 @@
     },
     "16562470292811ad81": {
       "type": "site-gravure",
+      "blocks": {
+        "c1c75132-c57d-4db4-a07d-3b86d050f73b": {
+          "type": "text",
+          "settings": {
+            "titre-petit": "Premier titre",
+            "titre-normal": "second titre",
+            "ndd": "lesite.com",
+            "lien-1": "https:\/\/mathieuprost.fr"
+          }
+        }
+      },
+      "block_order": [
+        "c1c75132-c57d-4db4-a07d-3b86d050f73b"
+      ],
       "settings": {
         "heading": ""
       }
