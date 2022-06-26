@@ -4,9 +4,7 @@
             <h2 class ="titre-bourgogne" >{{block.settings.titre-bourgogne}}</h2>
             <h3 class ="sous-titre-bourgogne">{{block.settings.sous-titre-bourgogne}}</h3>
             <p class ="p_bourgogne">{{block.settings.p_bourgogne}}</p>
-          	<button class="section-nosbieres-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
-<button class = "bourgogne_btn"> JE DECOUVRE </button>
-
+          	<button class="bourgogne_btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
         </div>
 
       <img class ="bourgogne-ble_img" src="{{block.settings.image-title | img_url:'master'}}"/>
@@ -137,6 +135,11 @@
                             "label":"second image",
                             "id":"image-catalog"
                         },
+						{
+                    		"type": "text",            
+                    		"label": "bouton-text",
+                    		"id": "bouton-text"
+                		},
 						{
                     		"type": "url",            
                     		"label": "lien-1",
