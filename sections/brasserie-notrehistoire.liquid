@@ -1,12 +1,125 @@
+{%for block in section.blocks %}
+<div class="brasserie-notrehistoire-container-master" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">  
+	<h2 class="brasserie-notrehistoire-container-master-titre" >{{block.settings.titre}}</h2>
+    <div class="brasserie-notrehistoire-container" >
+        <div class="brasserie-notrehistoire-container-1">
+            <div class="brasserie-notrehistoire-container-1-texte">
+            
+            </div>
+            <div class="brasserie-notrehistoire-container-1-image">
+            
+            </div>
+        </div>
+        <div class="brasserie-notrehistoire-container-2">
+            <div class="brasserie-notrehistoire-container-2-image">
+            
+            </div>
+            <div class="brasserie-notrehistoire-container-2-texte">
+            
+            </div>
+        </div>
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "notre histoire",
+    "class" : "notre-histoire",
+    "settings": [
+        {
+            "type":"text",
+            "label":"engagements",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"engagements",
+            "settings":[
+                  {
+                  	"type":"text",
+                  	"label":"titre",
+                  	"id":"titre"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-1",
+                  	"id":"image-1"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"text-1",
+                  	"id":"text-1"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-2",
+                  	"id":"image-2"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-2-texte",
+                  	"id":"engagements-2-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-3",
+                  	"id":"image-3"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-3-texte",
+                  	"id":"engagements-3-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-4",
+                  	"id":"image-4"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-4-texte",
+                  	"id":"engagements-4-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-5",
+                  	"id":"image-5"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-5-texte",
+                  	"id":"engagements-5-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-6",
+                  	"id":"image-6"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-6-texte",
+                  	"id":"engagements-6-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-fond",
+                  	"id":"image-fond"
+                  }
+            ]
+     } 
+],
+"presets" : [
+    {
+    "category":"image",
+    "name": "engagements" 
+    }
+]
+
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
