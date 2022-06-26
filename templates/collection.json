@@ -33,7 +33,7 @@
           "type": "text",
           "settings": {
             "heading": "NOS BIERES",
-            "presentation": "Nos bières sont brassées dans le respect des méthodes artisanales, de la qualité de nos matières premières, du client et de l’environnement.",
+            "nos-bieres-presentation": "Nos bières sont brassées dans le respect des méthodes artisanales, de la qualité de nos matières premières, du client et de l’environnement.",
             "image-catalog": "shopify:\/\/shop_images\/nos_bieres_header.png"
           }
         }
