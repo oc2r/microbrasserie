@@ -106,6 +106,26 @@
       "settings": {
         "heading": ""
       }
+    },
+    "16562757822c7bfe90": {
+      "type": "brasserie-localisation",
+      "blocks": {
+        "70ef34ed-1c7b-4c39-a749-e9499256dfe3": {
+          "type": "text",
+          "settings": {
+            "titre": "Localistaion",
+            "adresse": "27 bis rue du progrès",
+            "code-postal": "93100",
+            "ville": "Montreuil"
+          }
+        }
+      },
+      "block_order": [
+        "70ef34ed-1c7b-4c39-a749-e9499256dfe3"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -113,6 +133,7 @@
     "16560837878a6df2f5",
     "1655995243371492ce",
     "16562535443610698a",
-    "1656273062ad40b9b1"
+    "1656273062ad40b9b1",
+    "16562757822c7bfe90"
   ]
 }
