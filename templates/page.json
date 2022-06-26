@@ -62,12 +62,13 @@
         "c4d2e39b-b769-46d1-b10f-31f522cf880d": {
           "type": "text",
           "settings": {
-            "engagements-1-image": "",
+            "titre": "C le titre",
             "engagements-1-texte": "",
-            "engagements-2-image": "",
             "engagements-2-texte": "",
-            "engagements-3-image": "",
-            "engagements-3-texte": ""
+            "engagements-3-texte": "",
+            "engagements-4-texte": "",
+            "engagements-5-texte": "",
+            "engagements-6-texte": ""
           }
         }
       },
