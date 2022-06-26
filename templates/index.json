@@ -98,13 +98,15 @@
         "bbfa2299-6e65-46e3-b00e-0d741e66ec9c": {
           "type": "text",
           "settings": {
-            "reassurance-1-image": "shopify:\/\/shop_images\/insta4.png",
+            "reassurance-1-image": "shopify:\/\/shop_images\/france.png",
             "heading-1": "premier element",
             "description-1": "pezdqsklffzesnkdnfaezksql",
-            "heading-2": "",
-            "description-2": "",
-            "heading-3": "",
-            "description-3": ""
+            "image-2": "shopify:\/\/shop_images\/paiement.png",
+            "heading-2": "paiement",
+            "description-2": "cccizhsqdezqjsd",
+            "image-3": "shopify:\/\/shop_images\/service-client.png",
+            "heading-3": "SAV de qulité",
+            "description-3": "ezdqsdnizejbfdué\"b"
           }
         }
       },
