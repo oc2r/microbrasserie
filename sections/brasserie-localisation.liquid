@@ -3,7 +3,7 @@
 	<h2 class="brasserie-localisation-container-master-titre" >{{block.settings.titre}}</h2>
     <div class="brasserie-localisation-container" >
         <div class="brasserie-localisation-container-carte">
-            <img src="" alt="">
+            <img class="brasserie-localisation-carte" src="{{block.settings.image-carte | img_url:'master'}}" alt="">
         </div>
         <div class="brasserie-localisation-container-coordonnees">
             <p class="brasserie-localisation-adresse">Adresse : {{block.settings.adresse}} - {{block.settings.code-postal}} {{block.settings.ville}}</p>
@@ -37,17 +37,6 @@
 	width: 30%;
 }
 
-.brasserie-notrehistoire-container-1-texte, .brasserie-notrehistoire-container-2-texte{
-	padding: 20px;
-}
-
-.brasserie-notrehistoire-container-1-image, .brasserie-notrehistoire-container-2-image{
-}
-
-.brasserie-notrehistoire-container-1-image-1, .brasserie-notrehistoire-container-2-image-2{
-	width:100%;
-	object-fit: cover;    
-}
 
 {% endstyle %}
 
