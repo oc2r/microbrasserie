@@ -1,5 +1,5 @@
 {%for block in section.blocks %}
-<div class="reassurance-container">
+<div class="site-gravure-container">
     <h2 class="site-gravure-titre-petit">{{block.settings.titre-petit}}</h2>
     <h2 class="site-gravure-titre-normal">{{block.settings.titre-normal}}</h2>
     <h2 class="site-gravure-ndd">{{block.settings.ndd}}</h2>
@@ -10,8 +10,9 @@
 
 {% stylesheet %}
 
-.reassurance-container{
-	max-height: 400px;
+.site-gravure-container{
+	display: flex;
+	flex-direction: column;
 }
 
 {% endstylesheet %}
