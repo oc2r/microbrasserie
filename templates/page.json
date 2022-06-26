@@ -123,6 +123,7 @@
           "type": "text",
           "settings": {
             "titre": "Localistaion",
+            "image-carte": "shopify:\/\/shop_images\/carte.png",
             "adresse": "27 bis rue du progrès",
             "code-postal": "93100",
             "ville": "Montreuil",
