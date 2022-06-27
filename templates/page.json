@@ -35,10 +35,8 @@
         "8f1739d3-f236-4e75-bc3e-27a177cbbe22": {
           "type": "text",
           "settings": {
-            "heading": "QUI SOMMES-NOUS",
-            "presentation": "Amis passionnés de houblons, de malts, de petites levures de tous horizons, de bière artisanale brassée avec amour, préparez vous pour ce grand périple : celui de la Brasserie Artisanale Autre Monde. Cela fait maintenant 2 ans que nous nous préparons pour ce voyage, et nous travaillons chaque jour pour le grand départ !",
-            "weare": "",
-            "weare_text": ""
+            "titre-1": "QUI SOMMES-NOUS",
+            "texte": "Amis passionnés de houblons, de malts, de petites levures de tous horizons, de bière artisanale brassée avec amour, préparez vous pour ce grand périple : celui de la Brasserie Artisanale Autre Monde. Cela fait maintenant 2 ans que nous nous préparons pour ce voyage, et nous travaillons chaque jour pour le grand départ !"
           }
         }
       },
