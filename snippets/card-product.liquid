@@ -89,7 +89,7 @@
               <a href="{{ card_product.url }}" class="full-unstyled-link">
                 {{ card_product.title | escape }}
               </a>
-             prout 4
+             lala 4
             </h3>
             
           </div>
@@ -109,10 +109,10 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          <h4>
+          <h3>
                {{ card_product.description | escape }}
-			   {{product.metafields.custom.sous_titre | escape}}
-          </h4>
+            	  {{ custom.sous_titre  | escape }}
+          </h3>
 
 
           <div class="card-information">
@@ -266,5 +266,5 @@
   </div>
 {%- endif -%}
 
-
+Material: {{ product.metafields.specs.material }}
 
