@@ -2,8 +2,8 @@
 <div class="section-nosservices-container-principal">
       
   	<div class="section-nosservices-container-secondaire-texte">
-        <h2 class="section-nosservices-titre-petit">{{block.settings.heading-1}}</h2>
-        <h2 class="section-nosservices-titre-normal">{{block.settings.heading-2}}</h2>
+        <h2 class="section-nosservices-titre-petit">{{block.settings.heading-petit}}</h2>
+        <h2 class="section-nosservices-titre-normal">{{block.settings.heading-normal}}</h2>
         <h3 class="section-nosservices-sous-titre">{{block.settings.heading-3}}</h3>
         <p class="section-nosservices-description">{{block.settings.description}}</p>
         <button class="section-nosservices-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
@@ -163,7 +163,7 @@
         {
             "type":"text",
             "label":"nos services",
-            "id":"heading-1"
+            "id":"titre"
         }
     ],
     "blocks":[
@@ -171,10 +171,15 @@
             "type":"text",
             "name":"nos services",
             "settings":[
+				{
+                    "type":"text",
+                    "label":"heading-petit",
+                    "id":"heading-petit"
+                },
                 {
                     "type":"text",
-                    "label":"heading-2",
-                    "id":"heading-2"
+                    "label":"heading-normal",
+                    "id":"heading-normal"
                 },
                 {
                     "type":"text",
