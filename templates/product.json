@@ -233,8 +233,10 @@
         "04f12f16-beb7-4f5a-9462-a2cf5d06a2b5": {
           "type": "text",
           "settings": {
-            "titre-1": "",
-            "texte": ""
+            "image-1": "shopify:\/\/shop_images\/epee.png",
+            "titre-1": "Le Griffon",
+            "texte": "“Honorant l’antique alliance entre les Elfes et les guerrieres de la Terre, les monteurs de griffons fendirent le ciel de leurs lances pour entrer dans la bataille contre les horbes du Chaos”",
+            "image-fond": "shopify:\/\/shop_images\/fond-griffon_c487fc6c-7988-4090-8169-6bdfff5a5171.png"
           }
         }
       },
