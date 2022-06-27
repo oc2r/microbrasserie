@@ -185,12 +185,32 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656334963741e04d8": {
+      "type": "service-section-left",
+      "blocks": {
+        "fd6c1449-2cdf-49d7-84e7-8e162de8444c": {
+          "type": "text",
+          "settings": {
+            "image-service-left": "shopify:\/\/shop_images\/Group_221.png",
+            "title-service-left": "Achetez vos bieres en pack directement !",
+            "description-service-left": "Offrez vous un assortissement des differtentes bieres de notre gamme ou meme un pack de votre coup de coeur"
+          }
+        }
+      },
+      "block_order": [
+        "fd6c1449-2cdf-49d7-84e7-8e162de8444c"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "1656323226f6fa0876",
     "main",
     "product-recommendations",
-    "16563225019dbf5998"
+    "16563225019dbf5998",
+    "1656334963741e04d8"
   ]
 }
