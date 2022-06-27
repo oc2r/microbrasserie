@@ -1,0 +1,93 @@
+{%for block in section.blocks %}
+<div class="site-gravure-container">
+    <h2 class="site-gravure-titre-petit">{{block.settings.titre-petit}}</h2>
+    <h2 class="site-gravure-titre-normal">{{block.settings.titre-normal}}</h2>
+    <button class="site-gravure-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button">{{block.settings.button-text}}</button>
+</div>
+{%endfor%}
+
+
+{% stylesheet %}
+
+.site-gravure-container{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(115,115,115, 0.6);
+	padding: 50px;
+	position: relative;
+bk:;
+}
+
+.site-gravure-titre-petit, .site-gravure-titre-normal{
+	margin: 0px;
+}
+
+.site-gravure-titre-normal{
+	padding-block: 20px;
+	border-bottom: 2px solid #ffffff;
+}
+
+.site-gravure-btn{
+    height: 70px;
+    width: 300px;
+	cursor: pointer;
+	display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background-color:rgba(115,115,115, 0);
+    border: none;
+}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+    "name": "site-gravure",
+    "class": "site-gravure",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"text",
+            "name":"section site gravure",
+            "settings":[
+                {
+                    "type":"text",
+                    "label":"titre-petit",
+                    "id":"titre-petit"
+                },
+				{
+                    "type":"text",
+                    "label":"titre-normal",
+                    "id":"titre-normal"
+                },
+				{
+                    "type":"text",
+                    "label":"button-text",
+                    "id":"button-text"
+                },
+				{
+                    "type": "url",            
+                    "label": "lien-1",
+                    "id": "lien-1"
+                }
+            ]
+        }        
+    ],
+"presets" : [
+    {
+        "category":"text",
+        "name": "site-gravure" 
+    }
+]
+}
+{% endschema %}
+
+

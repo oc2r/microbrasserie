@@ -1,15 +1,15 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#000000",
     "gradient_accent_1": "",
     "colors_accent_2": "#000000",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_text": "#fff",
+    "colors_outline_button_labels": "#ffffff",
     "colors_background_1": "#000000",
     "gradient_background_1": "",
-    "colors_background_2": "#f3f3f3",
+    "colors_background_2": "#000000",
     "gradient_background_2": "",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -84,9 +84,9 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/brasserieautremonde",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/brasserieautremonde\/",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -133,37 +133,38 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "c0363127-ce84-4286-b07f-704ae8b5c586": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo.png",
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Navigation",
+              "menu": "main-menu"
             }
           },
-          "footer-1": {
+          "58c26909-cc81-4a5d-8203-ad086da6842b": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Mentions légales",
+              "menu": "legalite"
             }
           }
         },
         "block_order": [
+          "c0363127-ce84-4286-b07f-704ae8b5c586",
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "58c26909-cc81-4a5d-8203-ad086da6842b"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "Inscriver-vous à la newsletter",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,

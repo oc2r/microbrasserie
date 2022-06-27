@@ -2204,10 +2204,10 @@ input[type='checkbox'] {
 }
 
 .header {
-/*   display: grid; */
+  display: grid;
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
-/*   align-items: center; */
+  align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -2285,6 +2285,7 @@ input[type='checkbox'] {
 .header__heading-logo {
   height: auto;
   width: 100%;  
+  align-self: center;
 }
 
 @media screen and (max-width: 989px) {
@@ -2316,9 +2317,10 @@ input[type='checkbox'] {
  	  /* position: relative; */
     top: 31px;
     /* position: fixed; */
-    right: 10px;
+    right: 65px;
     position: absolute;
-    box-sizing: content-box;
+    right: 65px;
+    box-sizing: border-box;
 
 }
 
@@ -2879,9 +2881,90 @@ details-disclosure > details {
   font-weight: var(--font-body-weight-bold);
 }
 
-  body{font-family: 'League Spartan', sans-serif;}
+@font-face {
+font-family: "MundaneNouveauRegular";
+src: url("MundaneNouveauRegular.woff2") format("woff2"),
+url("MundaneNouveauRegular.woff") format("woff");
+}
+
+.mundane { font-family: "MundaneNouveauRegular"!important; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}  
+
+  
+/*   
+ h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	margin-top: 0px;
+}
+
+h3 {
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+  
+p {
+	font-size: 15px;
+	font-style: italic;
+	color: white;
+	margin-top: 0 px;
+}
+  
+ */
+  
+    body{font-family: 'League Spartan', sans-serif;}
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { font-family: 'League Spartan', sans-serif; }
   
   .banner__media media span { font-family: 'League Spartan', sans-serif;}
   
+
+body, html {
+  width: 100vw;
+}

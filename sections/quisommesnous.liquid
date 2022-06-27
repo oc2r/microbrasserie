@@ -1,14 +1,11 @@
 {%for block in section.blocks %}
     <div class="catalog-category_container" >
-        <div class="header-notre-brasserie">
-            <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
-            <p class="presentation_text mundane">{{block.settings.presentation}}</p>
-        </div>
-      	<div class="qui-sommes-nous-container">
-            <h2 class ="catalog-category_title mundane" >{{block.settings.weare}}</h2>
+      	<div class="quisommesnous-container">
+            <h2 class ="catalog-category_title" >{{block.settings.titre-1}}</h2>
           	<span></span>
-            <p class="presentation_text">{{block.settings.weare_text}}</p>
+            <p class="presentation_text">{{block.settings.texte}}</p>
         </div>
+
     </div>
 {%endfor%}
 
@@ -40,13 +37,13 @@
 	font-weight: 700;
 }
 
-.qui-sommes-nous-container h2 {
+.quisommesnous-container h2 {
 	font-size: 40px;
 	font-weight: bold;
 	color: white;
 }
 
-.qui-sommes-nous-container {
+.quisommesnous-container {
 	margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -57,7 +54,7 @@
 	padding: 50px;
 }
 
-.qui-sommes-nous-container span {
+.quisommesnous-container span {
     height: 1px;
     width: 30%;
     background-color: aqua;
@@ -72,44 +69,29 @@
 
 {% schema %}
 {
-    "name": "brasserie header",
-    "class" : "section",
+    "name": "qui sommes nous",
+    "class" : "quisommesnous",
     "settings": [
         {
             "type":"text",
-            "label":"title catalog",
+            "label":"titre",
             "id":"heading"
         }
     ],
     "blocks": [
         {
             "type":"text",
-            "name":"title catalog",
+            "name":"qui sommes nous",
             "settings":[
                         {
                             "type":"text",
-                            "label":"H1 homepage",
-                            "id":"heading"
-                        },
-                        {
-                            "type":"text",
-                            "label":"text_presentation",
-                            "id":"presentation"
-                        },
-                        {
-                            "type":"image_picker",
-                            "label":"your image",
-                            "id":"image-bg"
+                            "label":"titre-1",
+                            "id":"titre-1"
                         },
 						{
                             "type":"text",
-                            "label":"qui_sommes_nous",
-                            "id":"weare"
-                        },
-						{
-                            "type":"text",
-                            "label":"weare_text",
-                            "id":"weare_text"
+                            "label":"texte",
+                            "id":"texte"
                         }
                     ]
      } 
@@ -117,7 +99,7 @@
 "presets" : [
                     {
                         "category":"image",
-                        "name": "brasserie header" 
+                        "name": "qui sommes nous" 
                     }
                     ]
 

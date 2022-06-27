@@ -1,0 +1,311 @@
+{%for block in section.blocks %}
+<div class="product-header-container">
+    <div class="product-container">
+        <div class="product-image-container">
+            <div class="type-beer">
+                <p class="name-type-beer mundane">{{ product.metafields.custom.sous_titre}}</p>
+            </div>
+            <div class="img-beer-container">
+                <img src="{{block.settings.illustration-beer-name | img_url:'master'}}" alt="">
+            </div>
+        </div>
+        <div class="info-product-container">
+            <h1 class="mundane">{{block.settings.beer-name}}</h1>
+            <h2 class="mundane">{{block.settings.beer-name-second}}</h2>
+            <p>{{block.settings.beer-description}}</p>
+            <div class="degre-litre-prix">
+                <div class="degre-litre">
+                    <p class="degre">{{block.settings.beer-degre}}</p>
+                    <span></span>
+                    <p class="litre">{{block.settings.beer-size}}</p>
+                </div>
+                <p class="prix">{{block.settings.beer-price}}</p>
+            </div>
+            <div class="choose-quantity">
+                <div class="choice-variant">
+                    <select name="choice-variant" id="choice-variant">
+                        <option value="Bières individuelles">Bières individuelles</option>
+                        <option value="Bières pack">Bières pack</option>
+                    </select>
+                    <div class="quantity-product">
+                        <select name="choice-quantity" id="choice-quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="add-basket">
+                <input type="button" value="Ajouter au panier">
+            </div>
+            <div class="info-take-container">
+                <div class="click-collect-container">
+                    <span>
+                        <img src="{{block.settings.icone-click-collect | img_url:'master'}}" alt="">
+                    </span>
+                    <p class="info-take">{{block.settings.txt-click-collect}}</p>
+                </div>
+                <div class="livraison-container">
+                    <span>
+                        <img src="{{block.settings.icone-livraison | img_url:'master'}}" alt="">
+                    </span>
+                    <p class="info-take">{{block.settings.txt-livraison}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+
+    .product-header-container {
+        background: rgba(22, 22, 22, 1);
+    }
+
+	.product-container {
+		display: flex;
+		flex-direction: row;
+        justify-content: start;
+        align-items: center;
+		background-color: red;
+    }
+
+    .product-image-container {
+		position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		align-items: center;
+		left: 10%;
+		width: 21%;
+        border: 1px solid rgba(252, 220, 92, 1);
+    }
+
+    .type-beer {
+		position: absolute;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+		left: 0px;
+		top: 50px;
+		height: fit-content;
+        background: rgba(252, 220, 92, 1);
+    }
+
+	.type-beer p {
+		margin: 0px;
+		padding-inline: 20px;
+        font-size: 35px;
+		color: rgba(0, 0, 0, 1);
+    }
+
+    .img-beer-container {
+        background-color: green;
+    }
+
+    .info-product-container {
+		position: relative;
+        display: flex;
+        flex-direction: column;
+		width: 30vw;
+		left: 15%;
+		background: rebeccapurple;
+    }
+
+	.info-product-container h1 {
+		margin: 0;
+		height: fit-content;
+        font-size: 100px;
+    }
+
+    .info-product-container h2 {
+		margin: 0;
+		font-size: 60px;
+        color: rgba(252, 220, 92, 1);
+    }
+
+    .degre-litre-prix {
+        display: flex;
+        align-items: center;
+    }
+
+    .degre-litre {
+		display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 13vw;
+		margin-block: 20px;
+        padding: 10px;
+        margin-right: 30px;
+		font-size: 30px;
+        background-color: rgba(112, 112, 112, 0.6);
+    }
+
+    .degre-litre span {
+        width: 1px;
+        height: 15px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+	.prix {
+		font-size: 40px;
+	}
+
+	.choose-quantity {
+        display: flex;
+    }
+
+	.choice-variant {
+		position: relative;
+		display: flex;
+		background-color: green;
+
+	}
+
+	.choice-variant select {
+		padding: 5px;
+		margin-right: 8px;
+		font-family: 'League Spartan', sans-serif;
+		border-radius: 0px;
+		border: 0px;
+	}
+
+	.quantity-product {
+		font-family: 'League Spartan', sans-serif;
+	}
+
+	.add-basket input {
+		padding: 5px;
+		margin-block: 15px;
+		font-family: 'League Spartan', sans-serif;
+	    border-radius: 0px;
+		border: 1px solid black;
+	}
+
+	.info-take-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+	.click-collect-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .click-collect-container span {
+        margin: 10px;
+    }
+
+    .livraison-container {
+        display: flex;
+        align-items: center;
+    }
+
+	.livraison-container span {
+        margin: 10px;
+    }
+
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "product-header",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"edit product",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"edit product",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"your beer type",
+                            "id":"your-beer-type"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your-beer-type-img",
+                            "id":"your-beer-type-img"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-name",
+                            "id":"beer-name"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-name-second",
+                            "id":"beer-name-second"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-description",
+                            "id":"beer-description"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-degre",
+                            "id":"beer-degre"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-size",
+                            "id":"beer-size"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-price",
+                            "id":"beer-price"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"icone-click-collect",
+                            "id":"icone-click-collect"
+                        },
+                        {
+                            "type":"text",
+                            "label":"txt-click-collect",
+                            "id":"txt-click-collect"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"icone-livraison",
+                            "id":"icone-livraison"
+                        },
+                        {
+                            "type":"text",
+                            "label":"txt-livraison",
+                            "id":"txt-livraison"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"illustration-beer-name",
+                            "id":"illustration-beer-name"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "product-header" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

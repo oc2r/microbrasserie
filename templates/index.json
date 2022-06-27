@@ -26,30 +26,6 @@
         "heading": ""
       }
     },
-    "1656082475472c236d": {
-      "type": "home-nosbieres",
-      "blocks": {
-        "3aeb2a29-e81b-41ce-9a10-4528f8001ba3": {
-          "type": "text",
-          "settings": {
-            "heading-2": "Nos bières",
-            "heading-3": "6 saveurs créés pour vous",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "bouton-texte": "Nos bières",
-            "lien-1": "",
-            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
-            "image-personnage": "shopify:\/\/shop_images\/griffon.png",
-            "image-nos-bieres-bg": "shopify:\/\/shop_images\/grunge-texture-dark.png"
-          }
-        }
-      },
-      "block_order": [
-        "3aeb2a29-e81b-41ce-9a10-4528f8001ba3"
-      ],
-      "settings": {
-        "heading-1": "Découvrez"
-      }
-    },
     "1656082672d8548305": {
       "type": "home-story",
       "blocks": {
@@ -81,7 +57,9 @@
             "sous-titre-bourgogne": "Le creusot acceuille un petit coin de paradis",
             "p_bourgogne": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "image-title": "shopify:\/\/shop_images\/Group_217.png",
-            "image-catalog": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png"
+            "image-catalog": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png",
+            "bouton-text": "Découvrir la brasserie",
+            "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/pages\/notre-brasserie"
           }
         }
       },
@@ -92,66 +70,105 @@
         "heading": "coeur-bourgogne"
       }
     },
-    "1656163351f296b4ce": {
-      "type": "multicolumn",
+    "1656168897bc476cf1": {
+      "type": "multicolonne-reassurance",
       "blocks": {
-        "1656163351d80a66ea-0": {
-          "type": "column",
+        "bbfa2299-6e65-46e3-b00e-0d741e66ec9c": {
+          "type": "text",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1656163351d80a66ea-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1656163351d80a66ea-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "reassurance-1-image": "shopify:\/\/shop_images\/france.png",
+            "heading-1": "premier element",
+            "description-1": "pezdqsklffzesnkdnfaezksql",
+            "reassurance-2-image": "shopify:\/\/shop_images\/paiement.png",
+            "heading-2": "paiement",
+            "description-2": "cccizhsqdezqjsd",
+            "reassurance-3-image": "shopify:\/\/shop_images\/service-client.png",
+            "heading-3": "SAV de qulité",
+            "description-3": "ezdqsdnizejbfdué\"b"
           }
         }
       },
       "block_order": [
-        "1656163351d80a66ea-0",
-        "1656163351d80a66ea-1",
-        "1656163351d80a66ea-2"
+        "bbfa2299-6e65-46e3-b00e-0d741e66ec9c"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": ""
+      }
+    },
+    "16561708686a030ac1": {
+      "type": "reseaux-sociaux-insta-fb",
+      "blocks": {
+        "5b0e7710-2582-407a-af81-9cb7da9ea6cb": {
+          "type": "text",
+          "settings": {
+            "titre-reseaux-sociaux": "SUIVEZ NOUS SUR INSTAGRAM ET FACEBOOK",
+            "insta-reseaux-sociaux": "@Brasserieautremonde",
+            "insta_img_1": "shopify:\/\/shop_images\/insta1.png",
+            "insta_img_2": "shopify:\/\/shop_images\/insta2.png",
+            "insta_img_3": "shopify:\/\/shop_images\/insta3.png",
+            "insta_img_4": "shopify:\/\/shop_images\/insta4.png"
+          }
+        }
+      },
+      "block_order": [
+        "5b0e7710-2582-407a-af81-9cb7da9ea6cb"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "16562470292811ad81": {
+      "type": "site-gravure",
+      "blocks": {
+        "c1c75132-c57d-4db4-a07d-3b86d050f73b": {
+          "type": "text",
+          "settings": {
+            "titre-petit": "Premier titre",
+            "titre-normal": "second titre",
+            "button-text": "cc c le text du bouton",
+            "lien-1": "https:\/\/mathieuprost.fr"
+          }
+        }
+      },
+      "block_order": [
+        "c1c75132-c57d-4db4-a07d-3b86d050f73b"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "1656345620c39e4e99": {
+      "type": "home-nosbieres",
+      "blocks": {
+        "aa7c9770-72f9-4df8-9929-be44bff9294e": {
+          "type": "text",
+          "settings": {
+            "heading-2": "NOS BIERES",
+            "heading-3": "6 saveurs créés pour vous",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "text-btn": "Nos bières",
+            "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/collections\/biere-blonde",
+            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
+            "image-personnage": "shopify:\/\/shop_images\/griffon.png"
+          }
+        }
+      },
+      "block_order": [
+        "aa7c9770-72f9-4df8-9929-be44bff9294e"
+      ],
+      "settings": {
+        "heading-1": "Découvrez"
       }
     }
   },
   "order": [
     "16560784216f86247c",
     "165607810377f0b2a1",
-    "1656082475472c236d",
     "1656082672d8548305",
     "16560778072b054bdb",
-    "1656163351f296b4ce"
+    "1656168897bc476cf1",
+    "16561708686a030ac1",
+    "16562470292811ad81",
+    "1656345620c39e4e99"
   ]
 }

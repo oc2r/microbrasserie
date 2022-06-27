@@ -54,7 +54,7 @@
 }
 
 .card--standard.card--text {
-  background-color: transparent;
+/*   background-color: transparent; */
 }
 
 .card-information {
@@ -91,8 +91,8 @@
 }
 
 .card__content {
-  display: grid;
-  grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr);
+/*   display: grid;
+  grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr); */
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
@@ -156,6 +156,19 @@
 .card__heading:last-child {
   margin-bottom: 0;
 }
+
+.card__information {
+  Background-color: Blue;
+  
+}
+
+
+
+
+#product-grid{width: 80%;
+margin-inline: auto;}
+
+
 
 .card--card.card--media > .card__content {
   margin-top: calc(0rem - var(--card-image-padding));
