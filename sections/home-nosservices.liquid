@@ -8,11 +8,6 @@
         <p class="section-nosservices-description">{{block.settings.description}}</p>
         <button class="section-nosservices-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
     </div>    
-
-    <div class="section-nosservices-container-secondaire-image">
-        <img class="section-nosservices-image-personnage" src="{{block.settings.image-personnage | img_url:'master'}}" alt="">
-        <img class="section-nosservices-image-produit" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
-    </div>
   
 </div>
 {%endfor%}
@@ -62,32 +57,6 @@
 .section-nosservices-description{
 	color: white;
     font-size: 20px;
-}
-
-
-.section-nosservices-container-secondaire-image{
-	display: flex;
-	flex-direction:column;
-	justify-content: space-between;
-	width: 400px;
-	height: 600px;
-	position: relative;
-}
-
-.section-nosservices-image-produit, .section-nosservices-image-personnage{
-	object-fit: contain;    
-	position: absolute;
-}
-
-.section-nosservices-image-produit{
-	max-height: 300px;
-	bottom: 0px;
-}
-
-.section-nosservices-image-personnage{
-	height: 600px;
-	bottom: 50px;
-	left: 350px;
 }
 
 .section-nosservices-btn {
