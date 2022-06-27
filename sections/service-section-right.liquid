@@ -1,0 +1,81 @@
+{%for block in section.blocks %}
+
+<div class="service-section-right" style="background-image: url('{{block.settings.image-service-bg | img_url:'master'}}');">
+    <img class ="image-service-right" src="{{block.settings.image-service-right | img_url:'master'}}"/>
+    <div class="title-description-service-right">
+        <h2>{{block.settings.title-service-right}}</h2>
+        <p>{{block.settings.description-service-right}}</p>
+    </div>
+</div>
+
+{%endfor%}
+{% style %}
+.service-section-right {
+    display: flex;
+    width: 69%;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.title-description-service-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "service section right",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"service section right",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"service section right",
+            "settings":[
+
+            {
+                "type":"image_picker",
+                "label":"image service right",
+                "id":"image-service-right"
+            },
+
+            {
+                "type":"image_picker",
+                "label":"image service bg",
+                "id":"image-service-bg-right"
+            },
+
+            {
+                "type": "text",
+                "label": "title service right",
+                "id": "title-service-right"
+            },
+            
+            {
+                "type": "text",
+                "label": "description service right",
+                "id": "description-service-right"
+            }
+        ]
+    } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "service section right" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+
