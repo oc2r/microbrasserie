@@ -185,12 +185,38 @@
       "settings": {
         "heading": ""
       }
+    },
+    "16563266022ff4e0dd": {
+      "type": "multicolonne-reassurance",
+      "blocks": {
+        "3ff5769b-cb44-4046-b2cc-bc0e8695e2f4": {
+          "type": "text",
+          "settings": {
+            "reassurance-1-image": "shopify:\/\/shop_images\/france.png",
+            "heading-1": "Fabrication française",
+            "description-1": "Bières brassées avec passion au Creusot",
+            "reassurance-2-image": "shopify:\/\/shop_images\/paiement.png",
+            "heading-2": "Paiement sécurisé",
+            "description-2": "Paypal et autres moyens de paiement",
+            "reassurance-3-image": "shopify:\/\/shop_images\/service-client.png",
+            "heading-3": "Service client efficace",
+            "description-3": "Intervention en moins d’1 heure"
+          }
+        }
+      },
+      "block_order": [
+        "3ff5769b-cb44-4046-b2cc-bc0e8695e2f4"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "1656323226f6fa0876",
     "main",
     "product-recommendations",
-    "16563225019dbf5998"
+    "16563225019dbf5998",
+    "16563266022ff4e0dd"
   ]
 }
