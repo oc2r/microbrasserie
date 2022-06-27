@@ -1,55 +1,59 @@
 {%for block in section.blocks %}
-<div class="founder-container">
-   <div class="founder">
-    <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
-    <p class="name-founder">{{block.settings.foundername-1}}</p>
-    <p class="description-founder">{{block.settings.foundertext-1}}</p>
-   </div>
-   <div class="founder">
-    <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
-    <p class="name-founder">{{block.settings.foundername-2}}</p>
-    <p class="description-founder">{{block.settings.foundertext-2}}</p>
-   </div>
-   <div class="founder">
-    <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
-    <p class="name-founder">{{block.settings.foundername-3}}</p>
-    <p class="description-founder">{{block.settings.foundertext-3}}</p>
-   </div>
-</div>
 
-<div class="brasserie-engagements-container-master" >  
-	<h2 class="brasserie-engagements-container-master-titre" >{{block.settings.titre}}</h2>
-  	<span></span>
-    <div class="brasserie-engagements-container" >
-      <div class="brasserie-engagements-container-1">
-          <div class ="brasserie-engagements">
-              <img class ="brasserie-engagements-1-image" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
-              <p class ="brasserie-engagements-1-texte">{{block.settings.text-1}}</p>
-          </div>
-          <div class ="brasserie-engagements">
-              <img class ="brasserie-engagements-2-image" src="{{block.settings.image-2 | img_url:'master'}}" alt="">
-              <p class ="brasserie-engagements-2-texte">{{block.settings.engagements-2-texte}}</p>
-          </div>
-          <div class ="brasserie-engagements">
-              <img class ="brasserie-engagements-3-image" src="{{block.settings.image-3 | img_url:'master'}}" alt="">
-              <p class ="brasserie-engagements-3-texte">{{block.settings.engagements-3-texte}}</p>
-          </div>
+<div class="founder-engagement">
+    <div class="founder-container">
+       <div class="founder">
+        <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
+        <p class="name-founder">{{block.settings.foundername-1}}</p>
+        <p class="description-founder">{{block.settings.foundertext-1}}</p>
+       </div>
+       <div class="founder">
+        <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
+        <p class="name-founder">{{block.settings.foundername-2}}</p>
+        <p class="description-founder">{{block.settings.foundertext-2}}</p>
+       </div>
+       <div class="founder">
+        <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
+        <p class="name-founder">{{block.settings.foundername-3}}</p>
+        <p class="description-founder">{{block.settings.foundertext-3}}</p>
+       </div>
+    </div>
+
+
+  <div class="brasserie-engagements-container-master" >  
+      <h2 class="brasserie-engagements-container-master-titre" >{{block.settings.titre}}</h2>
+      <span></span>
+      <div class="brasserie-engagements-container" >
+        <div class="brasserie-engagements-container-1">
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-1-image" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-1-texte">{{block.settings.text-1}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-2-image" src="{{block.settings.image-2 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-2-texte">{{block.settings.engagements-2-texte}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-3-image" src="{{block.settings.image-3 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-3-texte">{{block.settings.engagements-3-texte}}</p>
+            </div>
+        </div>
+        <div class="brasserie-engagements-container-2">
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-4-image" src="{{block.settings.image-4 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-4-texte">{{block.settings.engagements-4-texte}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-5-image" src="{{block.settings.image-5 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-5-texte">{{block.settings.engagements-5-texte}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-6-image" src="{{block.settings.image-6 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-6-texte">{{block.settings.engagements-6-texte}}</p>
+            </div>
+        </div>
       </div>
-      <div class="brasserie-engagements-container-2">
-          <div class ="brasserie-engagements">
-              <img class ="brasserie-engagements-4-image" src="{{block.settings.image-4 | img_url:'master'}}" alt="">
-              <p class ="brasserie-engagements-4-texte">{{block.settings.engagements-4-texte}}</p>
-          </div>
-          <div class ="brasserie-engagements">
-              <img class ="brasserie-engagements-5-image" src="{{block.settings.image-5 | img_url:'master'}}" alt="">
-              <p class ="brasserie-engagements-5-texte">{{block.settings.engagements-5-texte}}</p>
-          </div>
-          <div class ="brasserie-engagements">
-              <img class ="brasserie-engagements-6-image" src="{{block.settings.image-6 | img_url:'master'}}" alt="">
-              <p class ="brasserie-engagements-6-texte">{{block.settings.engagements-6-texte}}</p>
-          </div>
-      </div>
-  	</div>
+  </div>
 </div>
 {%endfor%}
 
