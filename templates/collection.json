@@ -52,11 +52,12 @@
         "aef9f1ce-cde9-493b-9cc8-d6e247c543dc": {
           "type": "text",
           "settings": {
-            "heading-2": "NOS SERVICES",
+            "heading-petit": "Découvrez",
+            "heading-normal": "NOS SERVICES",
             "heading-3": "",
-            "description": "",
-            "bouton-text": "",
-            "lien-1": "",
+            "description": "Location de tireuses a bière, visite de la brasserie, session de dégustation",
+            "bouton-text": "Je découvre",
+            "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/pages\/nos-services",
             "image-bg": "shopify:\/\/shop_images\/tireuse.png"
           }
         }
@@ -65,7 +66,7 @@
         "aef9f1ce-cde9-493b-9cc8-d6e247c543dc"
       ],
       "settings": {
-        "heading-1": "Découvrez"
+        "titre": ""
       }
     }
   },
