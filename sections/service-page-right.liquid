@@ -1,12 +1,85 @@
+{%for block in section.blocks %}
+
+
+<div class="servicepage-right">
+    <div class="servicepage-right-container">
+        <div class="title-description-servicepage-right">            <h2>{{block.settings.title-servicepage-right}}/h2>
+            <p>{{block.settings.description-servicepage-right}}/p>
+        </div>
+    </div>
+</div>
+
+{%endfor%}
+{% style %}
+
+.servicepage-right-container {
+    display: flex;
+    padding: 2%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.image-servicepage-right {	width: 40%;
+	height: 60%;
+}
+
+.servicepage-right {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.title-description-servicepage-right {    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "service  page right",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"service  page right",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"service  page right",
+            "settings":[
+
+            {
+                "type":"image_picker",
+                "label":"image service page right",
+                "id":"image-servicepage-right"
+           },
+
+            {
+                "type": "text",
+                "label": "title service page right",
+                "id": "title-servicepage-right"
+           },
+            
+            {
+                "type": "text",
+                "label": "description service page right",
+                "id": "description-servicepage-right"
+           }
+        ]
+    } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "service page right" 
+                    }
+                    ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
