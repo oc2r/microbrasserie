@@ -3,7 +3,7 @@
     <div class="product-container">
         <div class="product-image-container">
             <div class="type-beer">
-                <p class="name-type-beer mundane">{{block.settings.your-beer-type}}</p>
+                <p class="name-type-beer mundane">{{ product.metafields.custom.sous_titre | escape }}</p>
             </div>
             <div class="img-beer-container">
                 <img src="{{block.settings.illustration-beer-name | img_url:'master'}}" alt="">
