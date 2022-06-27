@@ -1,17 +1,17 @@
 {%for block in section.blocks %}
-<div class="section-nosbieres-container-principal">
+<div class="section-nosservices-container-principal">
       
-  	<div class="section-nosbieres-container-secondaire-texte">
-        <h2 class="section-nosbieres-titre-petit">{{block.settings.heading-1}}</h2>
-        <h2 class="section-nosbieres-titre-normal">{{block.settings.heading-2}}</h2>
-        <h3 class="section-nosbieres-sous-titre">{{block.settings.heading-3}}</h3>
-        <p class="section-nosbieres-description">{{block.settings.description}}</p>
-        <button class="section-nosbieres-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
+  	<div class="section-nosservices-container-secondaire-texte">
+        <h2 class="section-nosservices-titre-petit">{{block.settings.heading-1}}</h2>
+        <h2 class="section-nosservices-titre-normal">{{block.settings.heading-2}}</h2>
+        <h3 class="section-nosservices-sous-titre">{{block.settings.heading-3}}</h3>
+        <p class="section-nosservices-description">{{block.settings.description}}</p>
+        <button class="section-nosservices-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
     </div>    
 
-    <div class="section-nosbieres-container-secondaire-image">
-        <img class="section-nosbieres-image-personnage" src="{{block.settings.image-personnage | img_url:'master'}}" alt="">
-        <img class="section-nosbieres-image-produit" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
+    <div class="section-nosservices-container-secondaire-image">
+        <img class="section-nosservices-image-personnage" src="{{block.settings.image-personnage | img_url:'master'}}" alt="">
+        <img class="section-nosservices-image-produit" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
     </div>
   
 </div>
@@ -19,7 +19,7 @@
 
 {% stylesheet %}
 
-.section-nosbieres-container-principal {
+.section-nosservices-container-principal {
 	max-height:900px;
 	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
     background-repeat: no-repeat;
@@ -30,42 +30,42 @@
 	flex-direction: column;
 }
 
-.section-nosbieres-container-secondaire-texte{
+.section-nosservices-container-secondaire-texte{
 	display:flex;
 	flex-direction: column;
     width: 100%;
 }
 
-.section-nosbieres-container-secondaire-texte h2 {
+.section-nosservices-container-secondaire-texte h2 {
 	font-size: 40px;
 	font-weight: bold;
 	color: white;
 }
 
-.section-nosbieres-titre-petit{
+.section-nosservices-titre-petit{
 	color: white;
     font-size: 45px;
 }
 
-.section-nosbieres-titre-normal{
+.section-nosservices-titre-normal{
     font-size: 50px;
 	margin-bottom: 20px;
 	color: white;
 	border-bottom: 2px solid #ffffff;
 }
 
-.section-nosbieres-sous-titre{
+.section-nosservices-sous-titre{
 	color: white;
     font-size: 35px;
 }
 
-.section-nosbieres-description{
+.section-nosservices-description{
 	color: white;
     font-size: 20px;
 }
 
 
-.section-nosbieres-container-secondaire-image{
+.section-nosservices-container-secondaire-image{
 	display: flex;
 	flex-direction:column;
 	justify-content: space-between;
@@ -74,23 +74,23 @@
 	position: relative;
 }
 
-.section-nosbieres-image-produit, .section-nosbieres-image-personnage{
+.section-nosservices-image-produit, .section-nosservices-image-personnage{
 	object-fit: contain;    
 	position: absolute;
 }
 
-.section-nosbieres-image-produit{
+.section-nosservices-image-produit{
 	max-height: 300px;
 	bottom: 0px;
 }
 
-.section-nosbieres-image-personnage{
+.section-nosservices-image-personnage{
 	height: 600px;
 	bottom: 50px;
 	left: 350px;
 }
 
-.section-nosbieres-btn {
+.section-nosservices-btn {
 	margin-top: 50px;
 	margin-bottom : 50px;
 	width: 206.87px;
@@ -102,7 +102,7 @@
 	border: 1px;
 }
 
-.section-nosbieres-btn:hover{
+.section-nosservices-btn:hover{
 	cursor: pointer;
 }
 
@@ -111,7 +111,7 @@
 
 @media (min-width:640px){
 
-.section-nosbieres-container-principal {
+.section-nosservices-container-principal {
 	padding-left: 50px;
 	padding-right: 50px;
 }
@@ -119,7 +119,7 @@
 
 @media (min-width:1040px){
 
-.section-nosbieres-container-principal {
+.section-nosservices-container-principal {
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
@@ -127,22 +127,22 @@
 	padding-left: 150px;
 	padding-right: 150px;
 }
-.section-nosbieres-container-secondaire-texte{
+.section-nosservices-container-secondaire-texte{
 	width: calc(30%-150px);
 	margin-right:50px;
 
 }
 
-.section-nosbieres-container-secondaire-image{
+.section-nosservices-container-secondaire-image{
 	justify-content: end;
 }
 
-.section-nosbieres-image-personnage{
+.section-nosservices-image-personnage{
 	top: 0px;
 	left:-50px;
 }
 
-.section-nosbieres-image-produit{
+.section-nosservices-image-produit{
     max-width: 400px;
     max-height: 200px;
 
