@@ -1,9 +1,9 @@
 {%for block in section.blocks %}
     <div class="catalog-category_container" >
       	<div class="quisommesnous-container">
-            <h2 class ="catalog-category_title" >{{block.settings.weare}}</h2>
+            <h2 class ="catalog-category_title" >{{block.settings.titre-1}}</h2>
           	<span></span>
-            <p class="presentation_text">{{block.settings.weare_text}}</p>
+            <p class="presentation_text">{{block.settings.texte}}</p>
         </div>
 
     </div>
@@ -85,28 +85,13 @@
             "settings":[
                         {
                             "type":"text",
-                            "label":"H1 homepage",
-                            "id":"heading"
-                        },
-                        {
-                            "type":"text",
-                            "label":"text_presentation",
-                            "id":"presentation"
-                        },
-                        {
-                            "type":"image_picker",
-                            "label":"your image",
-                            "id":"image-bg"
+                            "label":"titre-1",
+                            "id":"titre-1"
                         },
 						{
                             "type":"text",
-                            "label":"qui_sommes_nous",
-                            "id":"weare"
-                        },
-						{
-                            "type":"text",
-                            "label":"weare_text",
-                            "id":"weare_text"
+                            "label":"texte",
+                            "id":"texte"
                         }
                     ]
      } 
