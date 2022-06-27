@@ -172,6 +172,7 @@
           "settings": {
             "description-aromatic-profil": "Nous avons brassé cette bière avec de l’avoine pour lui apporter de la rondeur et de la longueur en bouche. Les saveurs des malts torréfiés évoquent un moka ou un expresso riche en arômes.",
             "description-suggestion-food": "Cette bière blonde accompagnera très bien un steak frites, un gratin dauphinois, une choucroute ou un plateau de fruits de mer. Bière festive, elle est également parfaite seule à l’apéritif",
+            "description-graphique": "shopify:\/\/shop_images\/griffon-graphique-composition.png",
             "description-composition-seed": "Malt Pale Ale, Malt Froment, Malt Froment Crystal, Malt Chocolat,  Orge Grillée, Flocons d’Avoine",
             "description-composition-hops": "Fuggle, Willamette",
             "description-composition-yeast": "S04 English Ale"
