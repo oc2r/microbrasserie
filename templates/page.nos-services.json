@@ -64,12 +64,32 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656361137d93271a2": {
+      "type": "service-page-section-left",
+      "blocks": {
+        "907e62ec-49f2-427b-b392-6de9a3b68285": {
+          "type": "text",
+          "settings": {
+            "image-service-page-left": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png",
+            "title-service-page-left": "Visite de la brasserie",
+            "description-service-page-left": "Venez nous rencontrer, pénetrez dans les backstages de la brasserie, et évéillez vos papilles avec un atelier de dégustation de nos meilleures bières"
+          }
+        }
+      },
+      "block_order": [
+        "907e62ec-49f2-427b-b392-6de9a3b68285"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
     "1656335755d6ede27c",
     "16563596598cdb8a31",
-    "1656360444a5989b7d"
+    "1656360444a5989b7d",
+    "1656361137d93271a2"
   ]
 }
