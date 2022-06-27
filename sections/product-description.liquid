@@ -12,18 +12,18 @@
         </div>
         <div class="suggestion-food-container">
             <h2>En accompagnement</h2>
-                <div class="description-suggestion-food">{{block.settings.description-suggestion-food}}</div>
+                <div class="description-suggestion-food">{{product.metafields.custom.accompagnement | escape}}</div>
         </div>
     </div>
-    <img class ="description-graphique" src="{{block.settings.description-graphique | img_url:'master'}}"/>
+    <img class ="description-graphique" src="{{product.metafields.custom.graphique | escape}}"/>
     <div class="ingredients-container">
         <h2>Ingrédients</h2>
             <h3>Graines</h3>
-                <div class="description-composition-seed">{{block.settings.description-composition-seed}}</div>
+                <div class="description-composition-seed">{{product.metafields.custom.grains | escape}}</div>
             <h3>Houblons</h3>
-                <div class="description-composition-hops">{{block.settings.description-composition-hops}}</div>
+                <div class="description-composition-hops">{{product.metafields.custom.houblons | escape}}</div>
             <h3>Levures</h3>
-                <div class="description-composition-yeast">{{block.settings.description-composition-yeast}}</div>
+                <div class="description-composition-yeast">{{product.metafields.custom.levure | escape}}</div>
     </div>
 </div>
 {%endfor%}
