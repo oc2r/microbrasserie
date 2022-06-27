@@ -15,11 +15,10 @@
                 <div class="description-suggestion-food">{{product.metafields.custom.accompagnement | escape}}</div>
         </div>
     </div>
-    <img class ="description-graphique" src="{{product.metafields.custom.graphique | escape}}"/>
+    <img class ="description-graphique" src="{{product.metafields.custom.graphique | img_url:'master'}}"/>
     <div class="ingredients-container">
         <h2>Ingrédients</h2>
             <h3>Graines</h3>
-      <div>{{product.metafields.custom.graphique | escape}}</div>
                 <div class="description-composition-seed">{{product.metafields.custom.grains | escape}}</div>
             <h3>Houblons</h3>
                 <div class="description-composition-hops">{{product.metafields.custom.houblons | escape}}</div>
