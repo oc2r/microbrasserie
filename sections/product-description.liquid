@@ -1,12 +1,82 @@
+<div class="product-description-container">
+    <h2>Profil Aromatique</h2>
+        <div class="description-aromatic-profil">{{block.settings.description-aromatic-profil}}</div>
+    <h2>En accompagnement</h2>
+        <div class="description-suggestion-food">{{block.settings.description-suggestion-food}}</div>
+        <img class ="description-graphique" src="{{block.settings.description-graphique | img_url:'master'}}"/>
+    <h2>Ingrédients</h2>
+        <h3>Graines</h3>
+            <div class="description-composition-seed">{{block.settings.description-composition-seed}}</div>
+        <h3>Houblons</h3>
+            <div class="description-composition-hops">{{block.settings.description-composition-hops}}</div>
+        <h3>Levures</h3>
+            <div class="description-composition-yeast">{{block.settings.description-composition-yeast}}</div>
+</div>
+
+{% style %}
+
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "product description",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"product description",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"product description",
+            "settings":[
+            {
+                "type":"text",
+                "label":"description aromatic profil",
+                "id":"description-aromatic-profil"
+            },
+            {
+                "type":"text",
+                "label":"description suggestion food",
+                "id":"description-suggestion-food"
+            },
+            {
+                "type":"image_picker",
+                "label":"description graphique",
+                "id":"description-graphique"
+            },
+
+            {
+                "type": "text",
+                "label": "seed",
+                "id": "description-composition-seed"
+            },
+            
+            {
+                "type": "text",
+                "label": "hops",
+                "id": "description-composition-hops"
+            },
+            {
+                "type": "text",
+                "label": "yeast",
+                "id": "description-composition-yeast"
+            }
+        ]
+    } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "product description" 
+                    }
+                    ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
