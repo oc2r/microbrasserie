@@ -1,5 +1,6 @@
 {%for block in section.blocks %}
-<div class="image-service-bg" style="background-image: src='{{block.settings.image-service-bg | img_url:'master'}}';">
+
+<div class="image-service-bg" style="background-image: url='{{block.settings.image-service-bg | img_url:'master'}}';">
     <img class ="image-service-left" src="{{block.settings.image-service-left | img_url:'master'}}"/>
     <div class="title-description-service-left">
         <h2>{{block.settings.title-service-left}}</h2>
