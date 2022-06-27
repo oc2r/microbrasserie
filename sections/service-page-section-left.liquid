@@ -1,12 +1,89 @@
+{%for block in section.blocks %}
+
+
+<div class="service-page-section-left">
+    <div class="service-page-section-left-container" style="background-image: url('{{block.settings.image-service-page-bg | img_url:'master'}}');">
+        <img class ="image-service-page-left" src="{{block.settings.image-service-page-left | img_url:'master'}}"/>
+        <div class="title-description-service-page-left">
+            <h2>{{block.settings.title-service-page-left}}</h2>
+            <p>{{block.settings.description-service-page-left}}</p>
+        </div>
+    </div>
+</div>
+
+{%endfor%}
+{% style %}
+
+.service-page-section-left-container {
+    display: flex;
+    padding: 2%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.image-service-page-left {
+	width: 40%;
+}
+
+.title-description-service-page-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "service section page left",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"service section page left",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"service section page left",
+            "settings":[
+
+            {
+                "type":"image_picker",
+                "label":"image service page left",
+                "id":"image-service-page-left"
+            },
+
+            {
+                "type":"image_picker",
+                "label":"image service page bg",
+                "id":"image-service-page-bg"
+            },
+
+            {
+                "type": "text",
+                "label": "title service page left",
+                "id": "title-service-page-left"
+            },
+            
+            {
+                "type": "text",
+                "label": "description service page left",
+                "id": "description-service-page-left"
+            }
+        ]
+    } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "service section page left" 
+                    }
+                    ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
