@@ -45,11 +45,31 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656360444a5989b7d": {
+      "type": "service-page-right",
+      "blocks": {
+        "faf116e6-406c-40f9-a534-a4d976ab2268": {
+          "type": "text",
+          "settings": {
+            "image-servicepage-right": "shopify:\/\/shop_images\/insta2.png",
+            "title-servicepage-right": "Atelier de brassage",
+            "description-servicepage-right": "Venez décourir l’univers du brassage et devenez  un pro du houblon en participant à nos ateliers !"
+          }
+        }
+      },
+      "block_order": [
+        "faf116e6-406c-40f9-a534-a4d976ab2268"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
     "1656335755d6ede27c",
-    "16563596598cdb8a31"
+    "16563596598cdb8a31",
+    "1656360444a5989b7d"
   ]
 }
