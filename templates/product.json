@@ -193,6 +193,7 @@
           "type": "text",
           "settings": {
             "image-service-left": "shopify:\/\/shop_images\/Group_221.png",
+            "image-service-bg": "shopify:\/\/shop_images\/wooden-texture_1.png",
             "title-service-left": "Achetez vos bieres en pack directement !",
             "description-service-left": "Offrez vous un assortissement des differtentes bieres de notre gamme ou meme un pack de votre coup de coeur"
           }
