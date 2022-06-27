@@ -1,6 +1,6 @@
 {%for block in section.blocks %}
 
-<div class="service-section-right" style="background-image: url('{{block.settings.image-service-bg | img_url:'master'}}');">
+<div class="service-section-right" style="background-image: url('{{block.settings.image-service-bg-right | img_url:'master'}}');">
     <img class ="image-service-right" src="{{block.settings.image-service-right | img_url:'master'}}"/>
     <div class="title-description-service-right">
         <h2>{{block.settings.title-service-right}}</h2>
@@ -52,7 +52,7 @@
             {
                 "type":"image_picker",
                 "label":"image service bg",
-                "id":"image-service-bg"
+                "id":"image-service-bg-right"
             },
 
             {
