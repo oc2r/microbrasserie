@@ -148,11 +148,11 @@
               "menu": "main-menu"
             }
           },
-          "footer-1": {
+          "58c26909-cc81-4a5d-8203-ad086da6842b": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "Mentions légales",
+              "menu": "legalite"
             }
           },
           "footer-2": {
@@ -166,7 +166,7 @@
         "block_order": [
           "c0363127-ce84-4286-b07f-704ae8b5c586",
           "footer-0",
-          "footer-1",
+          "58c26909-cc81-4a5d-8203-ad086da6842b",
           "footer-2"
         ],
         "settings": {
