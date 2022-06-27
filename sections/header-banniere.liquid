@@ -1,8 +1,8 @@
 {%for block in section.blocks %}
     <div class="header-banniere-container-master" >
         <div class="header-banniere-container">
-            <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
-            <p class="presentation_text">{{block.settings.presentation}}</p>
+            <h1 class ="header-banniere-titre" >{{block.settings.heading}}</h1>
+            <p class="header-banniere-description">{{block.settings.description}}</p>
         </div>
     </div>
 {%endfor%}
@@ -35,7 +35,7 @@
 	font-weight: 700;
 }
 
-.presentation_text {
+.header-banniere-description{
     font-size: 1.5rem;
 	color: #FFFFFF;
 }
@@ -66,22 +66,7 @@
                         {
                             "type":"text",
                             "label":"text_presentation",
-                            "id":"presentation"
-                        },
-                        {
-                            "type":"image_picker",
-                            "label":"your image",
-                            "id":"image-bg"
-                        },
-						{
-                            "type":"text",
-                            "label":"qui_sommes_nous",
-                            "id":"weare"
-                        },
-						{
-                            "type":"text",
-                            "label":"weare_text",
-                            "id":"weare_text"
+                            "id":"description"
                         }
                     ]
      } 
