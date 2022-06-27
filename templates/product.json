@@ -78,11 +78,6 @@
           "settings": {
           }
         },
-        "test": {
-          "type": "text",
-          "settings": {
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -135,7 +130,6 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "test",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
