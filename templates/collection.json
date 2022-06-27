@@ -19,25 +19,6 @@
         "heading": ""
       }
     },
-    "1656260989438d37c0": {
-      "type": "nos-bieres-header",
-      "blocks": {
-        "6b36b2e5-b7c3-48e7-8f26-37badeceffa3": {
-          "type": "text",
-          "settings": {
-            "heading": "NOS BIERES",
-            "nos-bieres-presentation": "Nos bières sont brassées dans le respect des méthodes artisanales, de la qualité de nos matières premières, du client et de l’environnement.",
-            "image-catalog": "shopify:\/\/shop_images\/nos_bieres_header.png"
-          }
-        }
-      },
-      "block_order": [
-        "6b36b2e5-b7c3-48e7-8f26-37badeceffa3"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -91,7 +72,6 @@
   },
   "order": [
     "165633741846cb351e",
-    "1656260989438d37c0",
     "banner",
     "product-grid",
     "16563331904b7a69a1"
