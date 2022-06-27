@@ -29,6 +29,24 @@
         "heading": ""
       }
     },
+    "1656335755d6ede27c": {
+      "type": "header-banniere",
+      "blocks": {
+        "dc967ff8-b129-453e-a96d-3d56d113a006": {
+          "type": "text",
+          "settings": {
+            "heading": "NOS SERVICES",
+            "description": "la Brasserie Artisanale Autre Monde ouvre Ses portes au Creusot ! entrez avec nous dans cet univers fantastique !"
+          }
+        }
+      },
+      "block_order": [
+        "dc967ff8-b129-453e-a96d-3d56d113a006"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "1656334685eb6b6535": {
       "type": "quisommesnous",
       "blocks": {
@@ -179,6 +197,7 @@
   "order": [
     "main",
     "16560837878a6df2f5",
+    "1656335755d6ede27c",
     "1656334685eb6b6535",
     "1655995243371492ce",
     "16562535443610698a",
