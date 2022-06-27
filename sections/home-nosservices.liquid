@@ -1,0 +1,224 @@
+{%for block in section.blocks %}
+<div class="section-nosbieres-container-principal">
+      
+  	<div class="section-nosbieres-container-secondaire-texte">
+        <h2 class="section-nosbieres-titre-petit">{{block.settings.heading-1}}</h2>
+        <h2 class="section-nosbieres-titre-normal">{{block.settings.heading-2}}</h2>
+        <h3 class="section-nosbieres-sous-titre">{{block.settings.heading-3}}</h3>
+        <p class="section-nosbieres-description">{{block.settings.description}}</p>
+        <button class="section-nosbieres-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
+    </div>    
+
+    <div class="section-nosbieres-container-secondaire-image">
+        <img class="section-nosbieres-image-personnage" src="{{block.settings.image-personnage | img_url:'master'}}" alt="">
+        <img class="section-nosbieres-image-produit" src="{{block.settings.image-produit | img_url:'master'}}" alt="">
+    </div>
+  
+</div>
+{%endfor%}
+
+{% stylesheet %}
+
+.section-nosbieres-container-principal {
+	max-height:900px;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: top;
+	padding: 50px;
+	display:flex;
+	flex-direction: column;
+}
+
+.section-nosbieres-container-secondaire-texte{
+	display:flex;
+	flex-direction: column;
+    width: 100%;
+}
+
+.section-nosbieres-container-secondaire-texte h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+.section-nosbieres-titre-petit{
+	color: white;
+    font-size: 45px;
+}
+
+.section-nosbieres-titre-normal{
+    font-size: 50px;
+	margin-bottom: 20px;
+	color: white;
+	border-bottom: 2px solid #ffffff;
+}
+
+.section-nosbieres-sous-titre{
+	color: white;
+    font-size: 35px;
+}
+
+.section-nosbieres-description{
+	color: white;
+    font-size: 20px;
+}
+
+
+.section-nosbieres-container-secondaire-image{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	width: 400px;
+	height: 600px;
+	position: relative;
+}
+
+.section-nosbieres-image-produit, .section-nosbieres-image-personnage{
+	object-fit: contain;    
+	position: absolute;
+}
+
+.section-nosbieres-image-produit{
+	max-height: 300px;
+	bottom: 0px;
+}
+
+.section-nosbieres-image-personnage{
+	height: 600px;
+	bottom: 50px;
+	left: 350px;
+}
+
+.section-nosbieres-btn {
+	margin-top: 50px;
+	margin-bottom : 50px;
+	width: 206.87px;
+	height: 57px;
+	font-size: 20px;
+	font-family: "League spartan", sans-serif;
+	color: white;
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px;
+}
+
+.section-nosbieres-btn:hover{
+	cursor: pointer;
+}
+
+@media (max-width:640px){
+}
+
+@media (min-width:640px){
+
+.section-nosbieres-container-principal {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+}
+
+@media (min-width:1040px){
+
+.section-nosbieres-container-principal {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: end;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.section-nosbieres-container-secondaire-texte{
+	width: calc(30%-150px);
+	margin-right:50px;
+
+}
+
+.section-nosbieres-container-secondaire-image{
+	justify-content: end;
+}
+
+.section-nosbieres-image-personnage{
+	top: 0px;
+	left:-50px;
+}
+
+.section-nosbieres-image-produit{
+    max-width: 400px;
+    max-height: 200px;
+
+}
+
+}
+
+@media (min-width: 1920px){
+}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+    "name": "section nos bieres",
+    "class": "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"section nos bieres",
+            "id":"heading-1"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"text",
+            "name":"section nos bieres",
+            "settings":[
+                {
+                    "type":"text",
+                    "label":"heading-2",
+                    "id":"heading-2"
+                },
+                {
+                    "type":"text",
+                    "label":"heading-3",
+                    "id":"heading-3"
+                },
+                {
+                    "type":"text",
+                    "label":"description",
+                    "id":"description"
+                },
+                {
+                    "type": "text",            
+                    "label": "bouton-text",
+                    "id": "bouton-text"
+                },
+                {
+                    "type": "url",            
+                    "label": "lien-1",
+                    "id": "lien-1"
+                },
+                {
+                    "type":"image_picker",
+                    "label":"image-produit",
+                    "id":"image-produit"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-personnage",
+                    "id":"image-personnage"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-nos-bieres-bg",
+                    "id":"image-nos-bieres-bg"
+                }
+            ]
+        }        
+    ],
+"presets" : [
+    {
+        "category":"image",
+        "name": "section nos bieres" 
+    }
+]
+}
+{% endschema %}
