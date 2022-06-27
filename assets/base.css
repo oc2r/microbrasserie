@@ -2916,6 +2916,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  	
 }
 ol, ul {
 	list-style: none;
@@ -2964,6 +2965,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { font-family: 'League Spartan', san
   .banner__media media span { font-family: 'League Spartan', sans-serif;}
   
 
-body {
+body, html {
   width: 100vw;
 }
