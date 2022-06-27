@@ -136,8 +136,8 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Navigation",
+              "menu": "main-menu"
             }
           },
           "footer-1": {
@@ -153,12 +153,20 @@
               "heading": "Our mission",
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
+          },
+          "ec3dcbc9-0fb7-4811-a414-f7a9fbf1d99c": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "footer-2",
+          "ec3dcbc9-0fb7-4811-a414-f7a9fbf1d99c"
         ],
         "settings": {
           "color_scheme": "accent-1",
