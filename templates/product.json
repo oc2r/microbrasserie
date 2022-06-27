@@ -214,6 +214,7 @@
           "settings": {
             "image-service-right": "shopify:\/\/shop_images\/Group_244.png",
             "image-service-bg-right": "shopify:\/\/shop_images\/wooden-texture_1.png",
+            "color_body": "",
             "title-service-right": "Louez une tireuse à bière",
             "description-service-right": "Pour votre soirrée entre amis, vos repas en famille ou tout autre evenements festifs, profitez  délicieuses bières pression comme dans un bar tout en reduisant vos déchets  !"
           }
@@ -221,6 +222,24 @@
       },
       "block_order": [
         "1fe5a82d-1b60-451c-93a5-1ff4de17c6ad"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "165634109545be26bc": {
+      "type": "home-nosbieres",
+      "blocks": {
+        "04f12f16-beb7-4f5a-9462-a2cf5d06a2b5": {
+          "type": "text",
+          "settings": {
+            "titre-1": "",
+            "texte": ""
+          }
+        }
+      },
+      "block_order": [
+        "04f12f16-beb7-4f5a-9462-a2cf5d06a2b5"
       ],
       "settings": {
         "heading": ""
@@ -233,6 +252,7 @@
     "product-recommendations",
     "16563225019dbf5998",
     "1656334963741e04d8",
-    "1656336844af21b30b"
+    "1656336844af21b30b",
+    "165634109545be26bc"
   ]
 }
