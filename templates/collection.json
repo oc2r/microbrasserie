@@ -48,6 +48,21 @@
     },
     "16563331904b7a69a1": {
       "type": "home-nosservices",
+      "blocks": {
+        "aef9f1ce-cde9-493b-9cc8-d6e247c543dc": {
+          "type": "text",
+          "settings": {
+            "heading-2": "",
+            "heading-3": "",
+            "description": "",
+            "bouton-text": "",
+            "lien-1": ""
+          }
+        }
+      },
+      "block_order": [
+        "aef9f1ce-cde9-493b-9cc8-d6e247c543dc"
+      ],
       "settings": {
         "heading-1": ""
       }
