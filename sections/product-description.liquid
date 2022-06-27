@@ -3,17 +3,17 @@
     <div class="aromatic-suggestion-container">
 
         <div class = "aromatic-profil-container">
-            <h2>Profil Aromatique</h2>
-                <div class="description-aromatic-profil">{{product_description.custom-profil_aromatique | escape}}</div>
+            <h2 class="aromatic-profil-container-titre-1">Profil Aromatique</h2>
+                <div class="description-aromatic-profil">{{block.settings.description-aromatic-profil}}</div>
         </div>
         <div class="suggestion-food-container">
-            <h2>En accompagnement</h2>
+            <h2 class="aromatic-profil-container-titre-2">En accompagnement</h2>
                 <div class="description-suggestion-food">{{block.settings.description-suggestion-food}}</div>
         </div>
     </div>
     <img class ="description-graphique" src="{{block.settings.description-graphique | img_url:'master'}}"/>
     <div class="ingredients-container">
-        <h2>Ingrédients</h2>
+        <h2 class="aromatic-profil-container-titre-3">Ingrédients</h2>
             <h3>Graines</h3>
                 <div class="description-composition-seed">{{block.settings.description-composition-seed}}</div>
             <h3>Houblons</h3>
@@ -54,6 +54,9 @@
 	width:30%;
 }
 
+.aromatic-profil-container-titre-1, .aromatic-profil-container-titre-2, .aromatic-profil-container-titre-3{
+	margin-block:10px;
+}
 
 
 {% endstyle %}
