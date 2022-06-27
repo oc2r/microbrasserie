@@ -1,0 +1,128 @@
+{%for block in section.blocks %}
+    <div class="catalog-category_container" >
+        <div class="header-notre-brasserie">
+            <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
+            <p class="presentation_text">{{block.settings.presentation}}</p>
+        </div>
+      	<div class="qui-sommes-nous-container">
+            <h2 class ="catalog-category_title" >{{block.settings.weare}}</h2>
+          	<span></span>
+            <p class="presentation_text">{{block.settings.weare_text}}</p>
+        </div>
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.catalog-category_container {
+	position: relative;
+	width: 100%;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+
+}
+
+.header-notre-brasserie {
+    position: relative;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding: 100px;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/page-brasserie-header_ba49d3cc-6232-438d-ace3-1b6827d6b35e.png?v=1656084922");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-notre-brasserie h1 {
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+.qui-sommes-nous-container h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+.qui-sommes-nous-container {
+	margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 	align-items: center;
+    text-align: justify;
+	width: 80%;
+	padding: 50px;
+}
+
+.qui-sommes-nous-container span {
+    height: 1px;
+    width: 30%;
+    background-color: aqua;
+}
+
+.presentation_text {
+    font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "brasserie header",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"H1 homepage",
+                            "id":"heading"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text_presentation",
+                            "id":"presentation"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your image",
+                            "id":"image-bg"
+                        },
+						{
+                            "type":"text",
+                            "label":"qui_sommes_nous",
+                            "id":"weare"
+                        },
+						{
+                            "type":"text",
+                            "label":"weare_text",
+                            "id":"weare_text"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "brasserie header" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+
