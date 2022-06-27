@@ -1,12 +1,98 @@
+{%for block in section.blocks %}
+<div class="histoire-personnage-container" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">
+    <div class="histoire-personnage-container-nom">
+        <img class="histoire-personnage-image" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
+        <h3 class="histoire-personnage-nom">{{block.settings.titre-1}}</h3>
+    </div>
+    <p class="histoire-personnage-description">{{block.settings.texte}}</p>
+</div>
+{%endfor%}
+
+{% style %}
+
+.histoire-personnage-container{
+	position: relative;
+	width: 100%;
+  	background-size: cover;
+	padding-inline:150px;
+	padding-block:50px;
+    text-align: center;
+}
+
+.histoire-personnage-container-nom h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+.histoire-personnage-container-nom{
+	margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 	align-items: center;
+	width: 80%;
+	padding: 50px;
+}
+
+.histoire-personnage-image{
+	margin-bottom: 20px;
+}
+
+.histoire-personnage-description{
+    font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "histoire personnage",
+    "class" : "histoire-personnage",
+    "settings": [
+        {
+            "type":"text",
+            "label":"titre",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"histoire personnage",
+            "settings":[
+                        {
+                            "type":"image_picker",
+                            "label":"image-1",
+                            "id":"image-1"
+                        },
+						{
+                            "type":"text",
+                            "label":"titre-1",
+                            "id":"titre-1"
+                        },
+						{
+                            "type":"text",
+                            "label":"texte",
+                            "id":"texte"
+                        },
+						{
+                            "type":"image_picker",
+                            "label":"image-fond",
+                            "id":"image-fond"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "histoire personnage" 
+                    }
+                    ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
