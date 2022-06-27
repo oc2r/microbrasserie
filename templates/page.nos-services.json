@@ -26,10 +26,30 @@
       "settings": {
         "heading": ""
       }
+    },
+    "16563596598cdb8a31": {
+      "type": "service-page-section-left",
+      "blocks": {
+        "6de6ec15-5145-4cce-96bb-ec60d6324ad6": {
+          "type": "text",
+          "settings": {
+            "image-service-page-left": "shopify:\/\/shop_images\/page-brasserie-header_d5a171f1-4ef6-479c-b1b4-b12d36fe9b85.png",
+            "title-service-page-left": "",
+            "description-service-page-left": ""
+          }
+        }
+      },
+      "block_order": [
+        "6de6ec15-5145-4cce-96bb-ec60d6324ad6"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
-    "1656335755d6ede27c"
+    "1656335755d6ede27c",
+    "16563596598cdb8a31"
   ]
 }
