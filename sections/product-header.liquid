@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    <img src="{{product.metafields.custom.image_name_biere}}" alt="">
+    <img class="illustration-beer-name" src="{{product.metafields.custom.image_name_biere}}" alt="">
 
 </div>
 {%endfor%}
@@ -223,6 +223,13 @@
 	.livraison-container span {
         margin: 10px;
     }
+
+	.illustration-beer-name {
+		position: relative;
+		width: 300vw;
+		height: 300vh;
+		background: blue;
+	}
 
 
 {% endstyle %}
