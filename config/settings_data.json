@@ -154,20 +154,12 @@
               "heading": "Mentions légales",
               "menu": "legalite"
             }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
           }
         },
         "block_order": [
           "c0363127-ce84-4286-b07f-704ae8b5c586",
           "footer-0",
-          "58c26909-cc81-4a5d-8203-ad086da6842b",
-          "footer-2"
+          "58c26909-cc81-4a5d-8203-ad086da6842b"
         ],
         "settings": {
           "color_scheme": "accent-1",
