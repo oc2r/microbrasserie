@@ -1,6 +1,6 @@
 {%for block in section.blocks %}
     <div class="histoire-personnage-container" >
-      	<div class="quisommesnous-container">
+      	<div class="histoire-personnage-container-nom">
             <h2 class ="catalog-category_title" >{{block.settings.titre-1}}</h2>
             <p class="presentation_text">{{block.settings.texte}}</p>
         </div>
@@ -43,13 +43,13 @@
 	font-weight: 700;
 }
 
-.quisommesnous-container h2 {
+.histoire-personnage-container-nom h2 {
 	font-size: 40px;
 	font-weight: bold;
 	color: white;
 }
 
-.quisommesnous-container {
+.histoire-personnage-container-nom{
 	margin-inline: auto;
     display: flex;
     flex-direction: column;
