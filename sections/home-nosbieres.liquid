@@ -1,17 +1,10 @@
 {%for block in section.blocks %}
-    <div class="histoire-personnage-container" >
-      	<div class="histoire-personnage-container-nom">
-            <h2 class ="catalog-category_title" >{{block.settings.titre-1}}</h2>
-            <p class="presentation_text">{{block.settings.texte}}</p>
-        </div>
-    </div>
-
 <div class="histoire-personnage-container">
     <div class="histoire-personnage-container-nom">
         <img class="histoire-personnage-image" src="" alt="">
-        <h3 class="histoire-personnage-nom"></h3>
+        <h3 class="histoire-personnage-nom">{{block.settings.titre-1}}</h3>
     </div>
-    <p class="histoire-personnage-description"></p>
+    <p class="histoire-personnage-description">{{block.settings.texte}}</p>
 </div>
 {%endfor%}
 
