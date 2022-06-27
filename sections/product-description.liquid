@@ -1,3 +1,4 @@
+{%for block in section.blocks %}
 <div class="product-description-container">
     <h2>Profil Aromatique</h2>
         <div class="description-aromatic-profil">{{block.settings.description-aromatic-profil}}</div>
@@ -12,6 +13,7 @@
         <h3>Levures</h3>
             <div class="description-composition-yeast">{{block.settings.description-composition-yeast}}</div>
 </div>
+{%endfor%}
 
 {% style %}
 
