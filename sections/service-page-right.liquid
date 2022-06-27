@@ -3,11 +3,11 @@
 
 <div class="servicepage-right">
     <div class="servicepage-right-container">
-        <img class ="image-servicepage-right" src="{{block.settings.image-servicepage-right | img_url:'master'}}"/>
-
+        
         <div class="title-description-servicepage-right"><h2>{{block.settings.title-servicepage-right}}</h2>
             <p>{{block.settings.description-servicepage-right}}</p>
         </div>
+        <img class ="image-servicepage-right" src="{{block.settings.image-servicepage-right | img_url:'master'}}"/>
     </div>
 </div>
 
@@ -16,12 +16,12 @@
 
 .servicepage-right-container {
     display: flex;
-    padding: 2%;
     margin-top: 2%;
     width: 100%;
 }
 
-.image-servicepage-right {	width: 40%;
+.image-servicepage-right {	
+    width: 40%;
 	height: 60%;
 }
 
@@ -30,7 +30,8 @@
     justify-content: flex-end;
 }
 
-.title-description-servicepage-right {    display: flex;
+.title-description-servicepage-right {    
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
