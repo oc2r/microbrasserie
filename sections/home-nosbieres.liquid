@@ -1,5 +1,5 @@
 {%for block in section.blocks %}
-<div class="histoire-personnage-container">
+<div class="histoire-personnage-container" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">
     <div class="histoire-personnage-container-nom">
         <img class="histoire-personnage-image" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
         <h3 class="histoire-personnage-nom">{{block.settings.titre-1}}</h3>
@@ -90,6 +90,11 @@
                             "type":"text",
                             "label":"texte",
                             "id":"texte"
+                        },
+						{
+                            "type":"image_picker",
+                            "label":"image-fond",
+                            "id":"image-fond"
                         }
                     ]
      } 
