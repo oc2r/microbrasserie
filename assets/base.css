@@ -2887,6 +2887,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { font-family: 'League Spartan', san
   
   .banner__media media span { font-family: 'League Spartan', sans-serif;}
 
+@font-face {
+font-family: "MundaneNouveauRegular";
+src: url("MundaneNouveauRegular.woff2") format("woff2"),
+url("MundaneNouveauRegular.woff") format("woff");
+}
+
+.mundane { font-family: "MundaneNouveauRegular"!important; }
+
+  
 /*   
  h2 {
 	font-size: 40px;
