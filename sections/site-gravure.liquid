@@ -1,33 +1,51 @@
 {%for block in section.blocks %}
-<div class="reassurance-container">
-    <div class="reassurance-1">
-        <img class="reassurance-1-image" src="{{block.settings.reassurance-1-image | img_url:'master'}}" alt="">
-        <h3 class="reassurance-1-titre">{{block.settings.heading-1}}</h3>
-        <p class="reassurance-1-description">{{block.settings.description-1}}</p>
-    </div>
-    <div class="reassurance-2">
-        <img class="reassurance-2-image" src="{{block.settings.reassurance-2-image | img_url:'master'}}" alt="">
-        <h3 class="reassurance-2-titre">{{block.settings.heading-2}}</h3>
-        <p class="reassurance-2-description">{{block.settings.description-2}}</p>
-    </div>
-    <div class="reassurance-3">
-        <img class="reassurance-3-image" src="{{block.settings.reassurance-3-image | img_url:'master'}}" alt="">
-        <h3 class="reassurance-3-titre">{{block.settings.heading-3}}</h3>
-        <p class="reassurance-3-description">{{block.settings.description-3}}</p>
-    </div>
+<div class="site-gravure-container">
+    <h2 class="site-gravure-titre-petit">{{block.settings.titre-petit}}</h2>
+    <h2 class="site-gravure-titre-normal">{{block.settings.titre-normal}}</h2>
+    <button class="site-gravure-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button">{{block.settings.button-text}}</button>
 </div>
 {%endfor%}
 
 
 {% stylesheet %}
 
+.site-gravure-container{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(115,115,115, 0.6);
+	padding: 50px;
+	position: relative;
+bk:;
+}
+
+.site-gravure-titre-petit, .site-gravure-titre-normal{
+	margin: 0px;
+}
+
+.site-gravure-titre-normal{
+	padding-block: 20px;
+	border-bottom: 2px solid #ffffff;
+}
+
+.site-gravure-btn{
+    height: 70px;
+    width: 300px;
+	cursor: pointer;
+	display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background-color:rgba(115,115,115, 0);
+    border: none;
+}
 
 {% endstylesheet %}
 
 {% schema %}
 {
-    "name": "elements-reassurance",
-    "class": "elements-reassurance",
+    "name": "site-gravure",
+    "class": "site-gravure",
     "settings": [
         {
             "type":"text",
@@ -38,60 +56,35 @@
     "blocks":[
         {
             "type":"text",
-            "name":"section nos bieres",
+            "name":"section site gravure",
             "settings":[
                 {
-                    "type":"image_picker",
-                    "label":"reassurance-1-image",
-                    "id":"reassurance-1-image"
-                },
-                {
                     "type":"text",
-                    "label":"heading-1",
-                    "id":"heading-1"
-                },
-                {
-                    "type":"text",
-                    "label":"description-1",
-                    "id":"description-1"
-                },
-                {
-                    "type":"image_picker",
-                    "label":"reassurance-2-image",
-                    "id":"reassurance-2-image"
-                },
-                {
-                    "type":"text",
-                    "label":"heading-2",
-                    "id":"heading-2"
-                },
-                {
-                    "type":"text",
-                    "label":"description-2",
-                    "id":"description-2"
+                    "label":"titre-petit",
+                    "id":"titre-petit"
                 },
 				{
-                    "type":"image_picker",
-                    "label":"reassurance-3-image",
-                    "id":"reassurance-3-image"
-                },
-                {
                     "type":"text",
-                    "label":"heading-3",
-                    "id":"heading-3"
+                    "label":"titre-normal",
+                    "id":"titre-normal"
                 },
-                {
+				{
                     "type":"text",
-                    "label":"description-3",
-                    "id":"description-3"
+                    "label":"button-text",
+                    "id":"button-text"
+                },
+				{
+                    "type": "url",            
+                    "label": "lien-1",
+                    "id": "lien-1"
                 }
             ]
         }        
     ],
 "presets" : [
     {
-        "category":"image",
-        "name": "elements-reassurance" 
+        "category":"text",
+        "name": "site-gravure" 
     }
 ]
 }

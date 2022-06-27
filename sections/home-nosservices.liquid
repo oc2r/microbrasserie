@@ -1,0 +1,184 @@
+{%for block in section.blocks %}
+<div class="section-nosservices-container-principal">
+      
+  	<div class="section-nosservices-container-secondaire-texte">
+        <h2 class="section-nosservices-titre-petit">{{block.settings.heading-petit}}</h2>
+        <h2 class="section-nosservices-titre-normal">{{block.settings.heading-normal}}</h2>
+        <h3 class="section-nosservices-sous-titre">{{block.settings.heading-3}}</h3>
+        <p class="section-nosservices-description">{{block.settings.description}}</p>
+        <button class="section-nosservices-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
+    </div>    
+  
+</div>
+{%endfor%}
+
+{% stylesheet %}
+
+.section-nosservices-container-principal {
+	max-height:900px;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/tireuse.png?v=1656333426");
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: top;
+	padding: 50px;
+	display:flex;
+	flex-direction: column;
+}
+
+.section-nosservices-container-secondaire-texte{
+	display:flex;
+	flex-direction: column;
+    width: 100%;
+}
+
+.section-nosservices-container-secondaire-texte h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+.section-nosservices-titre-petit{
+	color: white;
+    font-size: 45px;
+	margin:0px;
+bk:;
+}
+
+.section-nosservices-titre-normal{
+    font-size: 50px;
+	margin-bottom: 20px;
+	color: white;
+	border-bottom: 2px solid #ffffff;
+}
+
+.section-nosservices-sous-titre{
+	color: white;
+    font-size: 35px;
+}
+
+.section-nosservices-description{
+	color: white;
+    font-size: 20px;
+}
+
+.section-nosservices-btn {
+	margin-top: 50px;
+	margin-bottom : 50px;
+	width: 206.87px;
+	height: 57px;
+	font-size: 20px;
+	font-family: "League spartan", sans-serif;
+	color: white;
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px;
+}
+
+.section-nosservices-btn:hover{
+	cursor: pointer;
+}
+
+@media (max-width:640px){
+}
+
+@media (min-width:640px){
+
+.section-nosservices-container-principal {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+}
+
+@media (min-width:1040px){
+
+.section-nosservices-container-principal {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: end;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.section-nosservices-container-secondaire-texte{
+	margin-right:50px;
+
+}
+
+}
+
+@media (min-width: 1920px){
+}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+    "name": "nos services",
+    "class": "nosservices",
+    "settings": [
+        {
+            "type":"text",
+            "label":"nos services",
+            "id":"titre"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"text",
+            "name":"nos services",
+            "settings":[
+				{
+                    "type":"text",
+                    "label":"heading-petit",
+                    "id":"heading-petit"
+                },
+                {
+                    "type":"text",
+                    "label":"heading-normal",
+                    "id":"heading-normal"
+                },
+                {
+                    "type":"text",
+                    "label":"heading-3",
+                    "id":"heading-3"
+                },
+                {
+                    "type":"text",
+                    "label":"description",
+                    "id":"description"
+                },
+                {
+                    "type": "text",            
+                    "label": "bouton-text",
+                    "id": "bouton-text"
+                },
+                {
+                    "type": "url",            
+                    "label": "lien-1",
+                    "id": "lien-1"
+                },
+                {
+                    "type":"image_picker",
+                    "label":"image-produit",
+                    "id":"image-produit"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-personnage",
+                    "id":"image-personnage"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-bg",
+                    "id":"image-bg"
+                }
+            ]
+        }        
+    ],
+"presets" : [
+    {
+        "category":"image",
+        "name": "nos services" 
+    }
+]
+}
+{% endschema %}

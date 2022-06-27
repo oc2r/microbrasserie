@@ -1,6 +1,5 @@
 {%for block in section.blocks %}
     <div class="catalog-category_container" >
-
         <div class="text-content">
             <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
             <p class="presentation_text">{{block.settings.presentation}}</p>
@@ -12,29 +11,28 @@
 {% style %}
 
 .catalog-category_container {
-	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
-
+	position: relative;
+	height: 858px;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/banner-homepage.png?v=1656077915");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bg_homepage_intro_img {
-	width: 100vw;
-}
-
 .text-content {
     position: relative;
+	top: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	text-align: center;
     left: 52%;
-	background: green;
+
 	width: 45%;
 	color: #FFFFFF;
 }
 
-h1 {
+.text-content h1 {
 	font-weight: 700;
 	color: #FFFFFF;
 }

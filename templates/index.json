@@ -26,30 +26,6 @@
         "heading": ""
       }
     },
-    "1656082475472c236d": {
-      "type": "home-nosbieres",
-      "blocks": {
-        "3aeb2a29-e81b-41ce-9a10-4528f8001ba3": {
-          "type": "text",
-          "settings": {
-            "heading-2": "Nos bières",
-            "heading-3": "6 saveurs créés pour vous",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "bouton-texte": "Nos bières",
-            "lien-1": "",
-            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
-            "image-personnage": "shopify:\/\/shop_images\/griffon.png",
-            "image-nos-bieres-bg": "shopify:\/\/shop_images\/grunge-texture-dark.png"
-          }
-        }
-      },
-      "block_order": [
-        "3aeb2a29-e81b-41ce-9a10-4528f8001ba3"
-      ],
-      "settings": {
-        "heading-1": "Découvrez"
-      }
-    },
     "1656082672d8548305": {
       "type": "home-story",
       "blocks": {
@@ -81,7 +57,9 @@
             "sous-titre-bourgogne": "Le creusot acceuille un petit coin de paradis",
             "p_bourgogne": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "image-title": "shopify:\/\/shop_images\/Group_217.png",
-            "image-catalog": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png"
+            "image-catalog": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png",
+            "bouton-text": "Découvrir la brasserie",
+            "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/pages\/notre-brasserie"
           }
         }
       },
@@ -138,15 +116,59 @@
       "settings": {
         "heading": ""
       }
+    },
+    "16562470292811ad81": {
+      "type": "site-gravure",
+      "blocks": {
+        "c1c75132-c57d-4db4-a07d-3b86d050f73b": {
+          "type": "text",
+          "settings": {
+            "titre-petit": "Premier titre",
+            "titre-normal": "second titre",
+            "button-text": "cc c le text du bouton",
+            "lien-1": "https:\/\/mathieuprost.fr"
+          }
+        }
+      },
+      "block_order": [
+        "c1c75132-c57d-4db4-a07d-3b86d050f73b"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "1656345620c39e4e99": {
+      "type": "home-nosbieres",
+      "blocks": {
+        "aa7c9770-72f9-4df8-9929-be44bff9294e": {
+          "type": "text",
+          "settings": {
+            "heading-2": "NOS BIERES",
+            "heading-3": "6 saveurs créés pour vous",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "text-btn": "Nos bières",
+            "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/collections\/biere-blonde",
+            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
+            "image-personnage": "shopify:\/\/shop_images\/griffon.png"
+          }
+        }
+      },
+      "block_order": [
+        "aa7c9770-72f9-4df8-9929-be44bff9294e"
+      ],
+      "settings": {
+        "heading-1": "Découvrez"
+      }
     }
   },
   "order": [
     "16560784216f86247c",
     "165607810377f0b2a1",
-    "1656082475472c236d",
     "1656082672d8548305",
     "16560778072b054bdb",
     "1656168897bc476cf1",
-    "16561708686a030ac1"
+    "16561708686a030ac1",
+    "16562470292811ad81",
+    "1656345620c39e4e99"
   ]
 }

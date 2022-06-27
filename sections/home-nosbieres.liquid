@@ -6,7 +6,7 @@
         <h2 class="section-nosbieres-titre-normal">{{block.settings.heading-2}}</h2>
         <h3 class="section-nosbieres-sous-titre">{{block.settings.heading-3}}</h3>
         <p class="section-nosbieres-description">{{block.settings.description}}</p>
-        <button class="section-nosbieres-btn">NOS BIERES{{block.settings.lien-1}}</button>
+		<button class="section-nosbieres-btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button">{{block.settings.text-btn}}</button>
     </div>    
 
     <div class="section-nosbieres-container-secondaire-image">
@@ -109,7 +109,7 @@
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: end;
+	align-items: center;
 	padding-left: 150px;
 	padding-right: 150px;
 }
@@ -174,8 +174,8 @@
                 },
                 {
                     "type": "text",            
-                    "label": "bouton-texte",
-                    "id": "bouton-texte"
+                    "label": "text-btn",
+                    "id": "text-btn"
                 },
                 {
                     "type": "url",            

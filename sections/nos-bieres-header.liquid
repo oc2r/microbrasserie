@@ -1,0 +1,105 @@
+{%for block in section.blocks %}
+    <div class="nos-bieres_container" >
+      	<img class ="nos_bieres_header_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
+
+        <div class="header-nos-bieres">
+          	<div> 
+            <h1 class ="nos-bieres_title" >{{block.settings.heading}}</h1>
+            </div>
+            <p class="nos-bieres-text">{{block.settings.nos-bieres-presentation}}</p>
+          
+        </div>
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.nos-bieres_container {
+	height: 100vh;
+    width: 100%;
+    text-align: center;
+    position:relative;
+	box-sizing: border-box;
+
+}
+
+.header-nos-bieres {
+    position: absolute;
+    top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+	text-align: center;
+	
+}
+
+.header-nos-bieres div {
+	width: fit-content;
+	margin-left: auto;
+  	margin-right: auto;
+	border-bottom: solid 1px white;
+
+}
+.header-nos-bieres h1 {
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 70 px;
+}
+
+
+.header-nos-bieres p {
+    font-size: 30px;
+	color: #FFFFFF;
+}
+.nos_bieres_header_img {
+	width: 100%;}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "nos bieres header",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"H1 nos bieres",
+                            "id":"heading"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text_presentation",
+                            "id":"nos-bieres-presentation"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your image",
+                            "id":"image-catalog"
+                        }
+					
+						
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "nos-bieres-header" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+
