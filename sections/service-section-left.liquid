@@ -1,6 +1,6 @@
 {%for block in section.blocks %}
 
-<div class="service-section-left" style="background-image: url('{{block.settings.image-service-bg | img_url:'master'}}');">
+<div class="service-section-left">
     <img class ="image-service-left" src="{{block.settings.image-service-left | img_url:'master'}}"/>
     <div class="title-description-service-left">
         <h2>{{block.settings.title-service-left}}</h2>
@@ -13,6 +13,7 @@
 .service-section-left {
     display: flex;
     width: 69%;
+    background-image: url('style="background-image: url('{{block.settings.image-service-bg | img_url:'master'}}');')
 }
 
 .title-description-service-left {
