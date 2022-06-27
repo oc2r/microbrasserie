@@ -1,16 +1,18 @@
 {%for block in section.blocks %}
 
 <div class="service-section-right" style="background-image: url('{{block.settings.image-service-bg-right | img_url:'master'}}');">
-    <div class="title-description-service-right">
-        <h2>{{block.settings.title-service-right}}</h2>
-        <p>{{block.settings.description-service-right}}</p>
+    <div class="service-section-right-container">
+        <div class="title-description-service-right">
+            <h2>{{block.settings.title-service-right}}</h2>
+            <p>{{block.settings.description-service-right}}</p>
+        </div>
+        <img class ="image-service-right" src="{{block.settings.image-service-right | img_url:'master'}}"/>
     </div>
-    <img class ="image-service-right" src="{{block.settings.image-service-right | img_url:'master'}}"/>
 </div>
 
 {%endfor%}
 {% style %}
-.service-section-right {
+.service-section-right-container {
     display: flex;
     justify-content: flex-end;
     padding: 2%;
