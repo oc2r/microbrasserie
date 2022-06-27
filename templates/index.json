@@ -136,6 +136,29 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656345620c39e4e99": {
+      "type": "home-nosbieres",
+      "blocks": {
+        "aa7c9770-72f9-4df8-9929-be44bff9294e": {
+          "type": "text",
+          "settings": {
+            "heading-2": "NOS BIERES",
+            "heading-3": "6 saveurs créés pour vous",
+            "description": "",
+            "bouton-texte": "",
+            "lien-1": "",
+            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
+            "image-personnage": "shopify:\/\/shop_images\/griffon.png"
+          }
+        }
+      },
+      "block_order": [
+        "aa7c9770-72f9-4df8-9929-be44bff9294e"
+      ],
+      "settings": {
+        "heading-1": "Découvrez"
+      }
     }
   },
   "order": [
@@ -145,6 +168,7 @@
     "16560778072b054bdb",
     "1656168897bc476cf1",
     "16561708686a030ac1",
-    "16562470292811ad81"
+    "16562470292811ad81",
+    "1656345620c39e4e99"
   ]
 }
