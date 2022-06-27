@@ -109,10 +109,9 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          <h4>
+          <h3>
                {{ card_product.description | escape }}
-				{{product.custom.sous_titre}}
-          </h4>
+          </h3>
 
 
           <div class="card-information">
@@ -266,5 +265,5 @@
   </div>
 {%- endif -%}
 
-
+Material: {{ product.metafields.specs.material }}
 
