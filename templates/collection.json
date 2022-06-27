@@ -45,11 +45,18 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16563331904b7a69a1": {
+      "type": "home-nosservices",
+      "settings": {
+        "heading-1": ""
+      }
     }
   },
   "order": [
     "1656260989438d37c0",
     "banner",
-    "product-grid"
+    "product-grid",
+    "16563331904b7a69a1"
   ]
 }
