@@ -1,5 +1,34 @@
 {
   "sections": {
+    "1656323226f6fa0876": {
+      "type": "product-header",
+      "blocks": {
+        "89511c1b-77e9-47e3-81a9-2b2a50813855": {
+          "type": "text",
+          "settings": {
+            "your-beer-type": "Blonde",
+            "your-beer-type-img": "shopify:\/\/shop_images\/Griffon_bt.png",
+            "beer-name": "Griffon",
+            "beer-name-second": "Festbier",
+            "beer-description": "Rafraichissante, savoureuse,  festive",
+            "beer-degre": "4,5°",
+            "beer-size": "33 cl",
+            "beer-price": "5,89 €",
+            "icone-click-collect": "shopify:\/\/shop_images\/icone-click-collect.png",
+            "txt-click-collect": "Retrait en magasin en click and collect",
+            "icone-livraison": "shopify:\/\/shop_images\/icone-livraison.png",
+            "txt-livraison": "Livraison bientôt disponible",
+            "illustration-beer-name": "shopify:\/\/shop_images\/Griffon_bt.png"
+          }
+        }
+      },
+      "block_order": [
+        "89511c1b-77e9-47e3-81a9-2b2a50813855"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -143,7 +172,6 @@
           "settings": {
             "description-aromatic-profil": "Nous avons brassé cette bière avec de l’avoine pour lui apporter de la rondeur et de la longueur en bouche. Les saveurs des malts torréfiés évoquent un moka ou un expresso riche en arômes.",
             "description-suggestion-food": "Cette bière blonde accompagnera très bien un steak frites, un gratin dauphinois, une choucroute ou un plateau de fruits de mer. Bière festive, elle est également parfaite seule à l’apéritif",
-            "description-graphique": "shopify:\/\/shop_images\/griffon-graphique-composition.png",
             "description-composition-seed": "Malt Pale Ale, Malt Froment, Malt Froment Crystal, Malt Chocolat,  Orge Grillée, Flocons d’Avoine",
             "description-composition-hops": "Fuggle, Willamette",
             "description-composition-yeast": "S04 English Ale"
@@ -159,6 +187,7 @@
     }
   },
   "order": [
+    "1656323226f6fa0876",
     "main",
     "product-recommendations",
     "16563225019dbf5998"
