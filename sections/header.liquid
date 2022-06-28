@@ -158,6 +158,11 @@
                                         </details>
                                       {%- endif -%}
                                     </li>
+                                   {% if i == 3 %}
+                                    	{% break %}
+                                    {% else %}
+                                    	{{ i }}
+                                    {% endif %}
                                    {%- endfor -%}
                                   
                                     <li>
