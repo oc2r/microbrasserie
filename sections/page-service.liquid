@@ -4,13 +4,13 @@
         <h1>{{block.settings.titre-page}}</h1>
         <p>{{block.settings.sous-titre-page}}</p>
     </div>
-    <h2 class="rendre-visite">{{block.settings.rendre-visite}}</h2>
+    <h2 class="mundane rendre-visite">{{block.settings.rendre-visite}}</h2>
     <div class="louer-tireuse">
         <div class="img-louer-tireuse">
       		<img src="url('{{block.settings.bg-header | img_url:'master'}}'" alt="">
       	</div>
         <div class="louer-tireuse-text-container">
-            <h3>{{block.settings.location-titre}}</h3>
+            <h3 class="mundane">{{block.settings.location-titre}}</h3>
             <span></span>
             <p>{{block.settings.location-texte}}</p>
             <ul>
@@ -26,7 +26,7 @@
     <div class="visite-brasserie">
         <div style="background-image: url('{{block.settings.img-atelier | img_url:'master'}}');" class="img-visite-brasserie">{{block.settings.img-atelier}}</div>
         <div class="visite-brasserie-text-container">
-            <h3>{{block.settings.titre-atelier}}</h3>
+            <h3 class="mundane">{{block.settings.titre-atelier}}</h3>
             <p>{{block.settings.text-atelier}}</p>
             <div class="time-price">
                 <p>{{block.settings.time-atelier}}</p>
@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="take-rdv">
-        <h2>{{block.settings.titre-rdv}}</h2>
+        <h2 class="mundane">{{block.settings.titre-rdv}}</h2>
         <span></span>
         <ul>
             <li>
@@ -60,6 +60,11 @@
 .page-service {
   	height: 400vh;
     background: green;
+}
+
+.rendre-visite {
+	margin: auto;
+
 }
 
 
