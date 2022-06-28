@@ -34,6 +34,7 @@
           "type": "text",
           "settings": {
             "image-service-page-left": "shopify:\/\/shop_images\/page-brasserie-header_d5a171f1-4ef6-479c-b1b4-b12d36fe9b85.png",
+            "bg-section-service-img": "shopify:\/\/shop_images\/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_9.png",
             "title-service-page-left": "Louer une tireuse à bière",
             "description-service-page-left": "Pour votre soirrée entre amis, vos repas en famille ou tout autre evenements festifs, profitez  délicieuses bières pression comme dans un bar tout en reduisant vos déchets  !"
           }
