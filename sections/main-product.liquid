@@ -235,7 +235,25 @@
                   </div>
                   <p class="prix">{{block.settings.beer-price}}</p>
               </div>
-               
+                <div class="choose-quantity">
+                    <div class="choice-variant">
+                        <select name="choice-variant" id="choice-variant">
+                            <option value="Bières individuelles">Bières individuelles</option>
+                            <option value="Bières pack">Bières pack</option>
+                        </select>
+                        <div class="quantity-product">
+                            <select name="choice-quantity" id="choice-quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+              </div>
                                          
                                          
             {%- when 'price' -%}
