@@ -1,0 +1,35 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1656335755d6ede27c": {
+      "type": "header-banniere",
+      "blocks": {
+        "dc967ff8-b129-453e-a96d-3d56d113a006": {
+          "type": "text",
+          "settings": {
+            "heading": "NOS SERVICES",
+            "description": "la Brasserie Artisanale Autre Monde ouvre Ses portes au Creusot ! entrez avec nous dans cet univers fantastique !",
+            "image-fond": "shopify:\/\/shop_images\/tireuse.png"
+          }
+        }
+      },
+      "block_order": [
+        "dc967ff8-b129-453e-a96d-3d56d113a006"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1656335755d6ede27c"
+  ]
+}

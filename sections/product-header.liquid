@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="product-header-container">
     <div class="product-container">
-        <div class="product-image-container">
+        <div class="product-image-container corner-border bottom-corner">
             <div class="type-beer">
                 <p class="name-type-beer mundane">{{ product.metafields.custom.sous_titre}}</p>
             </div>
@@ -10,9 +10,9 @@
             </div>
         </div>
         <div class="info-product-container">
-            <h1 class="mundane">{{block.settings.beer-name}}</h1>
-            <h2 class="mundane">{{block.settings.beer-name-second}}</h2>
-            <p>{{block.settings.beer-description}}</p>
+            <h1 class="mundane">{{product.title}}</h1>
+            <h2 class="mundane">{{product.metafields.custom.sous_titre_biere}}</h2>
+            <p>{{ product.metafields.custom.chapo2}}</p>
             <div class="degre-litre-prix">
                 <div class="degre-litre">
                     <p class="degre">{{block.settings.beer-degre}}</p>
@@ -40,7 +40,18 @@
                 </div>
             </div>
             <div class="add-basket">
-                <input type="button" value="Ajouter au panier">
+                <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary">
+                        <span>Ajouter au panier
+						</span>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                    </button>
+              ::before
+              <span>Ajouter au panier
+              </span>
             </div>
             <div class="info-take-container">
                 <div class="click-collect-container">
@@ -57,6 +68,7 @@
                 </div>
             </div>
         </div>
+          <img class="illustration-beer-name" src="{{product.metafields.custom.image_name_biere | img_url:'master'}}" alt="image de la créature">
     </div>
 </div>
 {%endfor%}
@@ -64,6 +76,7 @@
 {% style %}
 
     .product-header-container {
+		position: relative;
         background: rgba(22, 22, 22, 1);
     }
 
@@ -72,7 +85,6 @@
 		flex-direction: row;
         justify-content: start;
         align-items: center;
-		background-color: red;
     }
 
     .product-image-container {
@@ -82,8 +94,17 @@
         justify-content: center;
 		align-items: center;
 		left: 10%;
-		width: 21%;
-        border: 1px solid rgba(252, 220, 92, 1);
+		width: 320px;
+		height: 530px;
+		border: 1px solid {{product.metafields.custom.couleur_type_biere}};
+
+<!--  background-image:
+        linear-gradient(0deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // left
+        linear-gradient(90deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // top
+        linear-gradient(180deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // right
+        linear-gradient(270deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%) // bottom
+    ; -->
+
     }
 
     .type-beer {
@@ -104,9 +125,9 @@
 		color: rgba(0, 0, 0, 1);
     }
 
-    .img-beer-container {
-        background-color: green;
-    }
+	.name-type-beer {
+		background-color:{{product.metafields.custom.couleur_type_biere}};
+}
 
     .info-product-container {
 		position: relative;
@@ -210,6 +231,12 @@
 	.livraison-container span {
         margin: 10px;
     }
+
+	.illustration-beer-name {
+		margin-left: 200px;
+		top: 10px
+		width: 300px;
+	}
 
 
 {% endstyle %}

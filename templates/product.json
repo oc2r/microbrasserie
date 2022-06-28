@@ -233,15 +233,61 @@
         "04f12f16-beb7-4f5a-9462-a2cf5d06a2b5": {
           "type": "text",
           "settings": {
-            "image-1": "shopify:\/\/shop_images\/epee.png",
-            "titre-1": "Le Griffon",
-            "texte": "“Honorant l’antique alliance entre les Elfes et les guerrieres de la Terre, les monteurs de griffons fendirent le ciel de leurs lances pour entrer dans la bataille contre les horbes du Chaos”",
-            "image-fond": "shopify:\/\/shop_images\/fond-griffon_c487fc6c-7988-4090-8169-6bdfff5a5171.png"
+            "heading-2": "",
+            "heading-3": "",
+            "description": "",
+            "text-btn": "",
+            "lien-1": ""
           }
         }
       },
       "block_order": [
         "04f12f16-beb7-4f5a-9462-a2cf5d06a2b5"
+      ],
+      "settings": {
+        "heading-1": ""
+      }
+    },
+    "16563583452814a91e": {
+      "type": "multicolonne-reassurance",
+      "blocks": {
+        "4a7703ab-b443-45a7-a8c5-7adf89ee9c13": {
+          "type": "text",
+          "settings": {
+            "reassurance-1-image": "shopify:\/\/shop_images\/france.png",
+            "heading-1": "Fabrication française",
+            "description-1": "Bières brassées avec passion au Creusot",
+            "reassurance-2-image": "shopify:\/\/shop_images\/paiement.png",
+            "heading-2": "Paiement sécurisé",
+            "description-2": "Paypal et autres moyens de paiement",
+            "reassurance-3-image": "shopify:\/\/shop_images\/service-client.png",
+            "heading-3": "Service client efficace",
+            "description-3": "Intervention en moins d’1 heure"
+          }
+        }
+      },
+      "block_order": [
+        "4a7703ab-b443-45a7-a8c5-7adf89ee9c13"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "1656403428aec5e5fe": {
+      "type": "histoire-personnage",
+      "blocks": {
+        "ae08fa7c-4996-4348-be99-010a7c192fae": {
+          "type": "text",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/epee.png",
+            "titre-1": "GRIFFON",
+            "texte": "l'histoire du griffon",
+            "image-fond": "shopify:\/\/shop_images\/fond-griffon_c487fc6c-7988-4090-8169-6bdfff5a5171.png"
+          }
+        }
+      },
+      "block_order": [
+        "ae08fa7c-4996-4348-be99-010a7c192fae"
       ],
       "settings": {
         "heading": ""
@@ -255,6 +301,8 @@
     "16563225019dbf5998",
     "1656334963741e04d8",
     "1656336844af21b30b",
-    "165634109545be26bc"
+    "165634109545be26bc",
+    "16563583452814a91e",
+    "1656403428aec5e5fe"
   ]
 }
