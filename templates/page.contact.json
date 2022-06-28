@@ -16,10 +16,30 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16564191150f0cbcf5": {
+      "type": "adresse",
+      "blocks": {
+        "3ad96ed8-16db-4a87-b083-fb71a8d68763": {
+          "type": "text",
+          "settings": {
+            "contact-adresse-brasserie": "77, route de Montcenis 71200 Le Creusot",
+            "contact-tel-brasserie": "+33 (0)6 61 59 28 74",
+            "contact-mail-brasserie": ""
+          }
+        }
+      },
+      "block_order": [
+        "3ad96ed8-16db-4a87-b083-fb71a8d68763"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "16564191150f0cbcf5"
   ]
 }
