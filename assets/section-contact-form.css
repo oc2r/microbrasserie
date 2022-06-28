@@ -51,6 +51,6 @@
   visibility: hidden;
 }
 
-.contact__fields input {
+!important .contact__fields input {
   border: 0px;
-} !important
+} 
