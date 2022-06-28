@@ -1771,7 +1771,6 @@ details[open] > .share-button__fallback {
   padding: 1.5rem;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
-    border: 0;
 }
 
 .field__label,
