@@ -120,7 +120,6 @@
         "type": "header",
         "settings": {
           "color_scheme": "accent-2",
-          "logo": "shopify:\/\/shop_images\/Logo_1.png",
           "logo_width": 90,
           "logo_position": "middle-left",
           "menu": "main-menu",
