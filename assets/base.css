@@ -2213,6 +2213,11 @@ input[type='checkbox'] {
   align-items: center;
  
 }
+  
+.icon icon-cart-empty{
+position: absolute;
+top: -12px;
+}
 
 @media screen and (min-width: 990px) {
   .header {
@@ -2334,6 +2339,9 @@ input[type='checkbox'] {
 
 .header__icon {
   color: rgb(var(--color-foreground));
+  position: absolute;
+  top: -28px;
+  right: 10px;
 }
 
 .header__icon span {
