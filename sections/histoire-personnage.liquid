@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="histoire-personnage-container" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">
     <div class="histoire-personnage-container-nom">
-        <img class="histoire-personnage-image" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
+        <img class="histoire-personnage-image" src="{{product.metafields.custom.personnage_image | escape}}" alt="">
         <h3 class="histoire-personnage-nom">{{product.metafields.custom.personnage_nom | escape}}</h3>
     </div>
     <p class="histoire-personnage-description">{{product.metafields.custom.histoire_personnage | escape}}</p>
