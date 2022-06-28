@@ -1,5 +1,5 @@
 {%for block in section.blocks %}
-<div class="product-description-container" style="background-color:{{product.metafields.custom.couleur_type_biere}};">
+<div class="product-description-container">
     <div class="aromatic-suggestion-container">
 
         <div class = "aromatic-profil-container">
@@ -33,6 +33,7 @@
 .product-description-container h2, .product-description-container h3 {
 	width:fit-content;
     color: black;
+	background-color:{{product.metafields.custom.couleur_type_biere}};
 }
 
 .product-description-container {
