@@ -50,3 +50,7 @@
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+.contact__fields input {
+  border: 0px;
+}
