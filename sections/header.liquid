@@ -291,7 +291,7 @@
       
     {%- endif -%} -->
 
-     
+      <h1 class="header__heading">
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if section.settings.logo != blank -%}
             {%- assign image_size_2x = section.settings.logo_width | times: 2 | at_most: 5760 -%}
@@ -303,7 +303,12 @@
               height="{{ section.settings.logo.height }}"
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
-          
+          {%- else -%}
+            <span class="h2">{{ shop.name }}</span>
+          {%- endif -%}
+        </a>
+    {%- if request.page_type == 'index' -%}
+      </h1>
     {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
