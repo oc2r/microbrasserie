@@ -10,12 +10,14 @@
             "titre-page": "NOS SERVICES",
             "sous-titre-page": "Location de tireuses a bière, visite de la brasserie, session de dégustation",
             "rendre-visite": "nous rendre visite",
+            "img-location": "shopify:\/\/shop_images\/louer-tireuse-img.png",
             "location-titre": "LoueZ une tireuse à bière",
             "location-texte": "Pour votre soirée entre amis, vos repas en famille ou tout autre évènements festif, profitez de délicieuses bières pression comme au bar bar, tout en reduisant vos déchets  !",
             "location-taille-1": "Tireuse 2 têtes 100L servis par heure  2 futs simultanés 100€",
             "location-taille-2": "Tireuse 2 têtes 70L servis par heure  2 futs simultanés 50€",
             "location-taille-3": "Tireuse 1 tête 45L servis par heure  Refroidissement air sec 50€",
             "caution": "Un chèque de caution vous sera demandé lors du prêt",
+            "img-atelier": "shopify:\/\/shop_images\/atelier-brassage_22278d8d-33c2-4f98-aef7-c335c68bb063.png",
             "titre-atelier": "Atelier de brassage",
             "text-atelier": "Venez décourir l’univers du brassage et devenez  un pro du houblon en participant à nos ateliers !",
             "time-atelier": "Durée : 3h",
@@ -30,7 +32,7 @@
             "titre-tel": "Par téléphone",
             "text-tel": "+33 (0)6 61 59 28 74",
             "titre-mail": "Par Email",
-            "text-mail": "loremipsum@gmail.com"
+            "text-mail": "brasserie.autremonde@gmail.com"
           }
         }
       },
