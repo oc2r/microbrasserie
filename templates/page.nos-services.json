@@ -1,5 +1,45 @@
 {
   "sections": {
+    "165643062660b3e7e7": {
+      "type": "page-service",
+      "blocks": {
+        "3fe3494b-723b-44f2-bf9f-3600427f97b5": {
+          "type": "text",
+          "settings": {
+            "titre-page": "fbeeberberb",
+            "sous-titre-page": "",
+            "rendre-visite": "",
+            "location-titre": "",
+            "location-texte": "",
+            "location-taille-1": "",
+            "location-taille-2": "",
+            "location-taille-3": "",
+            "caution": "",
+            "titre-atelier": "",
+            "text-atelier": "",
+            "time-atelier": "",
+            "prix-atelier": "",
+            "titre-visite": "",
+            "text-visite": "",
+            "time-visite": "",
+            "prix-visite": "",
+            "titre-rdv": "",
+            "titre-en-personne": "",
+            "text-en-personne": "",
+            "titre-tel": "",
+            "text-tel": "",
+            "titre-mail": "",
+            "text-mail": ""
+          }
+        }
+      },
+      "block_order": [
+        "3fe3494b-723b-44f2-bf9f-3600427f97b5"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -125,55 +165,15 @@
       "settings": {
         "heading": ""
       }
-    },
-    "165643062660b3e7e7": {
-      "type": "page-service",
-      "blocks": {
-        "3fe3494b-723b-44f2-bf9f-3600427f97b5": {
-          "type": "text",
-          "settings": {
-            "titre-page": "fbeeberberb",
-            "sous-titre-page": "",
-            "rendre-visite": "",
-            "location-titre": "",
-            "location-texte": "",
-            "location-taille-1": "",
-            "location-taille-2": "",
-            "location-taille-3": "",
-            "caution": "",
-            "titre-atelier": "",
-            "text-atelier": "",
-            "time-atelier": "",
-            "prix-atelier": "",
-            "titre-visite": "",
-            "text-visite": "",
-            "time-visite": "",
-            "prix-visite": "",
-            "titre-rdv": "",
-            "titre-en-personne": "",
-            "text-en-personne": "",
-            "titre-tel": "",
-            "text-tel": "",
-            "titre-mail": "",
-            "text-mail": ""
-          }
-        }
-      },
-      "block_order": [
-        "3fe3494b-723b-44f2-bf9f-3600427f97b5"
-      ],
-      "settings": {
-        "heading": ""
-      }
     }
   },
   "order": [
+    "165643062660b3e7e7",
     "main",
     "1656335755d6ede27c",
     "16563596598cdb8a31",
     "1656360444a5989b7d",
     "1656361137d93271a2",
-    "165643031697d4a523",
-    "165643062660b3e7e7"
+    "165643031697d4a523"
   ]
 }
