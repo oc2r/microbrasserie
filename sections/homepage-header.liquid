@@ -1,6 +1,6 @@
 {%for block in section.blocks %}
     <div class="catalog-category_container" >
-        <div class="text-content" style="background-image: url("{{block.settings.image-bg}}"">
+        <div class="text-content" style="background-image: url("{{block.settings.image-bg | img_url:'master'}}"">
             <h1 class ="catalog-category_title" >{{block.settings.heading}}</h1>
             <p class="presentation_text">{{block.settings.presentation}}</p>
         </div>
