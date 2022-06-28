@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="product-header-container">
     <div class="product-container">
-        <div class="product-image-container corner-border">
+        <div class="product-image-container card-corner-border">
             <div class="type-beer">
                 <p class="name-type-beer mundane">{{ product.metafields.custom.sous_titre}}</p>
             </div>
@@ -139,6 +139,39 @@
       left:-12px;
 
     }
+
+	.card-corner-border::before
+      {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%) rotate(-280deg);
+          width: 160%;
+          height: 130%;
+          background-image: conic-gradient(#ff00bb 0deg, #ff00bb 90deg, transparent 130deg, transparent 180deg, #4530FF 180deg, #4530FF 270deg, transparent 310deg, transparent 360deg);
+          transition: transform 2s;
+      }
+      .card-corner-border:hover::before
+      {
+          transform: translate(-50%,-50%) rotate(-100deg);
+      }
+      .card-corner-border::after
+      {
+          content: 'HowToCodeSchool.com';
+          color: #ddd;
+          position: absolute;
+          background-color: #000;
+          display: flex;
+          font-size: 17px;
+          align-items: center;
+          justify-content: center;
+          height: 242px;
+          width: 192px;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+      }
 
     .info-product-container {
 		position: relative;
