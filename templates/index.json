@@ -17,13 +17,45 @@
             "image-bg": "shopify:\/\/shop_images\/Group_257.png",
             "image-bg-header": "shopify:\/\/shop_images\/grunge-texture-dark.png"
           }
+        },
+        "c303483e-0dd1-4826-b9eb-fafa6b72659b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "presentation": ""
+          }
         }
       },
       "block_order": [
-        "8cf623e6-fe93-418b-9e92-0701553b3ae0"
+        "8cf623e6-fe93-418b-9e92-0701553b3ae0",
+        "c303483e-0dd1-4826-b9eb-fafa6b72659b"
       ],
       "settings": {
         "heading": ""
+      }
+    },
+    "1656345620c39e4e99": {
+      "type": "home-nosbieres",
+      "blocks": {
+        "aa7c9770-72f9-4df8-9929-be44bff9294e": {
+          "type": "text",
+          "settings": {
+            "heading-2": "NOS BIERES",
+            "heading-3": "6 saveurs créés pour vous",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "text-btn": "Nos bières",
+            "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/collections\/biere-blonde",
+            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
+            "image-personnage": "shopify:\/\/shop_images\/griffon.png"
+          }
+        }
+      },
+      "block_order": [
+        "aa7c9770-72f9-4df8-9929-be44bff9294e"
+      ],
+      "settings": {
+        "heading-1": "Découvrez"
       }
     },
     "1656082672d8548305": {
@@ -136,39 +168,16 @@
       "settings": {
         "heading": ""
       }
-    },
-    "1656345620c39e4e99": {
-      "type": "home-nosbieres",
-      "blocks": {
-        "aa7c9770-72f9-4df8-9929-be44bff9294e": {
-          "type": "text",
-          "settings": {
-            "heading-2": "NOS BIERES",
-            "heading-3": "6 saveurs créés pour vous",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "text-btn": "Nos bières",
-            "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/collections\/biere-blonde",
-            "image-produit": "shopify:\/\/shop_images\/Bieres.png",
-            "image-personnage": "shopify:\/\/shop_images\/griffon.png"
-          }
-        }
-      },
-      "block_order": [
-        "aa7c9770-72f9-4df8-9929-be44bff9294e"
-      ],
-      "settings": {
-        "heading-1": "Découvrez"
-      }
     }
   },
   "order": [
     "16560784216f86247c",
     "165607810377f0b2a1",
+    "1656345620c39e4e99",
     "1656082672d8548305",
     "16560778072b054bdb",
     "1656168897bc476cf1",
     "16561708686a030ac1",
-    "16562470292811ad81",
-    "1656345620c39e4e99"
+    "16562470292811ad81"
   ]
 }
