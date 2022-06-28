@@ -35,11 +35,31 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656425358a5849711": {
+      "type": "nos-bieres-header",
+      "blocks": {
+        "f788cce1-9a1a-4ead-b9cd-d772060c2850": {
+          "type": "text",
+          "settings": {
+            "heading": "CONTACT",
+            "nos-bieres-presentation": "Quand on ne brasse pas, on vous réponds !",
+            "image-catalog": "shopify:\/\/shop_images\/contatct2.png"
+          }
+        }
+      },
+      "block_order": [
+        "f788cce1-9a1a-4ead-b9cd-d772060c2850"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
     "form",
-    "16564191150f0cbcf5"
+    "16564191150f0cbcf5",
+    "1656425358a5849711"
   ]
 }
