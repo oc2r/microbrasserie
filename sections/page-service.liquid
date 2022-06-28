@@ -1,3 +1,4 @@
+{%for block in section.blocks %}
 <div class="page-service">
     <div style="background-image: url('{{block.settings.bg-header | img_url:'master'}}');" class="header-service-container">
         <h1>{{block.settings.titre-page}}</h1>
@@ -50,10 +51,9 @@
         </ul>
     </div>
 </div>
-
+{%endfor%}
 
 {% style %}
-<style>
 
 .page-service {
   	height: 400vh;
@@ -128,7 +128,6 @@
 }
 
 
-</style>
 {% endstyle %}
 
 {% schema %}
