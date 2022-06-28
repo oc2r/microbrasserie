@@ -1,0 +1,224 @@
+<div class="page-service">
+    <div class="header-service-container">
+        <h1></h1>
+        <p></p>
+    </div>
+    <h2></h2>
+    <div class="louer-tireuse">
+        <h3></h3>
+        <span></span>
+        <p></p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="caution"></p>
+    </div>
+
+    <!-- div deja faite avant, la mettre ici -->
+    <div class="visite-brasserie">
+        <div class="img-visite-brasserie"></div>
+        <div class="visite-brasserie-text-container">
+            <h3></h3>
+            <p></p>
+            <div class="time-price">
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="take-rdv">
+        <h2></h2>
+        <span></span>
+        <ul>
+            <li>
+                <h4></h4>
+                <p></p>
+            </li>
+            <li>
+                <h4></h4>
+                <p></p>
+            </li>
+            <li>
+                <h4></h4>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+{% style %}
+
+.catalog-category_container {
+text-align: center
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "page-service",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"edit-page-service",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"edit-page-service",
+            "settings":[
+                        {
+                            "type":"image_picker",
+                            "label":"bg-header",
+                            "id":"bg-header"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-page",
+                            "id":"titre-page"
+                        },
+                        {
+                            "type":"text",
+                            "label":"sous-titre-page",
+                            "id":"sous-titre-page"
+                        },
+                        {
+                            "type":"text",
+                            "label":"rendre-visite",
+                            "id":"rendre-visite"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"img-location",
+                            "id":"img-location"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-titre",
+                            "id":"location-titre"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-texte",
+                            "id":"location-texte"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-1",
+                            "id":"location-taille-1"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-2",
+                            "id":"location-taille-2"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-3",
+                            "id":"location-taille-3"
+                        },
+                        {
+                            "type":"text",
+                            "label":"caution",
+                            "id":"caution"
+                        },
+                        {
+                            "type":"text",
+                            "label":"img-atelier",
+                            "id":"img-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-atelier",
+                            "id":"titre-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-atelier",
+                            "id":"text-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"time-atelier",
+                            "id":"time-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"prix-atelier",
+                            "id":"prix-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-visite",
+                            "id":"titre-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-visite",
+                            "id":"text-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"time-visite",
+                            "id":"time-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"prix-visite",
+                            "id":"prix-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-rdv",
+                            "id":"titre-rdv"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-en-personne",
+                            "id":"titre-en-personne"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-en-personne",
+                            "id":"text-en-personne"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-tel",
+                            "id":"titre-tel"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-tel",
+                            "id":"text-tel"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-mail",
+                            "id":"titre-mail"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-mail",
+                            "id":"text-mail"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "page-service" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+
