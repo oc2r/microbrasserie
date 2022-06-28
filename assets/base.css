@@ -1770,7 +1770,7 @@ details[open] > .share-button__fallback {
   text-align: left;
   padding: 1.5rem;
   margin: var(--inputs-border-width);
-/*   transition: box-shadow var(--duration-short) ease; */
+  transition: box-shadow var(--duration-short) ease;
 }
 
 .field__label,
