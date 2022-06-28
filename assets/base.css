@@ -2340,7 +2340,7 @@ top: -12px;
 .header__icon {
   color: rgb(var(--color-foreground));
   position: absolute;
-  top: -28px;
+  top: -25px;
   right: 10px;
 }
 
