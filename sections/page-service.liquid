@@ -1,48 +1,48 @@
 <div class="page-service">
     <div class="header-service-container">
-        <h1></h1>
-        <p></p>
+        <h1>{{block.settings.titre-page}}</h1>
+        <p>{{block.settings.sous-titre-page}}</p>
     </div>
-    <h2></h2>
+    <h2>{{block.settings.rendre-visite}}</h2>
     <div class="louer-tireuse">
-        <h3></h3>
+        <h3>{{block.settings.location-titre}}</h3>
         <span></span>
-        <p></p>
+        <p>{{block.settings.location-texte}}</p>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>{{block.settings.location-taille-1}}</li>
+            <li>{{block.settings.location-taille-2}}</li>
+            <li>{{block.settings.location-taille-3}}</li>
         </ul>
-        <p class="caution"></p>
+        <p class="caution">{{block.settings.caution}}</p>
     </div>
 
     <!-- div deja faite avant, la mettre ici -->
     <div class="visite-brasserie">
-        <div class="img-visite-brasserie"></div>
+        <div class="img-visite-brasserie">{{block.settings.img-atelier}}</div>
         <div class="visite-brasserie-text-container">
-            <h3></h3>
-            <p></p>
+            <h3>{{block.settings.titre-atelier}}</h3>
+            <p>{{block.settings.text-atelier}}</p>
             <div class="time-price">
-                <p></p>
-                <p></p>
+                <p>{{block.settings.time-atelier}}</p>
+                <p>{{block.settings.prix-atelier}}</p>
             </div>
         </div>
     </div>
     <div class="take-rdv">
-        <h2></h2>
+        <h2>{{block.settings.titre-rdv}}</h2>
         <span></span>
         <ul>
             <li>
-                <h4></h4>
-                <p></p>
+                <h4>{{block.settings.titre-en-personne}}</h4>
+                <p>{{block.settings.text-en-personne}}</p>
             </li>
             <li>
-                <h4></h4>
-                <p></p>
+                <h4>{{block.settings.titre-tel}}</h4>
+                <p>{{block.settings.text-tel}}</p>
             </li>
             <li>
-                <h4></h4>
-                <p></p>
+                <h4>{{block.settings.titre-mail}}</h4>
+                <p>{{block.settings.text-mail}}</p>
             </li>
         </ul>
     </div>
@@ -50,6 +50,10 @@
 
 
 {% style %}
+
+.page-service {
+    background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+}
 
 .catalog-category_container {
 text-align: center
@@ -129,7 +133,7 @@ text-align: center
                             "id":"caution"
                         },
                         {
-                            "type":"text",
+                            "type":"image_picker",
                             "label":"img-atelier",
                             "id":"img-atelier"
                         },
@@ -220,5 +224,4 @@ text-align: center
 
 }
 {% endschema %}
-
 
