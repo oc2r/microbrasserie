@@ -196,7 +196,7 @@
                 <h2 class="mundane">{{product.metafields.custom.sous_titre_biere}}</h2>
                 <p>{{ product.metafields.custom.chapo2}}</p>
                 <a href="{{ product.url }}" class="product__title">
-                  <h2 class="h1 mundane"">
+                  <h2 class="h1 mundane">
                     {{ product.title | escape }}
                   </h2>
                 </a>
@@ -223,7 +223,7 @@
                         </fieldset>
                     {%- endfor -%}  
                     {%- endif -%}                                                                                
-                 
+                    {{block.settings.beer-size}}
                <!-- <p>coucou stop ici pt de repere</p>                                                                       -->
                                           
                        <label class="degre" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
