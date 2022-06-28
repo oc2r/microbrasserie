@@ -2314,14 +2314,9 @@ input[type='checkbox'] {
 
 /* Header icons */
 .header__icons {
- 	  /* position: relative; */
-    top: 31px;
-    /* position: fixed; */
-    right: 65px;
-    position: absolute;
-    right: 65px;
-    box-sizing: border-box;
-
+ 	display: flex;
+  	grid-area: icons;
+  	justify-self: end;
 }
 
 .header__icon:not(.header__icon--summary),
