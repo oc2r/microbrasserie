@@ -6,7 +6,7 @@
     </div>
     <h2 class="rendre-visite">{{block.settings.rendre-visite}}</h2>
     <div class="louer-tireuse">
-        <div class="img-louer-tireuse"></div>
+        <div style="background-image: url('{{block.settings.img-location | img_url:'master'}}');" class="img-louer-tireuse"></div>
         <div class="louer-tireuse-text-container">
             <h3>{{block.settings.location-titre}}</h3>
             <span></span>
@@ -22,7 +22,7 @@
 
     <!-- div deja faite avant, la mettre ici -->
     <div class="visite-brasserie">
-        <div class="img-visite-brasserie">{{block.settings.img-atelier}}</div>
+        <div style="background-image: url('{{block.settings.img-atelier | img_url:'master'}}');" class="img-visite-brasserie">{{block.settings.img-atelier}}</div>
         <div class="visite-brasserie-text-container">
             <h3>{{block.settings.titre-atelier}}</h3>
             <p>{{block.settings.text-atelier}}</p>
