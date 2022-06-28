@@ -272,6 +272,26 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656403428aec5e5fe": {
+      "type": "histoire-personnage",
+      "blocks": {
+        "ae08fa7c-4996-4348-be99-010a7c192fae": {
+          "type": "text",
+          "settings": {
+            "image-1": "shopify:\/\/shop_images\/epee.png",
+            "titre-1": "GRIFFON",
+            "texte": "l'histoire du griffon",
+            "image-fond": "shopify:\/\/shop_images\/fond-griffon_c487fc6c-7988-4090-8169-6bdfff5a5171.png"
+          }
+        }
+      },
+      "block_order": [
+        "ae08fa7c-4996-4348-be99-010a7c192fae"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -282,6 +302,7 @@
     "1656334963741e04d8",
     "1656336844af21b30b",
     "165634109545be26bc",
-    "16563583452814a91e"
+    "16563583452814a91e",
+    "1656403428aec5e5fe"
   ]
 }
