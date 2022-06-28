@@ -205,7 +205,7 @@
                                           
                       <!-- <p>repere before bazar</p>                       -->
                           {%- if block.settings.picker_type == 'button' -%}
-                  <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                  <variant-radios class="no-js-hidden" data-section="{{  }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                     {%- for option in product.options_with_values -%}
                         <fieldset class="js product-form__input">
                           <legend class="form__label">{{ option.name }}</legend>
@@ -232,7 +232,7 @@
  
                       <p class="degre">{{ section.id }}-{{ option.position }}-{{ forloop.index0 }} {{ value }}</p>
                       <span></span>
-                      
+                      <p class="litre">{{block.settings.beer-size}}</p>
                   </div>
                   <p class="prix">{{block.settings.beer-price}}</p>
               </div>
