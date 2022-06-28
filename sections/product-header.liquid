@@ -116,12 +116,33 @@
 		color: rgba(0, 0, 0, 1);
     }
 
+	/* vertical line */
+    .corner-border::after {
+      content:'';
+      position: absolute;
+      background-color: purple;
+      width: 3px;
+      height: 60%;
+      top: 0;
+      left:-15px;
 
+    }
+
+    /* horizontal line */
+    .corner-border::before{
+      content:'';
+      position: absolute;
+      background-color: pink;
+      width: 20%;
+      height: 3px;
+      top: 0;
+      left:-12px;
+
+    }
 
 /* vertical line */
 .bottom-corner::after {
   content:'';
-  position: absolute;
   background-color: #85C1E9;
   width: 3px;
   height: 50%;
@@ -132,7 +153,6 @@
 /* horizontal line */
 .bottom-corner::before {
   content:'';
-  position: absolute;
   background-color: #85C1E9;
   width: 20%;
   height: 3px;
