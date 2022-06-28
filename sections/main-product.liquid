@@ -225,7 +225,15 @@
                     {%- endif -%}                                                                                
                     {{block.settings.beer-size}}
                <!-- <p>coucou stop ici pt de repere</p>                                                                       -->
-
+                     <div>                    
+                       <label class="degre" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                            {{ value | escape }}
+                            </label>               	
+                      <p class="degre">{{ section.id }}-{{ option.position }}-{{ forloop.index0 }} {{ value }}</p>
+                      <span></span>
+                      <p class="litre">{{block.settings.beer-size}}</p>
+                  </div>
+                  <p class="prix">{{block.settings.beer-price}}</p>
                     </variant-radios>
                     
                 <div class="choose-quantity">
