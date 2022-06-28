@@ -20,6 +20,10 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+  .caca {
+  display: flex;}
+  
+  
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -331,6 +335,8 @@
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                 
+                  <div class ="caca">
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}</legend>
@@ -347,6 +353,8 @@
                         {%- endfor -%}
                       </fieldset>
                   {%- endfor -%}
+                    
+                  </div>
                   <script type="application/json">
                     {{ product.variants | json }}
                   </script>
