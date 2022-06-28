@@ -1,12 +1,61 @@
+{%for block in section.blocks %}
+<div class="contact-brasserie-container">
+    <div class="contact-adresse-brasserie">
+        <h2>Adresse</h2>
+        <p>{{block.settings.contact-adresse-brasserie}}</p>
+    </div>
+    <div class="contact-tel-brasserie">
+        <h2>telephone</h2>
+        <p>{{block.settings.contact-tel-brasserie}}</p>
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "adresse form",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"adresse form",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"adresse form",
+            "settings":[                  
+				{
+                  	"type":"text",
+                  	"label":"contact adresse brasserie",
+                  	"id":"contact-adresse-brasserie"
+                  },
+				{
+                    "type":"text",
+                    "label":"contact tel brasserie",
+                    "id":"contact-tel-brasserie"
+                },
+				{
+                  	"type":"text",
+                  	"label":"contact mail brasserie",
+                  	"id":"contact-mail-brasserie"
+                  }
+            ]
+     } 
+],
+"presets" : [
+    {
+    "category":"image",
+    "name": "adresse form" 
+    }
+]
+
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
