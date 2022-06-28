@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="product-header-container">
     <div class="product-container">
-        <div class="product-image-container">
+        <div class="product-image-container corner-border">
             <div class="type-beer">
                 <p class="name-type-beer mundane">{{ product.metafields.custom.sous_titre}}</p>
             </div>
@@ -116,6 +116,29 @@
 		color: rgba(0, 0, 0, 1);
     }
 
+	/* vertical line */
+    .corner-border::after {
+      content:'';
+      position: absolute;
+      background-color: pink;
+      width: 3px;
+      height: 60%;
+      top: 0;
+      left:-15px;
+
+    }
+
+    /* horizontal line */
+    .corner-border::before{
+      content:'';
+      position: absolute;
+      background-color: pink;
+      width: 20%;
+      height: 3px;
+      top: 0;
+      left:-12px;
+
+    }
 
     .info-product-container {
 		position: relative;
