@@ -1,7 +1,7 @@
 {%for block in section.blocks %}
 <div class="contact-brasserie-container">
     <div class="contact-adresse-brasserie">
-        <h2>Adresse</h2>
+        <h2 style="margin: 5%;">Adresse</h2>
         <p>{{block.settings.contact-adresse-brasserie}}</p>
     </div>
     <div class="contact-tel-brasserie">
@@ -12,19 +12,7 @@
 {%endfor%}
 
 {% style %}
-.contact-brasserie-container{
-    position: absolute;
-    right: 10%;
-    top: 61%;
-    width: 20%;
-    font-size: 250%;
-}
 
-.contact-adresse-brasserie {
-	display:flex;
-	flex-direction: column;
-	gap: 10%;
-}
 
 {% endstyle %}
 
