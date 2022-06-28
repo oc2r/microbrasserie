@@ -201,7 +201,7 @@
                 </h2>
               </a>
              <div class="degre-litre-prix">
-                <div class="bg-green degre-litre">
+                <div class="degre-litre">
                         {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
@@ -222,7 +222,7 @@
                   {%- endfor -%}  
                   {%- endif -%}                                                                                
                
-                                                                                                  
+             <p>coucou stop ici pt de repere</p>                                                                      
                                         
                      <label class="degre" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                           vrov,or,v,o {{ value | escape }}

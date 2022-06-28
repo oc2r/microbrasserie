@@ -1655,6 +1655,7 @@ details[open] > .share-button__fallback {
   left: 0;
   border-radius: var(--inputs-radius-outset);
   z-index: -1;
+  border: 0px;
 }
 
 .field:after,
