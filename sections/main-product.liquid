@@ -200,18 +200,32 @@
                     {{ product.title | escape }}
                   </h2>
                 </a>
-                                                                                
+               <div class="degre-litre-prix">
+                  <div class="degre-litre">
+                                          
+                      <!-- <p>repere before bazar</p>                       -->
+                          {%- if block.settings.picker_type == 'button' -%}
+                  <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                    {%- for option in product.options_with_values -%}
+                        <fieldset class="js product-form__input">
+                          <legend class="form__label">{{ option.name }}</legend>
+                          {%- for value in option.values -%}
+                            <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                  name="{{ option.name }}"
+                                  value="{{ value | escape }}"
+                                  form="{{ product_form_id }}"
+                                  {% if option.selected_value == value %}checked{% endif %}
+                            >
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                              {{ value }}
+                            </label>
+                          {%- endfor -%}
+                        </fieldset>
+                    {%- endfor -%}  
+                    {%- endif -%}                                                                                
                     {{block.settings.beer-size}}
                <!-- <p>coucou stop ici pt de repere</p>                                                                       -->
-                     <div>                    
-                       <label class="degre" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value | escape }}
-                            </label>               	
-                      <p class="degre">{{ section.id }}-{{ option.position }}-{{ forloop.index0 }} {{ value }}</p>
-                      <span></span>
-                      <p class="litre">{{block.settings.beer-size}}</p>
-                  </div>
-                  <p class="prix">{{block.settings.beer-price}}</p>
+
                     </variant-radios>
                     
                 <div class="choose-quantity">
@@ -376,11 +390,11 @@
                         </fieldset>
                     {%- endfor -%}
 					 </div>
-                        </variant-radios>
+                        
                     <script type="application/json">
                       {{ product.variants | json }}
                     </script>
-                  
+                  </variant-radios>
                 {%- else -%}
                   <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                     {%- for option in product.options_with_values -%}
