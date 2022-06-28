@@ -1,7 +1,27 @@
 {
   "sections": {
+    "1656425797de2c0b51": {
+      "type": "header-banniere",
+      "blocks": {
+        "ea0c36c5-fd30-4560-ae10-feaed6b78d52": {
+          "type": "text",
+          "settings": {
+            "heading": "CONTACT",
+            "description": "Quand on ne brasse pas, on vous réponds !",
+            "image-fond": "shopify:\/\/shop_images\/contatct2.png"
+          }
+        }
+      },
+      "block_order": [
+        "ea0c36c5-fd30-4560-ae10-feaed6b78d52"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -35,31 +55,12 @@
       "settings": {
         "heading": ""
       }
-    },
-    "1656425797de2c0b51": {
-      "type": "header-banniere",
-      "blocks": {
-        "ea0c36c5-fd30-4560-ae10-feaed6b78d52": {
-          "type": "text",
-          "settings": {
-            "heading": "CONTACT",
-            "description": "Quand on ne brasse pas, on vous réponds !",
-            "image-fond": "shopify:\/\/shop_images\/contatct2.png"
-          }
-        }
-      },
-      "block_order": [
-        "ea0c36c5-fd30-4560-ae10-feaed6b78d52"
-      ],
-      "settings": {
-        "heading": ""
-      }
     }
   },
   "order": [
+    "1656425797de2c0b51",
     "main",
     "form",
-    "16564191150f0cbcf5",
-    "1656425797de2c0b51"
+    "16564191150f0cbcf5"
   ]
 }
