@@ -372,7 +372,7 @@
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
                                                                       
                                                                       
-                                                                      
+                 <div class="caca">                                                     
             {%- when 'variant_picker' -%}
               {%- unless product.has_only_default_variant -%}
                 {%- if block.settings.picker_type == 'button' -%}
@@ -393,6 +393,7 @@
                           {%- endfor -%}
                         </fieldset>
                     {%- endfor -%}
+                    </div>    
                     <script type="application/json">
                       {{ product.variants | json }}
                     </script>
