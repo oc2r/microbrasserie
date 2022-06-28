@@ -8,7 +8,7 @@
             <p>{{block.settings.description-service-page-left}}</p>
         </div>
     </div>
-  	<div style="background-image: url('{{block.settings.image-service-page-left | img_url:'master'}}');" >
+  	<div class="service-left-image" style="background-image: url('{{block.settings.image-service-page-left | img_url:'master'}}');" >
       <p>klnvsobvozb</p>
   	</div>
 </div>
@@ -25,7 +25,7 @@
 .service-page-section-left-container {
     display: flex;
     margin-top: 2%;
-	width: 60%;
+	
 	gap: 10%;
 	background-color: rgba(70, 70, 70, 0.45);
 }
@@ -41,6 +41,10 @@
     justify-content: center;
 	width: 40%;
 	text-align:center;
+}
+
+.service-left-image {
+	width: 60%;
 }
 
 {% endstyle %}
