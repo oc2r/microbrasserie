@@ -159,10 +159,9 @@
                                       {%- endif -%}
                                     </li>
                                    {%- endfor -%}
+                                  
                                     <li>
-                                     {%- if request.page_type == 'index' -%}
-                                        <h1 class="header__heading">
-                                      {%- endif -%}
+                                     
                                           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
                                             {%- if section.settings.logo != blank -%}
                                               {%- assign image_size_2x = section.settings.logo_width | times: 2 | at_most: 5760 -%}
@@ -177,11 +176,9 @@
                                             {%- else -%}
                                               <span class="h2">{{ shop.name }}</span>
                                             {%- endif -%}
-                                          </a>
-                                      {%- if request.page_type == 'index' -%}
-                                        </h1>
-                                      {%- endif -%}
-                                 </li>
+                                          </a>  
+                                 	</li>
+                                  
                            		{%- for link in (3..4) -%}
                                   <li>
                                   {%- if link.links != blank -%}
