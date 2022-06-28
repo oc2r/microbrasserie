@@ -2213,7 +2213,8 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header {
-   
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .header--has-menu:not(.header--middle-left) {
@@ -2583,6 +2584,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
+  padding: 1.2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
