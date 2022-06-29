@@ -232,7 +232,7 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
-            <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}  style="color: {{product.metafields.custom.couleur_type_biere}};" >
+            <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }} >
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
@@ -366,6 +366,7 @@
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                  
                   <div class ="caca">
+                   
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}</legend>
@@ -382,6 +383,9 @@
                         {%- endfor -%}
                       </fieldset>
                   {%- endfor -%}
+                   div class ="alcool">
+                    {{product.metafields.custom.taux.alcool}}
+                  </div>
                     
                   </div>
                   <script type="application/json">
