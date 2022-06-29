@@ -1,3 +1,5 @@
+<div class ="main_product_container">
+
 <section id="MainProduct-{{ section.id }}" class="page-width section-{{ section.id }}-padding" data-section="{{ section.id }}">
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -632,8 +634,13 @@
       ]
     }
   </script>
+    
+    
 </section>
 
+  
+  
+  </div>
 {% schema %}
 {
   "name": "t:sections.main-product.name",
