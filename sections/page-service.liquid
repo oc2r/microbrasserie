@@ -36,7 +36,7 @@
                 <p>{{block.settings.prix-atelier}}</p>
             </div>
         </div>
-        <div class="img-visite-brasserie">{{block.settings.img-atelier}}</div>
+        <div style="background-image: url('{{block.settings.img-atelier | img_url:'master'}}');" class="img-visite-brasserie"></div>
     </div>
 
     <div class="visite-brasserie">
