@@ -185,10 +185,10 @@
             "brasserie-notrehistoire-container-2-image-2": "shopify:\/\/shop_images\/travaux.png",
             "brasserie-localisation-container-master-titre": "Notre taverne",
             "image-carte": "shopify:\/\/shop_images\/carte.png",
-            "adresse": "",
-            "horaires-1": "",
-            "horaires-2": "",
-            "brasserie-processusfabrication-container-master-titre": ""
+            "adresse": "77 route de Montcenis 71200 Le Creusot",
+            "horaires-1": "Du lundi au vendredi de 10h00 à 18h00",
+            "horaires-2": "Le samedi et le dimanche de 9h30 à 19h00",
+            "brasserie-processusfabrication-container-master-titre": "Notre processus de fabrication"
           }
         }
       },
