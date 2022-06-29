@@ -6,8 +6,6 @@
   max-width: 60%;
   bottom: 50%;
   left: 60%;
-    min-height: calc(1.5rem + var(--buttons-border-width) * 2);
-
 }
 
 .card--card .quick-add {
@@ -204,7 +202,8 @@ quick-add-modal .product-form__buttons {
   min-width: 100%;
   box-sizing: border-box;
   font-size: 100%;
-  
+    min-height: calc(1.5rem + var(--buttons-border-width) * 2);
+
 }
 
 
