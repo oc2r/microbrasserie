@@ -41,8 +41,13 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "{{ product.metafields.custom.sous_titre_biere.value }}",
             "text_style": "subtitle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
           }
         },
         "price": {
@@ -65,11 +70,6 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "collapsible-row-0": {
@@ -123,11 +123,11 @@
       "block_order": [
         "title",
         "caption",
+        "description",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
