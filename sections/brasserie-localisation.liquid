@@ -7,8 +7,8 @@
         </div>
         <div class="brasserie-localisation-container-coordonnees">
             <p class="brasserie-localisation-adresse">Adresse : {{block.settings.adresse}}</p>
-            <p class="brasserie-localisation-horaires">Horaires : {{block.settings.horaires}}</p>
-            <p class="brasserie-localisation-tel">Tel : {{block.settings.telephone-1}}</p>
+            <p class="brasserie-localisation-horaires">Horaires : {{block.settings.horaires-1}}</p>
+            <p class="brasserie-localisation-tel">Tel : {{block.settings.horaires-2}}</p>
         </div>
     </div>
 </div>
@@ -90,8 +90,13 @@
                   },
 				{
                   	"type":"text",
-                  	"label":"telephone-1",
-                  	"id":"telephone-1"
+                  	"label":"horaires-1",
+                  	"id":"horaires-1"
+				},
+				{
+                  	"type":"text",
+                  	"label":"horaires-2",
+                  	"id":"horaires-2"
 				},
 				{
                     "type":"image_picker",
