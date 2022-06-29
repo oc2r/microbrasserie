@@ -322,7 +322,7 @@ a.product__text {
 }
 
 .product__text.caption-with-letter-spacing {
-  background-color: {{product.metafields.custom.couleur_type_biere}};
+  background-color: "{{product.metafields.custom.couleur_type_biere}}";
 
   position: absolute;
   text-transform: uppercase;
