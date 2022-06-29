@@ -9,13 +9,13 @@
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
-  .page-width{
-  	width: 50%;
-  margin-left: 0px;
+  
   }
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  	width: 50%;
+  margin-left: 0px;
     }
 
     @media screen and (min-width: 750px) {
