@@ -1,6 +1,6 @@
 {%for block in section.blocks %}
     <div class="catalog-category_container" >
-      	<div class="quisommesnous-container">
+      	<div style="background-image: url('{{block.settings.image-bg | img_url:'master'}}');" class="quisommesnous-container">
             <h2 class ="mundane catalog-category_title" >{{block.settings.titre-1}}</h2>
           	<span></span>
             <p class="presentation_text minion-font">{{block.settings.texte}}</p>
@@ -90,6 +90,11 @@
                             "label":"titre-1",
                             "id":"titre-1"
                         },
+						{
+                  	"type":"image_picker",
+                  	"label":"image-bg",
+                  	"id":"image-bg"
+                  },
 						{
                             "type":"text",
                             "label":"texte",
