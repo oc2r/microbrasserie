@@ -341,7 +341,7 @@ margin-left: 0;
                   <div class= "product_illustration"> 
   	 				<img src"{{custom.personnage_image | img_url:'master' }}">
 				</div>
-                  
+                  <img src="{{product.metafields.custom.personnage_image}}">
                   <div class ="caca">
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
