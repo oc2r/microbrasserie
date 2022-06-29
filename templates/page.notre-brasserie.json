@@ -111,11 +111,11 @@
         "70ef34ed-1c7b-4c39-a749-e9499256dfe3": {
           "type": "text",
           "settings": {
-            "titre": "Localisation",
+            "titre": "Notre taverne",
             "image-carte": "shopify:\/\/shop_images\/carte.png",
-            "adresse": "27 bis rue du progrès",
-            "code-postal": "93100",
-            "ville": "Montreuil",
+            "adresse": "77 route de Montcenis 71200 Le Creusot",
+            "code-postal": "",
+            "ville": "",
             "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
           }
         }
