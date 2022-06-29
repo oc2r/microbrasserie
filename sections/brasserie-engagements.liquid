@@ -4,7 +4,7 @@
     <div class="founder-container">
        <div class="founder">
         <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
-        <p class="description-founder">{{block.settings.foundertext-1}}</p>
+        <div class="description-founder">{{block.settings.foundertext-1}}</div>
         <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
 
        </div>
@@ -92,6 +92,11 @@
 
 .description-founder {
     display: none;
+}
+
+.founder:hover + .description-founder{
+	display: block;
+  color: red;
 }
 
 .brasserie-engagements-container-master{
