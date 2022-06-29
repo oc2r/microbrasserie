@@ -2,6 +2,7 @@
     <div style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');" class="header-banniere-container-master" >
         <div class="header-banniere-container">
             <h1 class ="header-banniere-titre" >{{block.settings.heading}}</h1>
+            <span class="separation-sous-titre"></span>
             <h3 class="header-banniere-description">{{block.settings.description}}</h3>
         </div>
     </div>
@@ -34,6 +35,14 @@
 	font-size: 75px;
     font-weight: 600;
 }
+
+.separation-sous-titre {
+	width: 400px;
+    height: 1px;
+	margin-block: 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
 
 .header-banniere-description{
 	font-family: "MundaneNouveauRegular"!important;
