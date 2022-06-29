@@ -1,7 +1,5 @@
 <div class ="main_product_container">
-    <div class ="alcool">
-      {{product.metafields.taux.alcool}}
-  </div>
+  
                     
 
 <section id="MainProduct-{{ section.id }}" class="page-width section-{{ section.id }}-padding" data-section="{{ section.id }}">
@@ -295,6 +293,9 @@
                 </div>
               </details>
             </div>
+          <div class ="alcool">
+      		{{product.metafields.taux.alcool}}
+  			</div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
