@@ -1,12 +1,678 @@
+{%for block in section.blocks %}
+    <div class="catalog-category_container" >
+      	<div style="background-image: url('{{block.settings.image-bg | img_url:'master'}}');" class="quisommesnous-container">
+            <h2 class ="mundane catalog-category_title" >{{block.settings.titre-1}}</h2>
+          	<span></span>
+            <p class="presentation_text minion-font">{{block.settings.texte}}</p>
+        </div>
+
+    </div>
+
+
+<div class="founder-engagement">
+    <div class="founder-container">
+       <div class="founder">
+        <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
+         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-1}}</p></div>
+        <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
+
+       </div>
+       <div class="founder">
+        <p class="name-founder mundane">{{block.settings.foundername-2}}</p>
+         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-2}}</p></div>
+        <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
+
+       </div>
+       <div class="founder">
+        <p class="name-founder mundane">{{block.settings.foundername-3}}</p>
+         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-3}}</p></div>
+         <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
+       </div>
+    </div>
+
+  	<div class="brasserie-engagements-container-master" >  
+      <h2 class="brasserie-engagements-container-master-titre mundane" >{{block.settings.titre-afterfoundertext-3}}</h2>
+      <span></span>
+      <div class="brasserie-engagements-container" >
+        <div class="brasserie-engagements-container-1">
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-1-image" src="{{block.settings.image-1-after-titreafterfoundertext-3 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-1-texte">{{block.settings.brasserie-engagements-1-texte}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-2-image" src="{{block.settings.brasserie-engagements-2-image | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-2-texte">{{block.settings.engagements-2-texte}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-3-image" src="{{block.settings.image-3 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-3-texte">{{block.settings.engagements-3-texte}}</p>
+            </div>
+        </div>
+        <div class="brasserie-engagements-container-2">
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-4-image" src="{{block.settings.image-4 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-4-texte">{{block.settings.engagements-4-texte}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-5-image" src="{{block.settings.image-5 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-5-texte">{{block.settings.engagements-5-texte}}</p>
+            </div>
+            <div class ="brasserie-engagements">
+                <img class ="brasserie-engagements-6-image" src="{{block.settings.image-6 | img_url:'master'}}" alt="">
+                <p class ="brasserie-engagements-6-texte">{{block.settings.engagements-6-texte}}</p>
+            </div>
+        </div>
+      </div>
+  	</div>
+</div>
+
+
+<div class="brasserie-notrehistoire-container-master" style="background-image: url('{{block.settings.brasserie-notrehistoire-container-master | img_url:'master'}}');">  
+	<h2 class="mundane brasserie-notrehistoire-container-master-titre" >{{block.settings.brasserie-notrehistoire-container-master-titre}}</h2>
+  	<span></span>
+    <div class="brasserie-notrehistoire-container" >
+        <div class="brasserie-notrehistoire-container-1">
+            <div class="brasserie-notrehistoire-container-1-texte">{{block.settings.brasserie-notrehistoire-container-1-texte}}</div>
+            <div class="brasserie-notrehistoire-container-1-image">
+            	<img class="brasserie-notrehistoire-container-1-image-1" src="{{block.settings.brasserie-notrehistoire-container-1-image-1 | img_url:'master'}}" alt="">
+            </div>
+        </div>
+        <div class="brasserie-notrehistoire-container-2">
+            <div class="brasserie-notrehistoire-container-2-image">
+            	<img class="brasserie-notrehistoire-container-2-image-2" src="{{block.settings.brasserie-notrehistoire-container-2-image-2 | img_url:'master'}}" alt="">
+            </div>
+            <div class="brasserie-notrehistoire-container-2-texte">{{block.settings.brasserie-notrehistoire-container-2-texte}}</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="brasserie-localisation-container-master" style="background-image: url('{{block.settings.brasserie-localisation-container-master | img_url:'master'}}');">  
+	<h2 class=" mundane brasserie-localisation-container-master-titre" >{{block.settings.brasserie-localisation-container-master-titre}}</h2>
+  	<span></span>
+    <div class="brasserie-localisation-container" >
+        <div class="brasserie-localisation-container-carte">
+            <img class="brasserie-localisation-carte" src="{{block.settings.image-carte | img_url:'master'}}" alt="">
+        </div>
+        <div class="brasserie-localisation-container-coordonnees">
+          <h4>Adresse : </h4>
+            <p class="brasserie-localisation-adresse">{{block.settings.adresse}}</p>
+          <h4 class="title-horaire">Horaires : </h4>
+            <p class="brasserie-localisation-horaires">{{block.settings.horaires-1}}</p>
+            <p class="brasserie-localisation-tel">{{block.settings.horaires-2}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="brasserie-processusfabrication-container-master" style="background-image: url('{{block.settings.brasserie-processusfabrication-container-master | img_url:'master'}}');">  
+	<h2 class="mundane brasserie-processusfabrication-container-master-titre" >{{block.settings.brasserie-processusfabrication-container-master-titre}}</h2>
+  	<span></span>
+    <div class="brasserie-processusfabrication-container" >
+        <img class="brasserie-processusfabrication" src="{{block.settings.brasserie-processusfabrication | img_url:'master'}}" alt="">
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+
+.catalog-category_container {
+	position: relative;
+	width: 100%;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+
+}
+
+.header-notre-brasserie {
+    position: relative;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding: 100px;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/page-brasserie-header_ba49d3cc-6232-438d-ace3-1b6827d6b35e.png?v=1656084922");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-notre-brasserie h1 {
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+.quisommesnous-container h2 {
+	font-size: 64px;
+	color: white;
+}
+
+.quisommesnous-container {
+	margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 	align-items: center;
+    text-align: justify;
+	width: 80%;
+	padding: 50px;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quisommesnous-container span {
+    height: 1px;
+    width: 25%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 25px;
+}
+
+.quisommesnous-container {
+	font-size: 28px;
+}
+
+
+
+
+.founder{
+position: relative;
+width: 390px;
+height:429px;}
+
+.founder-engagement {
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+}
+
+.founder-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+	width: 80%;
+    gap: 15px;
+}
+
+.founder img {
+    width: 390px;
+    height: 390px;
+    background-color: rgba(115, 115, 115, 0.95);
+	position: relative;
+	
+}
+
+.founder img:hover {display:none;}
+
+
+.name-founder {
+	width: 390px;
+	font-size: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.description-founder {
+width: 390px;
+    height: 390px;
+position: absolute;
+display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: rgba(115, 115, 115, 0.5);
+
+}
+
+.description-founder p {
+	width: 80%;
+	font-weight: 25;
+}
+
+
+
+.brasserie-engagements-container-master {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	position: relative;
+    width: 90%;
+	margin-top: 124px;
+	margin-inline: auto;
+	padding-block: 124px;
+}
+
+
+.brasserie-engagements-container-master span {
+    height: 2px;
+    width: 10%;
+    margin-inline: auto;
+	margin-top: 8px;
+	margin-bottom: 80px;
+	background: white;
+}
+
+.brasserie-engagements-container-master-titre{
+	font-size: 64px;
+	color: white;
+}
+
+.brasserie-engagements-container {
+    display: flex;
+    margin-inline: auto;
+	width: 90%;
+	justify-content: space-between;
+}
+
+.brasserie-engagements-container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.brasserie-engagements-container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.brasserie-engagements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-inline: 15px;
+}
+
+.brasserie-engagements img {
+    margin: 10px;
+}
+
+.brasserie-engagements p {
+	color: white;
+}
+
+.brasserie-engagements-3-texte {
+	color: red;
+}
+
+
+
+
+
+.brasserie-notrehistoire-container-master{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.brasserie-notrehistoire-container-master-titre{
+	margin-top: 15px;
+	font-size: 64px;
+
+<!-- 	margin-bottom: 50px; -->
+<!-- 	padding-bottom: 20px; -->
+<!-- 	border-bottom: 1px solid #ffffff; -->
+}
+
+.brasserie-notrehistoire-container-master span {
+    height: 1px;
+    width: 10%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 40px;
+}
+
+.brasserie-notrehistoire-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.brasserie-notrehistoire-container-1, .brasserie-notrehistoire-container-2{
+	width: 50%;
+}
+
+.brasserie-notrehistoire-container-1-texte, .brasserie-notrehistoire-container-2-texte {
+	font-size: 28px;
+	font-weight: 500;
+	padding: 20px;
+}
+
+.brasserie-notrehistoire-container-1-image, .brasserie-notrehistoire-container-2-image{
+}
+
+.brasserie-notrehistoire-container-1-image-1, .brasserie-notrehistoire-container-2-image-2{
+	width:100%;
+	object-fit: cover;    
+}
+
+
+.brasserie-localisation-container-master{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	padding-inline: 150px;
+	padding-block: 50px;
+}
+
+.brasserie-localisation-container-master span {
+    height: 1px;
+    width: 10%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 40px;
+}
+
+.brasserie-localisation-container-master-titre{
+
+	font-size: 64px;
+}
+
+.brasserie-localisation-container{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	max-height:100%;
+}
+
+.brasserie-localisation-container-carte, .brasserie-localisation-coordonnees{
+	width: 40%;
+	position:relative;
+}
+
+.brasserie-localisation-container-coordonnees h4 {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.brasserie-localisation-container-coordonnees p {
+	font-size: 28px;
+}
+
+.brasserie-localisation-carte{
+	width:100%;
+	max-height:100%;
+	object-fit: cover;
+}
+
+.brasserie-localisation-container-coordonnees{
+	margin-left: 50px;
+}
+
+.title-horaire {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+.brasserie-processusfabrication-container-master{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	padding-inline: 150px;
+	padding-block: 50px;
+}
+
+.brasserie-processusfabrication-container-master span {
+    height: 1px;
+    width: 30%;
+    background-color: white;
+	margin-top: 12px;
+	margin-bottom: 38px;
+}
+
+.brasserie-processusfabrication-container-master-titre{
+
+	font-size: 64px;
+}
+
+.brasserie-processusfabrication-container{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+}
+
+.brasserie-processusfabrication{
+	width:100%;
+}
+
+
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "new-brasserie-complete",
+    "class" : "new-brasserie-complete",
+    "settings": [
+        {
+            "type":"text",
+            "label":"titre",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"new-brasserie-complete",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"titre-1",
+                            "id":"titre-1"
+                        },
+						{
+                  	"type":"image_picker",
+                  	"label":"image-bg",
+                  	"id":"image-bg"
+                  },
+						{
+                            "type":"text",
+                            "label":"texte",
+                            "id":"texte"
+                        },
+						{
+                  "type":"image_picker",
+                  "label":"founderimage-1",
+                  "id":"founderimage-1"
+                  },
+                  {
+                    "type":"text",
+                    "label":"foundername-1",
+                    "id":"foundername-1"
+                  },
+				  {
+                    "type":"text",
+                    "label":"foundertext-1",
+                    "id":"foundertext-1"
+                  },
+				  {
+                  	"type":"image_picker",
+                  	"label":"founderimage-2",
+                  	"id":"founderimage-2"
+                  },
+				  {
+                    "type":"text",
+                    "label":"foundername-2",
+                    "id":"foundername-2"
+                  },
+				  {
+                    "type":"text",
+                    "label":"foundertext-1",
+                    "id":"foundertext-2"
+                  },
+				  {
+                  	"type":"image_picker",
+                  	"label":"founderimage-3",
+                  	"id":"founderimage-3"
+                  },
+				  {
+                    "type":"text",
+                    "label":"foundername-1",
+                    "id":"foundername-3"
+                  },
+				  {
+                    "type":"text",
+                    "label":"foundertext-3",
+                    "id":"foundertext-3"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"titre-afterfoundertext-3",
+                  	"id":"titreafterfoundertext-3"
+                  },
+				  {
+                  	"type":"image_picker",
+                  	"label":"image-1-after-titreafterfoundertext-3",
+                  	"id":"image-1-after-titreafterfoundertext-3"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"brasserie-engagements-1-texte",
+                  	"id":"brasserie-engagements-1-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"brasserie-engagements-2-image",
+                  	"id":"brasserie-engagements-2-image"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-2-texte",
+                  	"id":"engagements-2-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-3",
+                  	"id":"image-3"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-3-texte",
+                  	"id":"engagements-3-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-4",
+                  	"id":"image-4"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-4-texte",
+                  	"id":"engagements-4-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-5",
+                  	"id":"image-5"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-5-texte",
+                  	"id":"engagements-5-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-6",
+                  	"id":"image-6"
+                  },
+                  {
+                  	"type":"text",
+                  	"label":"engagements-6-texte",
+                  	"id":"engagements-6-texte"
+                  },
+					{
+                  	"type":"text",
+                  	"label":"brasserie-notrehistoire-container-master-titre",
+                  	"id":"brasserie-notrehistoire-container-master-titre"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"brasserie-notrehistoire-container-1-texte",
+                  	"id":"brasserie-notrehistoire-container-1-texte"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"brasserie-notrehistoire-container-1-image-1",
+                  	"id":"brasserie-notrehistoire-container-1-image-1"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"brasserie-notrehistoire-container-2-texte",
+                  	"id":"brasserie-notrehistoire-container-2-texte"
+                  },				
+				{
+                  	"type":"image_picker",
+                  	"label":"brasserie-notrehistoire-container-2-image-2",
+                  	"id":"brasserie-notrehistoire-container-2-image-2"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"brasserie-notrehistoire-container-master",
+                  	"id":"brasserie-notrehistoire-container-master"
+                  },
+					{
+                  	"type":"text",
+                  	"label":"brasserie-localisation-container-master-titre",
+                  	"id":"brasserie-localisation-container-master-titre"
+                  },
+				{
+                    "type":"image_picker",
+                    "label":"image-carte",
+                    "id":"image-carte"
+                },
+				{
+                  	"type":"text",
+                  	"label":"adresse",
+                  	"id":"adresse"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"horaires-1",
+                  	"id":"horaires-1"
+				},
+				{
+                  	"type":"text",
+                  	"label":"horaires-2",
+                  	"id":"horaires-2"
+				},
+				{
+                    "type":"image_picker",
+                    "label":"brasserie-processusfabrication-container-master",
+                    "id":"brasserie-processusfabrication-container-master"
+                },
+				{
+                  	"type":"text",
+                  	"label":"brasserie-processusfabrication-container-master-titre",
+                  	"id":"brasserie-processusfabrication-container-master-titre"
+                  },
+				{
+                    "type":"image_picker",
+                    "label":"brasserie-processusfabrication",
+                    "id":"brasserie-processusfabrication"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-fond",
+                    "id":"image-fond"
+                }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "new-brasserie-complete" 
+                    }
+                    ]
+
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
