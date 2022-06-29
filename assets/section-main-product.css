@@ -1,6 +1,5 @@
-type_biere {
-  width:100%;}
-
+.type_biere {
+  width: fit-content;}
 section {
   background-color: rgba(22, 22, 22, 1);
   margin-left: 0px;
