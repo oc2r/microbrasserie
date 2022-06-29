@@ -107,6 +107,9 @@
 
 .card__information {
 /*   grid-row-start: 2; */
+  position: relative;
+  bottom: 25%;
+  left: 10%;
   padding: 1.3rem 1rem;
 }
 
