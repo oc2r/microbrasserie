@@ -5,7 +5,7 @@
        <div class="founder">
         <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
         <div class="description-founder">{{block.settings.foundertext-1}}</div>
-        <img class="founder_img" src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
+        <img id="founder_img" src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
 
        </div>
        <div class="founder">
@@ -60,7 +60,7 @@
 
 <script>
 
-let hiddendiv = document.querySelector(".founder_img");
+let hiddendiv = document.getElementById(founder_img);
 
 hiddendiv.addEventListener('mouseover', function handleMouseOver() {
   hiddendiv.style.display = 'none';});
