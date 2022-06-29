@@ -111,7 +111,7 @@
   bottom: 25%;
   right: 10%;
   padding: 1.3rem 1rem;
-  padding-top: 200%;
+  padding-bottom: 200%;
 }
 
 .card:not(.ratio) > .card__content {
