@@ -188,7 +188,8 @@
             "adresse": "77 route de Montcenis 71200 Le Creusot",
             "horaires-1": "Du lundi au vendredi de 10h00 à 18h00",
             "horaires-2": "Le samedi et le dimanche de 9h30 à 19h00",
-            "brasserie-processusfabrication-container-master-titre": "Notre processus de fabrication"
+            "brasserie-processusfabrication-container-master-titre": "Notre processus de fabrication",
+            "brasserie-processusfabrication": "shopify:\/\/shop_images\/processus-fabrication.png"
           }
         }
       },
