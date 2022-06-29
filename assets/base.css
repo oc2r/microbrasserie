@@ -1197,8 +1197,8 @@ summary::-webkit-details-marker {
   display: block;
   position: absolute;
   top: 0;
-  left: 80%;
-  height: 35%;
+  left: 50%;
+  height: 15%;
   width: auto;
 }
 
