@@ -64,7 +64,7 @@
     </div>
     <div class="take-rdv">
         <h2 class="mundane">{{block.settings.titre-rdv}}</h2>
-        <span></span>
+        <span class="separation-sous-titre"></span>
         <ul>
             <li>
                 <h4>{{block.settings.titre-en-personne}}</h4>
@@ -291,6 +291,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.take-rdv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    width: 1152px;
+    background-color: goldenrod;
+}
+.take-rdv li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.take-rdv h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
 }
 
 
