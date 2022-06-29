@@ -57,10 +57,8 @@
   	</div>
 </div>
 {%endfor%}
-console.log("cacaca");
 
-
-{% javascript %}
+<script>
 console.log("caca");
 let hiddendiv = document.querySelector(".description-founder");
 
@@ -70,7 +68,7 @@ hiddendiv.addEventListener('mouseover', function handleMouseOver() {
 hiddendiv.addEventListener('mouseout', function handleMouseOut() {
   hiddendiv.style.display = 'none';});
 
-{% endjavascript %}  
+</script> 
 
 {% style %}
 
