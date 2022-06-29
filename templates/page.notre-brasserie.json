@@ -57,7 +57,7 @@
             "founderimage-2": "shopify:\/\/shop_images\/baptiste.png",
             "foundername-2": "Baptiste MELLET",
             "foundertext-2": "Après 6 années passées à Lille où il développe un goût aiguisé pour les bières artisanales, Baptiste décide de revenir au Creusot et de s’associer à la brasserie Autre Monde. Futur gérant de la taproom, Baptiste est également un authentique barman et notre responsable clientèle. Capable de différencier les IPA en blind test, on le trouve généralement enfermé dans le frigo à houblons.",
-            "founderimage-3": "shopify:\/\/shop_images\/image_12.png",
+            "founderimage-3": "shopify:\/\/shop_images\/vincent.png",
             "foundername-3": "Vincent MANIEZ",
             "foundertext-3": "Originaire du Creusot, Vincent brasse en amateur depuis 2018. En 2020, il se forme au métier d’artisan-brasseur à l’ENILBIO et, après plusieurs expériences dans des brasseries artisanales de la région, il est fier aujourd'hui d'être notre Artisan Brasseur et gérant de la brasserie. Il aime nous partager sa passion pour les lambics et les sours, bières légèrement acidulées, et a toujours une recette prête à être testée !",
             "titre": "NOS ENGAGEMENTS",
@@ -91,7 +91,7 @@
           "settings": {
             "titre": "Notre histoire",
             "texte-1": "Notre aventure commence en 2020 lors de la rencontre entre    En mai 2022, nous brassons et embouteiillons notre première bière chez Two Dudes, un ami brasseur. C’est en juin que nous la présentons pour la première fois : l’Aventurier. C’est une blonde de type pale ale au houblon cascade. Avec ses reflets dorés et ses notes de miel, elle fut idéale pour l’été.   En juillet",
-            "image-1": "shopify:\/\/shop_images\/team.png",
+            "image-1": "shopify:\/\/shop_images\/travaux.png",
             "texte-2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "image-2": "shopify:\/\/shop_images\/travaux.png",
             "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
@@ -111,7 +111,7 @@
         "70ef34ed-1c7b-4c39-a749-e9499256dfe3": {
           "type": "text",
           "settings": {
-            "titre": "Localistaion",
+            "titre": "Localisation",
             "image-carte": "shopify:\/\/shop_images\/carte.png",
             "adresse": "27 bis rue du progrès",
             "code-postal": "93100",
