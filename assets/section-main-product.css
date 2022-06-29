@@ -313,11 +313,7 @@ fieldset.product-form__input .form__label {
 .product__text {
   margin-bottom: 0;
 }
-.product__text caption-with-letter-spacing{
-   position: absolute;
-  top: 0px;
-  left: 0px;
-}
+
   
 a.product__text {
   display: block;
@@ -327,6 +323,8 @@ a.product__text {
 
 .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
+  top: 100px;
+  left: 0px;
 }
 
 .product__title {
