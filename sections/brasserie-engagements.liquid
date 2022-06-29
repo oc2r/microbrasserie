@@ -62,7 +62,9 @@
 var hiddendiv = document.querySelector(".description-founder");
 
 hiddendiv.addEventListener('mouseover', function handleMouseOver() {
-  hiddendiv.style.display = 'block';});
+          this.classList.remove('description-founder');
+        this.classList.add('description-founder-show');
+})
 
 hiddendiv.addEventListener('mouseout', function handleMouseOut() {
   hiddendiv.style.display = 'none';});
@@ -104,6 +106,10 @@ hiddendiv.addEventListener('mouseout', function handleMouseOut() {
 .description-founder {
     display: none;
 }
+description-founder-show{
+ display: block;
+}
+
 
 .brasserie-engagements-container-master{
 	display:flex;
