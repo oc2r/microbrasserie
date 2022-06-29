@@ -118,6 +118,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "07beb4bd-6cde-403b-b9eb-19d42a89b856": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.sous_titre.value }}",
+            "text_style": "uppercase"
+          }
         }
       },
       "block_order": [
@@ -132,7 +139,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "07beb4bd-6cde-403b-b9eb-19d42a89b856"
       ],
       "settings": {
         "enable_sticky_info": true,
