@@ -321,7 +321,11 @@ a.product__text {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.product__text.caption-with-letter-spacing {
+.type_biere{
+  color: blue;}
+
+  
+  .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
 
 }
