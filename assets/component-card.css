@@ -1,3 +1,9 @@
+.circle-bg {
+  position: absolute;
+  left:25%;
+  top:25%;
+}
+
 .card-wrapper {
   color: inherit;
   height: 100%;
