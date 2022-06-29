@@ -322,6 +322,7 @@ a.product__text {
 }
 
 .product__text.caption-with-letter-spacing {
+  position: absolute;
   text-transform: uppercase;
   top: 100px;
   left: 0px;
