@@ -2,7 +2,7 @@
     <div style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');" class="header-banniere-container-master" >
         <div class="header-banniere-container">
             <h1 class ="header-banniere-titre" >{{block.settings.heading}}</h1>
-            <p class="header-banniere-description">{{block.settings.description}}</p>
+            <h3 class="header-banniere-description">{{block.settings.description}}</h3>
         </div>
     </div>
 {%endfor%}
@@ -36,7 +36,9 @@
 }
 
 .header-banniere-description{
-    font-size: 1.5rem;
+	font-family: "MundaneNouveauRegular"!important;
+    font-size: 45px;
+    text-align: center;
 	color: #FFFFFF;
 }
 
