@@ -4,20 +4,20 @@
     <div class="founder-container">
        <div class="founder">
         <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
-        <div class="description-founder">{{block.settings.foundertext-1}}</div>
+        <p class="description-founder">{{block.settings.foundertext-1}}</p>
         <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
 
        </div>
        <div class="founder">
         <p class="name-founder mundane">{{block.settings.foundername-2}}</p>
-        <div class="description-founder">{{block.settings.foundertext-2}}</div>
+        <p class="description-founder">{{block.settings.foundertext-2}}</p>
         <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
 
        </div>
        <div class="founder">
+        <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
         <p class="name-founder mundane">{{block.settings.foundername-3}}</p>
-        <div class="description-founder">{{block.settings.foundertext-3}}</div>
-         <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
+        <p class="description-founder">{{block.settings.foundertext-3}}</p>
        </div>
     </div>
 
@@ -60,10 +60,6 @@
 
 {% style %}
 
-.founder{
-width: 390px;
-height:429px;}
-
 .founder-engagement {
 	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
 }
@@ -83,16 +79,11 @@ height:429px;}
     width: 390px;
     height: 390px;
     background-color: antiquewhite;
-	position: relative;
-	
 }
-
-.founder img:hover {display:none;}
-
 
 .name-founder {
     margin-inline: auto;
-	font-size: 35px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,13 +91,8 @@ height:429px;}
 }
 
 .description-founder {
-width: 390px;
-    height: 390px;
-position: absolute;
-
+    display: none;
 }
-
-
 
 .brasserie-engagements-container-master{
 	display:flex;
@@ -122,14 +108,12 @@ position: absolute;
     height: 2px;
     width: 30%;
     margin-inline: auto;
-	margin-top: 8px;
-	margin-bottom: 80px;
 }
 
 .brasserie-engagements-container-master-titre{
-	margin-top: 40px;
 	margin-bottom: 20px;
-	font-size: 64px;
+	font-size: 60px;
+	font-weight: bold;
 	color: white;
 }
 
