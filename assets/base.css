@@ -1197,9 +1197,9 @@ summary::-webkit-details-marker {
   display: block;
   position: absolute;
   top: 0;
-  left: 50%;
-  height: 15%;
-  width: auto;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .media > img {
