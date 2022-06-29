@@ -4,8 +4,8 @@
     <div class="founder-container">
        <div class="founder">
         <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
-        <div class="description-founder" id="founder1">{{block.settings.foundertext-1}}</div>
-        <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
+        <div class="description-founder">{{block.settings.foundertext-1}}</div>
+        <img class="founder_img" src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
 
        </div>
        <div class="founder">
@@ -60,13 +60,13 @@
 
 <script>
 
-let hiddendiv = document.getElementById(founder1);
+let hiddendiv = document.querySelector(".founder_img");
 
 hiddendiv.addEventListener('mouseover', function handleMouseOver() {
-  hiddendiv.style.display = 'block';});
+  hiddendiv.style.display = 'none';});
 
 hiddendiv.addEventListener('mouseout', function handleMouseOut() {
-  hiddendiv.style.display = 'none';});
+  hiddendiv.style.display = 'block';});
 
 </script> 
 
@@ -88,6 +88,7 @@ hiddendiv.addEventListener('mouseout', function handleMouseOut() {
 }
 
 .founder img {
+	display: block;
     width: 390px;
     height: 390px;
     background-color: antiquewhite;
