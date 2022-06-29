@@ -2,6 +2,7 @@
 <div class="page-service">
     <div style="background-image: url('{{block.settings.bg-header | img_url:'master'}}');" class="header-service-container">
         <h1>{{block.settings.titre-page}}</h1>
+      	<span></span>
         <p class="mundane">{{block.settings.sous-titre-page}}</p>
     </div>
   <div class="visite-h2">
@@ -85,6 +86,11 @@
 .header-service-container h1 {
 	font-size: 75px;
     font-weight: 600;
+}
+
+.header-service-container span {
+	height: 1px;
+	width: 100px;
 }
 
 .header-service-container p {
