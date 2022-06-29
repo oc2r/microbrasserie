@@ -321,8 +321,7 @@ a.product__text {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.type_biere{
-  color: blue;}
+
 
   
   .product__text.caption-with-letter-spacing {
@@ -345,7 +344,6 @@ a.product__text {
 
 .product__title + .product__text.caption-with-letter-spacing {
   margin-top: -1.5rem;
-  color: #d36a28;
 }
 
 .product__text.caption-with-letter-spacing + .product__title {
