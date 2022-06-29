@@ -2,6 +2,9 @@ section {
   background-color: rgba(22, 22, 22, 1);
 }
 
+.product_illustration { width: 100px;}
+
+
 
 .product {
   margin: 0;
