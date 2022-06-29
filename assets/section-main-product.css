@@ -618,6 +618,8 @@ a.product__text {
 .product__media-item > * {
   display: block;
   position: relative;
+  width: 30%;
+  left: 35%;
 }
 
 .product__media-toggle {
