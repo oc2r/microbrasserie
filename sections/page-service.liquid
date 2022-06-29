@@ -3,7 +3,7 @@
     <div style="background-image: url('{{block.settings.bg-header | img_url:'master'}}');" class="header-service-container">
         <h1>{{block.settings.titre-page}}</h1>
       	<span class="separation-sous-titre"></span>
-        <h3 class="mundane">{{block.settings.sous-titre-page}}</h3>
+        <p class="mundane">{{block.settings.sous-titre-page}}</p>
     </div>
   <div class="visite-h2">
       <h2 class="mundane rendre-visite">{{block.settings.rendre-visite}}</h2>
@@ -26,16 +26,29 @@
           </div>
         </div>
     </div>
-
-    <!-- div deja faite avant, la mettre ici -->
-    <div class="visite-brasserie">
-        <div style="background-image: url('{{block.settings.img-atelier | img_url:'master'}}');" class="img-visite-brasserie">{{block.settings.img-atelier}}</div>
-        <div class="visite-brasserie-text-container">
-            <h3 class="mundane">{{block.settings.titre-atelier}}</h3>
+  
+  	<div class="atelier-brassage">
+        <div class="atelier-text-container">
+          <div class="atelier-brassage-text-content">
+            <h3>{{block.settings.titre-atelier}}</h3>
             <p>{{block.settings.text-atelier}}</p>
             <div class="time-price">
                 <p>{{block.settings.time-atelier}}</p>
                 <p>{{block.settings.prix-atelier}}</p>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url('{{block.settings.img-atelier | img_url:'master'}}');" class="img-visite-brasserie">dfbddddfffsvsdvsd</div>
+    </div>
+
+    <div class="visite-brasserie">
+        <div style="background-image: url('{{block.settings.img-visite | img_url:'master'}}');" class="img-visite-brasserie">fdddbfbfsssvdds</div>
+        <div class="visite-brasserie-text-container">
+            <h3>{{block.settings.titre-visite}}</h3>
+            <p>{{block.settings.text-visite}}</p>
+            <div class="time-price">
+                <p>{{block.settings.time-visite}}</p>
+                <p>{{block.settings.prix-visite}}</p>
             </div>
         </div>
     </div>
@@ -99,7 +112,7 @@
 	background: white;
 }
 
-.header-service-container h3 {
+.header-service-container p {
 	font-size: 45px;
     text-align: center;
 }
@@ -159,7 +172,7 @@
 }
 
 .louer-tireuse-text-content p {
-	paading-top: 25px;
+	padding-top: 25px;
 }
 
 .louer-tireuse-text-container ul {
@@ -183,6 +196,48 @@
 
 .caution {
     margin-top: 30px;
+}
+
+.atelier-text-container {
+    background: rgba(70, 70, 70, 0.45);
+	background: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 80%;
+	height: 100%;
+}
+
+.atelier-brassage-text-content {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 80%;
+	height: 80%;
+	background: red;
+}
+
+.atelier-brassage-text-content p {
+	text-align: center;
+}
+
+.atelier-brassage-text-container h3 {
+	font-size: 64px;
+	margin-bottom: 10px;
+}
+
+.time-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.img-visite-brasserie {
+    width: 600px;
+    height: 400px;
 }
 
 
