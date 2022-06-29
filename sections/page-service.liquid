@@ -1,8 +1,10 @@
 {%for block in section.blocks %}
 <div class="page-service">
     <div style="background-image: url('{{block.settings.bg-header | img_url:'master'}}');" class="header-service-container">
+      <div>
         <h1>{{block.settings.titre-page}}</h1>
       	<span></span>
+      </div>
         <p class="mundane">{{block.settings.sous-titre-page}}</p>
     </div>
   <div class="visite-h2">
@@ -90,7 +92,7 @@
 
 .header-service-container span {
 	height: 1px;
-	width: 100px;
+	width: 100%;
 	background: white;
 }
 
