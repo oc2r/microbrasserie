@@ -1,6 +1,7 @@
 {%for block in section.blocks %}
 <div class="brasserie-notrehistoire-container-master" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">  
 	<h2 class="mundane brasserie-notrehistoire-container-master-titre" >{{block.settings.titre}}</h2>
+  	<span></span>
     <div class="brasserie-notrehistoire-container" >
         <div class="brasserie-notrehistoire-container-1">
             <div class="brasserie-notrehistoire-container-1-texte">{{block.settings.texte-1}}</div>
@@ -31,6 +32,14 @@
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ffffff;
 	font-size: 64px;
+}
+
+.brasserie-notrehistoire-container-master span {
+    height: 1px;
+    width: 25%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 25px;
 }
 
 .brasserie-notrehistoire-container{
