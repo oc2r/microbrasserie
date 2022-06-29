@@ -4,9 +4,11 @@
   top:25%;
 }
 
+.circle-bg {
+  width: 65%;}
+
 .circles{
-height:210px;
-width:210px;}
+width:100%;}
 
 .card-wrapper {
   color: inherit;
