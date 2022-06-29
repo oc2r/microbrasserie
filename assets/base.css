@@ -1198,10 +1198,9 @@ summary::-webkit-details-marker {
   max-width: 100%;
   position: absolute;
   top: 0;
- 
-      left: 80%;
-    height: 35%;
-    width: auto;
+  left: 80%;
+  height: 35%;
+  width: auto;
 }
 
 .media > img {
