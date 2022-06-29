@@ -9,6 +9,7 @@
   </div>
     <div class="louer-tireuse">
         <div class="img-louer-tireuse">
+      		<img src="url('{{block.settings.bg-header | img_url:'master'}}'" alt="image louer tireuse">
       	</div>
         <div class="louer-tireuse-text-container">
             <h3 class="mundane">{{block.settings.location-titre}}</h3>
@@ -91,7 +92,7 @@
 
 .img-louer-tireuse {
 		height: 300px;
-	    background: url('//cdn.shopify.com/s/files/1/0650/7049/8025/files/Group_246.png?v=1656431415');
+	    background: "url('{{block.settings.bg-header | img_url:'master'}}'";
 }
 .img-louer-tireuse img {
 	height: 577px;
