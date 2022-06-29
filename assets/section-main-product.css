@@ -312,11 +312,13 @@ fieldset.product-form__input .form__label {
 
 .product__text {
   position: absolute;
-  top: 100px;
-  left: 0px;
   margin-bottom: 0;
 }
-
+.product__text caption-with-letter-spacing{
+  top: 100px;
+  left: 0px;
+}
+  
 a.product__text {
   display: block;
   text-decoration: none;
