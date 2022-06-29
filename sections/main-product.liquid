@@ -16,7 +16,7 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  	width: 63%;
+  	width: 50%;
   margin-left: 0px;
     margin-right: 0px;
 
@@ -29,9 +29,9 @@
       }
     }
   .pipi {
-  width: 37%;
+  width: 50%;
   	  	background: url("{{product.metafields.custom.illustration | img_url :'master'}}");
-  	background-position: left;
+  	background-position: center;
   	backgroung-size: cover;
   	background-repeat: no-repeat;
   	
