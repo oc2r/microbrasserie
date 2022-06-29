@@ -1,6 +1,7 @@
 {%for block in section.blocks %}
 <div class="brasserie-localisation-container-master" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">  
 	<h2 class=" mundane brasserie-localisation-container-master-titre" >{{block.settings.titre}}</h2>
+  	<span></span>
     <div class="brasserie-localisation-container" >
         <div class="brasserie-localisation-container-carte">
             <img class="brasserie-localisation-carte" src="{{block.settings.image-carte | img_url:'master'}}" alt="">
@@ -26,10 +27,16 @@
 	padding-block: 50px;
 }
 
+.brasserie-localisation-container-master span {
+    height: 1px;
+    width: 10%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 25px;
+}
+
 .brasserie-localisation-container-master-titre{
-	margin-bottom: 50px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #ffffff;
+
 	font-size: 64px;
 }
 
