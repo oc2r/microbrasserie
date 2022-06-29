@@ -55,6 +55,7 @@
     },
     "1656335755d6ede27c": {
       "type": "header-banniere",
+      "disabled": true,
       "blocks": {
         "dc967ff8-b129-453e-a96d-3d56d113a006": {
           "type": "text",
@@ -74,6 +75,7 @@
     },
     "16563596598cdb8a31": {
       "type": "service-page-section-left",
+      "disabled": true,
       "blocks": {
         "6de6ec15-5145-4cce-96bb-ec60d6324ad6": {
           "type": "text",
@@ -94,6 +96,7 @@
     },
     "1656360444a5989b7d": {
       "type": "service-page-right",
+      "disabled": true,
       "blocks": {
         "faf116e6-406c-40f9-a534-a4d976ab2268": {
           "type": "text",
@@ -113,19 +116,7 @@
     },
     "1656361137d93271a2": {
       "type": "service-page-section-left",
-      "blocks": {
-        "907e62ec-49f2-427b-b392-6de9a3b68285": {
-          "type": "text",
-          "settings": {
-            "image-service-page-left": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png",
-            "title-service-page-left": "Visite de la brasserie",
-            "description-service-page-left": "Venez nous rencontrer, pénetrez dans les backstages de la brasserie, et évéillez vos papilles avec un atelier de dégustation de nos meilleures bières"
-          }
-        }
-      },
-      "block_order": [
-        "907e62ec-49f2-427b-b392-6de9a3b68285"
-      ],
+      "disabled": true,
       "settings": {
         "heading": ""
       }
