@@ -110,7 +110,6 @@
   position: relative;
   bottom: 25%;
   left: 10%;
-  padding: 1.3rem 1rem;
 }
 
 .card:not(.ratio) > .card__content {
