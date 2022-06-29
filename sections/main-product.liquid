@@ -1,4 +1,8 @@
 <div class ="main_product_container">
+    <div class ="alcool">
+      {{product.metafields.taux.alcool}}
+  </div>
+                    
 
 <section id="MainProduct-{{ section.id }}" class="page-width section-{{ section.id }}-padding" data-section="{{ section.id }}">
 
@@ -383,9 +387,7 @@
                         {%- endfor -%}
                       </fieldset>
                   {%- endfor -%}
-                   <div class ="alcool">
-                    {{product.metafields.taux.alcool}}
-                  </div>
+                 
                     
                   </div>
                   <script type="application/json">
