@@ -69,7 +69,8 @@
 }
 
 .card .media {
-  width: 100%;
+  width: 30%;
+  left: 35%;
 }
 
 .card__media {
