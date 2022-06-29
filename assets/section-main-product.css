@@ -312,7 +312,7 @@ fieldset.product-form__input .form__label {
 
 .product__text {
   position: absolute;
-  top: 0px;
+  top: 20px;
   margin-bottom: 0;
 }
 
