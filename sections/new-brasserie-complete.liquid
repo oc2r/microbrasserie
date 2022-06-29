@@ -1,4 +1,5 @@
 {%for block in section.blocks %}
+<div style="background-image: url('{{block.settings.image-bg-page | img_url:'master'}}');" class="page-notre-brasserie">
     <div class="catalog-category_container" >
       	<div style="background-image: url('{{block.settings.image-bg | img_url:'master'}}');" class="quisommesnous-container">
             <h2 class ="mundane catalog-category_title" >{{block.settings.titre-1}}</h2>
@@ -9,109 +10,110 @@
     </div>
 
 
-<div class="founder-engagement">
-    <div class="founder-container">
-       <div class="founder">
-        <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
-         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-1}}</p></div>
-        <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
+  <div class="founder-engagement">
+      <div class="founder-container">
+         <div class="founder">
+          <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
+           <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-1}}</p></div>
+          <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
 
-       </div>
-       <div class="founder">
-        <p class="name-founder mundane">{{block.settings.foundername-2}}</p>
-         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-2}}</p></div>
-        <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
+         </div>
+         <div class="founder">
+          <p class="name-founder mundane">{{block.settings.foundername-2}}</p>
+           <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-2}}</p></div>
+          <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
 
-       </div>
-       <div class="founder">
-        <p class="name-founder mundane">{{block.settings.foundername-3}}</p>
-         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-3}}</p></div>
-         <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
-       </div>
-    </div>
+         </div>
+         <div class="founder">
+          <p class="name-founder mundane">{{block.settings.foundername-3}}</p>
+           <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-3}}</p></div>
+           <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
+         </div>
+      </div>
 
-  	<div class="brasserie-engagements-container-master" >  
-      <h2 class="brasserie-engagements-container-master-titre mundane" >{{block.settings.titre-afterfoundertext-3}}</h2>
-      <span></span>
-      <div class="brasserie-engagements-container" >
-        <div class="brasserie-engagements-container-1">
-            <div class ="brasserie-engagements">
-                <img class ="brasserie-engagements-1-image" src="{{block.settings.image-1-after-titreafterfoundertext-3 | img_url:'master'}}" alt="">
-                <p class ="brasserie-engagements-1-texte">{{block.settings.brasserie-engagements-1-texte}}</p>
-            </div>
-            <div class ="brasserie-engagements">
-                <img class ="brasserie-engagements-2-image" src="{{block.settings.brasserie-engagements-2-image | img_url:'master'}}" alt="">
-                <p class ="brasserie-engagements-2-texte">{{block.settings.engagements-2-texte}}</p>
-            </div>
-            <div class ="brasserie-engagements">
-                <img class ="brasserie-engagements-3-image" src="{{block.settings.image-3 | img_url:'master'}}" alt="">
-                <p class ="brasserie-engagements-3-texte">{{block.settings.engagements-3-texte}}</p>
-            </div>
-        </div>
-        <div class="brasserie-engagements-container-2">
-            <div class ="brasserie-engagements">
-                <img class ="brasserie-engagements-4-image" src="{{block.settings.image-4 | img_url:'master'}}" alt="">
-                <p class ="brasserie-engagements-4-texte">{{block.settings.engagements-4-texte}}</p>
-            </div>
-            <div class ="brasserie-engagements">
-                <img class ="brasserie-engagements-5-image" src="{{block.settings.image-5 | img_url:'master'}}" alt="">
-                <p class ="brasserie-engagements-5-texte">{{block.settings.engagements-5-texte}}</p>
-            </div>
-            <div class ="brasserie-engagements">
-                <img class ="brasserie-engagements-6-image" src="{{block.settings.image-6 | img_url:'master'}}" alt="">
-                <p class ="brasserie-engagements-6-texte">{{block.settings.engagements-6-texte}}</p>
-            </div>
+      <div class="brasserie-engagements-container-master" >  
+        <h2 class="brasserie-engagements-container-master-titre mundane" >{{block.settings.titre-afterfoundertext-3}}</h2>
+        <span></span>
+        <div class="brasserie-engagements-container" >
+          <div class="brasserie-engagements-container-1">
+              <div class ="brasserie-engagements">
+                  <img class ="brasserie-engagements-1-image" src="{{block.settings.image-1-after-titreafterfoundertext-3 | img_url:'master'}}" alt="">
+                  <p class ="brasserie-engagements-1-texte">{{block.settings.brasserie-engagements-1-texte}}</p>
+              </div>
+              <div class ="brasserie-engagements">
+                  <img class ="brasserie-engagements-2-image" src="{{block.settings.brasserie-engagements-2-image | img_url:'master'}}" alt="">
+                  <p class ="brasserie-engagements-2-texte">{{block.settings.engagements-2-texte}}</p>
+              </div>
+              <div class ="brasserie-engagements">
+                  <img class ="brasserie-engagements-3-image" src="{{block.settings.image-3 | img_url:'master'}}" alt="">
+                  <p class ="brasserie-engagements-3-texte">{{block.settings.engagements-3-texte}}</p>
+              </div>
+          </div>
+          <div class="brasserie-engagements-container-2">
+              <div class ="brasserie-engagements">
+                  <img class ="brasserie-engagements-4-image" src="{{block.settings.image-4 | img_url:'master'}}" alt="">
+                  <p class ="brasserie-engagements-4-texte">{{block.settings.engagements-4-texte}}</p>
+              </div>
+              <div class ="brasserie-engagements">
+                  <img class ="brasserie-engagements-5-image" src="{{block.settings.image-5 | img_url:'master'}}" alt="">
+                  <p class ="brasserie-engagements-5-texte">{{block.settings.engagements-5-texte}}</p>
+              </div>
+              <div class ="brasserie-engagements">
+                  <img class ="brasserie-engagements-6-image" src="{{block.settings.image-6 | img_url:'master'}}" alt="">
+                  <p class ="brasserie-engagements-6-texte">{{block.settings.engagements-6-texte}}</p>
+              </div>
+          </div>
         </div>
       </div>
-  	</div>
-</div>
+  </div>
 
 
-<div class="brasserie-notrehistoire-container-master" style="background-image: url('{{block.settings.brasserie-notrehistoire-container-master | img_url:'master'}}');">  
-	<h2 class="mundane brasserie-notrehistoire-container-master-titre" >{{block.settings.brasserie-notrehistoire-container-master-titre}}</h2>
-  	<span></span>
-    <div class="brasserie-notrehistoire-container" >
-        <div class="brasserie-notrehistoire-container-1">
-            <div class="brasserie-notrehistoire-container-1-texte">{{block.settings.brasserie-notrehistoire-container-1-texte}}</div>
-            <div class="brasserie-notrehistoire-container-1-image">
-            	<img class="brasserie-notrehistoire-container-1-image-1" src="{{block.settings.brasserie-notrehistoire-container-1-image-1 | img_url:'master'}}" alt="">
-            </div>
-        </div>
-        <div class="brasserie-notrehistoire-container-2">
-            <div class="brasserie-notrehistoire-container-2-image">
-            	<img class="brasserie-notrehistoire-container-2-image-2" src="{{block.settings.brasserie-notrehistoire-container-2-image-2 | img_url:'master'}}" alt="">
-            </div>
-            <div class="brasserie-notrehistoire-container-2-texte">{{block.settings.brasserie-notrehistoire-container-2-texte}}</div>
-        </div>
-    </div>
-</div>
+  <div class="brasserie-notrehistoire-container-master" style="background-image: url('{{block.settings.brasserie-notrehistoire-container-master | img_url:'master'}}');">  
+      <h2 class="mundane brasserie-notrehistoire-container-master-titre" >{{block.settings.brasserie-notrehistoire-container-master-titre}}</h2>
+      <span></span>
+      <div class="brasserie-notrehistoire-container" >
+          <div class="brasserie-notrehistoire-container-1">
+              <div class="brasserie-notrehistoire-container-1-texte">{{block.settings.brasserie-notrehistoire-container-1-texte}}</div>
+              <div class="brasserie-notrehistoire-container-1-image">
+                  <img class="brasserie-notrehistoire-container-1-image-1" src="{{block.settings.brasserie-notrehistoire-container-1-image-1 | img_url:'master'}}" alt="">
+              </div>
+          </div>
+          <div class="brasserie-notrehistoire-container-2">
+              <div class="brasserie-notrehistoire-container-2-image">
+                  <img class="brasserie-notrehistoire-container-2-image-2" src="{{block.settings.brasserie-notrehistoire-container-2-image-2 | img_url:'master'}}" alt="">
+              </div>
+              <div class="brasserie-notrehistoire-container-2-texte">{{block.settings.brasserie-notrehistoire-container-2-texte}}</div>
+          </div>
+      </div>
+  </div>
 
 
-<div class="brasserie-localisation-container-master" style="background-image: url('{{block.settings.brasserie-localisation-container-master | img_url:'master'}}');">  
-	<h2 class=" mundane brasserie-localisation-container-master-titre" >{{block.settings.brasserie-localisation-container-master-titre}}</h2>
-  	<span></span>
-    <div class="brasserie-localisation-container" >
-        <div class="brasserie-localisation-container-carte">
-            <img class="brasserie-localisation-carte" src="{{block.settings.image-carte | img_url:'master'}}" alt="">
-        </div>
-        <div class="brasserie-localisation-container-coordonnees">
-          <h4>Adresse : </h4>
-            <p class="brasserie-localisation-adresse">{{block.settings.adresse}}</p>
-          <h4 class="title-horaire">Horaires : </h4>
-            <p class="brasserie-localisation-horaires">{{block.settings.horaires-1}}</p>
-            <p class="brasserie-localisation-tel">{{block.settings.horaires-2}}</p>
-        </div>
-    </div>
-</div>
+  <div class="brasserie-localisation-container-master" style="background-image: url('{{block.settings.brasserie-localisation-container-master | img_url:'master'}}');">  
+      <h2 class=" mundane brasserie-localisation-container-master-titre" >{{block.settings.brasserie-localisation-container-master-titre}}</h2>
+      <span></span>
+      <div class="brasserie-localisation-container" >
+          <div class="brasserie-localisation-container-carte">
+              <img class="brasserie-localisation-carte" src="{{block.settings.image-carte | img_url:'master'}}" alt="">
+          </div>
+          <div class="brasserie-localisation-container-coordonnees">
+            <h4>Adresse : </h4>
+              <p class="brasserie-localisation-adresse">{{block.settings.adresse}}</p>
+            <h4 class="title-horaire">Horaires : </h4>
+              <p class="brasserie-localisation-horaires">{{block.settings.horaires-1}}</p>
+              <p class="brasserie-localisation-tel">{{block.settings.horaires-2}}</p>
+          </div>
+      </div>
+  </div>
 
 
 
-<div class="brasserie-processusfabrication-container-master" style="background-image: url('{{block.settings.brasserie-processusfabrication-container-master | img_url:'master'}}');">  
-	<h2 class="mundane brasserie-processusfabrication-container-master-titre" >{{block.settings.brasserie-processusfabrication-container-master-titre}}</h2>
-  	<span></span>
-    <div class="brasserie-processusfabrication-container" >
-        <img class="brasserie-processusfabrication" src="{{block.settings.brasserie-processusfabrication | img_url:'master'}}" alt="">
-    </div>
+  <div class="brasserie-processusfabrication-container-master" style="background-image: url('{{block.settings.brasserie-processusfabrication-container-master | img_url:'master'}}');">  
+      <h2 class="mundane brasserie-processusfabrication-container-master-titre" >{{block.settings.brasserie-processusfabrication-container-master-titre}}</h2>
+      <span></span>
+      <div class="brasserie-processusfabrication-container" >
+          <img class="brasserie-processusfabrication" src="{{block.settings.brasserie-processusfabrication | img_url:'master'}}" alt="">
+      </div>
+  </div>
 </div>
 {%endfor%}
 
@@ -661,6 +663,11 @@ display: flex;
                     "type":"image_picker",
                     "label":"image-fond",
                     "id":"image-fond"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-bg-page",
+                    "id":"image-bg-page"
                 }
                     ]
      } 
