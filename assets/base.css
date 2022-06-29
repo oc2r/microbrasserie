@@ -1,9 +1,7 @@
 body{overflow-x: hidden;
   background-color: rgba(22, 22, 22, 1);
 }
-.locale-selectors__container {
-display: none !important;
-}
+
 /* Color custom properties */
 
 

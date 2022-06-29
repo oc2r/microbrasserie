@@ -146,6 +146,49 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1656545164f099a98d": {
+      "type": "new-brasserie-complete",
+      "blocks": {
+        "0603ce6e-0611-4cdc-803d-446ca398c952": {
+          "type": "text",
+          "settings": {
+            "titre-1": "Qui sommes nous ?",
+            "image-bg": "shopify:\/\/shop_images\/Group_222.png",
+            "texte": "Amis passionnés de houblons, de malts, de petites levures de tous horizons, de bière artisanale brassée avec amour, préparez vous pour ce grand périple : celui de la Brasserie Artisanale Autre Monde. Cela fait maintenant 2 ans que nous nous préparons pour ce voyage, et nous travaillons chaque jour pour le grand départ !",
+            "founderimage-1": "shopify:\/\/shop_images\/mathieu.png",
+            "foundername-1": "",
+            "foundertext-1": "",
+            "founderimage-2": "shopify:\/\/shop_images\/baptiste.png",
+            "foundername-2": "",
+            "foundertext-2": "",
+            "founderimage-3": "shopify:\/\/shop_images\/image_12.png",
+            "foundername-3": "",
+            "foundertext-3": "",
+            "titreafterfoundertext-3": "",
+            "brasserie-engagements-1-texte": "",
+            "engagements-2-texte": "",
+            "engagements-3-texte": "",
+            "engagements-4-texte": "",
+            "engagements-5-texte": "",
+            "engagements-6-texte": "",
+            "brasserie-notrehistoire-container-master-titre": "",
+            "brasserie-notrehistoire-container-1-texte": "",
+            "brasserie-notrehistoire-container-2-texte": "",
+            "brasserie-localisation-container-master-titre": "",
+            "adresse": "",
+            "horaires-1": "",
+            "horaires-2": "",
+            "brasserie-processusfabrication-container-master-titre": ""
+          }
+        }
+      },
+      "block_order": [
+        "0603ce6e-0611-4cdc-803d-446ca398c952"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -155,6 +198,7 @@
     "16562535443610698a",
     "1656273062ad40b9b1",
     "16562757822c7bfe90",
-    "1656277792713d9bba"
+    "1656277792713d9bba",
+    "1656545164f099a98d"
   ]
 }
