@@ -367,6 +367,7 @@ margin-left: 0;
                 </variant-radios>
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                   <img src="{{product.metafields.custom.personnage_image | img_url:'master'}}"/>
                   {%- for option in product.options_with_values -%}
                     <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
