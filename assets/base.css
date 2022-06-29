@@ -1198,9 +1198,8 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 0;
   left: 0;
-  height: 250px;
+  height: 100%;
   width: auto;
-  transform: translate(-40%,0);
   
 }
 
