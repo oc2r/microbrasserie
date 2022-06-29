@@ -1,6 +1,7 @@
 section {
   background-color: rgba(22, 22, 22, 1);
   margin-left: 0px;
+  height: 100vh;
 }
 
 .product_illustration { width: 100px;}
