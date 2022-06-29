@@ -1195,7 +1195,6 @@ summary::-webkit-details-marker {
 .media > *:not(.zoom):not(.deferred-media__poster-button),
 .media model-viewer {
   display: block;
-  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1273,7 +1272,7 @@ button.shopify-payment-button__button--unbranded,
 .customer button,
 button.shopify-payment-button__button--unbranded {
   min-width: calc(12rem + var(--buttons-border-width) * 2);
-  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  min-height: calc(1.5rem + var(--buttons-border-width) * 2);
 }
 
 .shopify-payment-button__button--branded {
@@ -2898,16 +2897,6 @@ url("MundaneNouveauRegular.woff") format("woff");
 
 .mundane { font-family: "MundaneNouveauRegular"!important; }
 
-@font-face {
-font-family: "Minion-DisplayItalic";
-src: url("Minion-DisplayItalic.woff2") format("woff2"),
-url("Minion-DisplayItalic.woff") format("woff");
-}
-
-.minion-font { font-family: "Minion-DisplayItalic"!important; }
-  
-  
-  
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
