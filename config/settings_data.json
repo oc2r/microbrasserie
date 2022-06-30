@@ -97,6 +97,11 @@
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/logo_marque_blanc_512.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#000000",
+    "checkout_accent_color": "#fafafa",
+    "checkout_button_color": "#ffffff",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
