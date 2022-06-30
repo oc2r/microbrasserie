@@ -1,3 +1,4 @@
+{%for block in section.blocks %}
 <div class="brasserie-localisation-container-master">
 <div class="powr-map" id="e6f02747_1656581423"></div><script src="https://www.powr.io/powr.js?platform=shopify"></script>
 <div class="brasserie-localisation-container-coordonnees">
@@ -8,6 +9,7 @@
             <p class="brasserie-localisation-tel">{{block.settings.horaires-2}}</p>
         </div>
 </div>
+{%endfor%}
 
 {% schema %}
 {
