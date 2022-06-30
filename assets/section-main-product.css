@@ -1,8 +1,6 @@
 .type_biere {
   width: fit-content;
-	padding:2%;
-  color: black;
-}
+	padding:2%;}
 section {
   background-color: rgba(22, 22, 22, 1);
   margin-left: 0px;
@@ -413,7 +411,10 @@ a.product__text {
 }
 
 .product__tax {
-  margin-top: -1.4rem;
+  margin-top: -2rem;
+  font-weight:300;
+  font-size:15px
+
 }
 
 .product--no-media noscript .product-form__input,
