@@ -4,9 +4,7 @@
 
 <section id="MainProduct-{{ section.id }}" class="page-width section-{{ section.id }}-padding" data-section="{{ section.id }}">
 
-  <div class="type_biere" style="background-color: {{product.metafields.custom.couleur_type_biere}}; color: black" >
-    <p>{{product.metafields.custom.sous_titre}}</p>
-  </div>
+ 
   
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -45,8 +43,7 @@
     font-family: "MundaneNouveauRegular";
   font-size:45px}
 
-.product-popup-modal{
- background-color:blue}
+
   
   .pipi {
   width: 40%;
@@ -76,6 +73,10 @@
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
+       <div class="type_biere" style="background-color: {{product.metafields.custom.couleur_type_biere}};" >
+    <p>{{product.metafields.custom.sous_titre}}</p>
+  </div>
+        
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
