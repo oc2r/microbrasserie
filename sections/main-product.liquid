@@ -73,10 +73,13 @@
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
-       <div class="type_biere" style="background-color: {{product.metafields.custom.couleur_type_biere}};" >
+       
+        <div class="type_biere" style="background-color: {{product.metafields.custom.couleur_type_biere}};" >
     <p>{{product.metafields.custom.sous_titre}}</p>
   </div>
-        
+        <svg width="322" height="532" viewBox="0 0 322 532" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M161 1H1V435.841M321 97.7652V531H161" stroke="#DFDBD3" stroke-width="2"/>
+</svg>
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
