@@ -190,9 +190,10 @@ cart-items {
 }
 
 .cart__checkout-button {
+  color: black;
   max-width: 36rem;
   border: 1px solid white;
-  color: white;
+  background-color: white;
 }
 
 .cart__ctas {
