@@ -109,14 +109,14 @@
           "type": "text",
           "settings": {
             "reassurance-1-image": "shopify:\/\/shop_images\/france.png",
-            "heading-1": "premier element",
-            "description-1": "pezdqsklffzesnkdnfaezksql",
+            "heading-1": "Fabrication française",
+            "description-1": "Bières brassées avec passion au Creusot",
             "reassurance-2-image": "shopify:\/\/shop_images\/paiement.png",
-            "heading-2": "paiement",
-            "description-2": "cccizhsqdezqjsd",
+            "heading-2": "Paiement sécurisé",
+            "description-2": "Paypal et autres moyens de paiement",
             "reassurance-3-image": "shopify:\/\/shop_images\/service-client.png",
             "heading-3": "SAV de qulité",
-            "description-3": "ezdqsdnizejbfdué\"b"
+            "description-3": "Intervention en moins d’une heure"
           }
         }
       },
