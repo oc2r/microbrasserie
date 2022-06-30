@@ -1,32 +1,28 @@
 {%for block in section.blocks %}
-<div class ="avis_container">
-  coucou
+  {% comment %}Start automatically added Judge.me widget{% endcomment %}
   {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
-</div>
+{% comment %}End automatically added Judge.me widget{% endcomment %}
 {%endfor%}
-{% style %}
-.avis_container{ background-color: blue;}
 
-{% endstyle %}
 
 {% schema %}
 {
-    "name": "jugeme",
-    "class" : "processus-fabrication",
+    "name": "judgeme2",
+    "class" : "section",
     "settings": [
         {
             "type":"text",
-            "label":"comments",
+            "label":"judgme2",
             "id":"heading"
         }
     ],
 
 "presets" : [
-    {
-    "category":"text",
-    "name": "jugeme" 
-    }
-]
+                    {
+                        "category":"image",
+                        "name": "judgme2" 
+                    }
+                    ]
 
 }
 {% endschema %}
