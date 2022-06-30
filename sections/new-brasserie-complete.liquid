@@ -88,22 +88,21 @@
   </div>
 
 
-  <div class="brasserie-localisation-container-master">  
-      <h2 class=" mundane brasserie-localisation-container-master-titre" >{{block.settings.brasserie-localisation-container-master-titre}}</h2>
-      <span></span>
-      <div class="brasserie-localisation-container" >
-          <div class="brasserie-localisation-container-carte">
-              <img class="brasserie-localisation-carte" src="{{block.settings.image-carte | img_url:'master'}}" alt="">
-          </div>
-          <div class="brasserie-localisation-container-coordonnees">
-            <h4>Adresse : </h4>
-              <p class="brasserie-localisation-adresse">{{block.settings.adresse}}</p>
-            <h4 class="title-horaire">Horaires : </h4>
-              <p class="brasserie-localisation-horaires">{{block.settings.horaires-1}}</p>
-              <p class="brasserie-localisation-tel">{{block.settings.horaires-2}}</p>
-          </div>
-      </div>
-  </div>
+<h2 class=" mundane brasserie-localisation-container-master-titre" style="text-align:center;">{{block.settings.brasserie-localisation-container-master-titre}}</h2>
+
+<div class="brasserie-localisation-container-master">
+
+	<div class="powr-map" id="e6f02747_1656581423"><script src="https://www.powr.io/powr.js?platform=shopify"></script></div>
+  	
+	
+  <div class="brasserie-localisation-container-coordonnees">
+			<h4>Adresse : </h4>
+            <p class="brasserie-localisation-adresse">{{block.settings.brasserie-localisation-adresse}}</p>
+          	<h4 class="title-horaire">Horaires : </h4>
+            <p class="brasserie-localisation-horaires">{{block.settings.horaires-1}}</p>
+            <p class="brasserie-localisation-tel">{{block.settings.horaires-2}}</p>
+     </div>
+</div>
 
 
 
@@ -347,66 +346,23 @@ display: flex;
 }
 
 
+
+
 .brasserie-localisation-container-master{
 	display:flex;
-	flex-direction: column;
-	align-items:center;
-	padding-inline: 150px;
-	padding-block: 50px;
+flex-direction: row;
+justify-content:center;
+align-items:center;
 }
 
-.brasserie-localisation-container-master span {
-    height: 1px;
-    width: 10%;
-    background-color: white;
-	margin-top: 8px;
-	margin-bottom: 40px;
+.powr-map {
+	width:50%;
 }
 
-.brasserie-localisation-container-master-titre{
-
-	font-size: 64px;
+.brasserie-localisation-container-coordonnees {
+width:50%;
+top:20%;
 }
-
-.brasserie-localisation-container{
-	display: flex;
-	flex-direction:row;
-	justify-content: center;
-	align-items: center;
-	max-height:100%;
-}
-
-.brasserie-localisation-container-carte, .brasserie-localisation-coordonnees{
-	width: 40%;
-	position:relative;
-}
-
-.brasserie-localisation-container-coordonnees h4 {
-	font-size: 28px;
-	font-weight: 700;
-	margin-bottom: 15px;
-}
-
-.brasserie-localisation-container-coordonnees p {
-	font-size: 28px;
-}
-
-.brasserie-localisation-carte{
-	width:100%;
-	max-height:100%;
-	object-fit: cover;
-}
-
-.brasserie-localisation-container-coordonnees{
-	margin-left: 50px;
-}
-
-.title-horaire {
-	margin-top: 30px;
-}
-
-
-
 
 
 
@@ -631,8 +587,8 @@ display: flex;
                 },
 				{
                   	"type":"text",
-                  	"label":"adresse",
-                  	"id":"adresse"
+                  	"label":"brasserie-localisation-adresse",
+                  	"id":"brasserie-localisation-adresse"
                   },
 				{
                   	"type":"text",
@@ -644,6 +600,7 @@ display: flex;
                   	"label":"horaires-2",
                   	"id":"horaires-2"
 				},
+					
 				{
                     "type":"image_picker",
                     "label":"brasserie-processusfabrication-container-master",
