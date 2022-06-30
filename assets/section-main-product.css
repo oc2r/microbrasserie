@@ -1,10 +1,12 @@
-/* .container_input_product{
-  display: flex;
-  background-color: blue;};
- */
 .cadre_image{
   position: absolute;
   top: 120px;
+}
+.image_product{
+height:70%;}
+
+.media{
+  height: 470px;
 }
 
 
@@ -315,7 +317,7 @@ fieldset.product-form__input .form__label {
 /* Product info */
 
 .product__info-container > * + * {
-  margin: 1.0rem 0;
+  margin: 1.5rem 0;
 }
 
 .product__info-container .product-form,
