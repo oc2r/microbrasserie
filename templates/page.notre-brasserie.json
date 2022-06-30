@@ -16,7 +16,7 @@
           "settings": {
             "heading": "NOTRE BRASSERIE",
             "description": "la Brasserie Artisanale Autre Monde ouvre Ses portes au Creusot ! entrez avec nous dans cet univers fantastique !",
-            "image-fond": "shopify:\/\/shop_images\/banner-homepage.png"
+            "image-fond": "shopify:\/\/shop_images\/Group_213.png"
           }
         }
       },
@@ -29,11 +29,13 @@
     },
     "1656334685eb6b6535": {
       "type": "quisommesnous",
+      "disabled": true,
       "blocks": {
         "8f1739d3-f236-4e75-bc3e-27a177cbbe22": {
           "type": "text",
           "settings": {
-            "titre-1": "QUI SOMMES-NOUS",
+            "titre-1": "QUI SOMMES-NOUS ?",
+            "image-bg": "shopify:\/\/shop_images\/bg-black-wall.png",
             "texte": "Amis passionnés de houblons, de malts, de petites levures de tous horizons, de bière artisanale brassée avec amour, préparez vous pour ce grand périple : celui de la Brasserie Artisanale Autre Monde. Cela fait maintenant 2 ans que nous nous préparons pour ce voyage, et nous travaillons chaque jour pour le grand départ !"
           }
         }
@@ -47,6 +49,7 @@
     },
     "16562535443610698a": {
       "type": "brasserie-engagements",
+      "disabled": true,
       "blocks": {
         "c4d2e39b-b769-46d1-b10f-31f522cf880d": {
           "type": "text",
@@ -85,13 +88,14 @@
     },
     "1656273062ad40b9b1": {
       "type": "brasserie-notrehistoire",
+      "disabled": true,
       "blocks": {
         "bd6c3404-fca5-49ad-8ee1-49e0352b8685": {
           "type": "text",
           "settings": {
             "titre": "Notre histoire",
             "texte-1": "Notre aventure commence en 2020 lors de la rencontre entre    En mai 2022, nous brassons et embouteiillons notre première bière chez Two Dudes, un ami brasseur. C’est en juin que nous la présentons pour la première fois : l’Aventurier. C’est une blonde de type pale ale au houblon cascade. Avec ses reflets dorés et ses notes de miel, elle fut idéale pour l’été.   En juillet",
-            "image-1": "shopify:\/\/shop_images\/travaux.png",
+            "image-1": "shopify:\/\/shop_images\/team.png",
             "texte-2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "image-2": "shopify:\/\/shop_images\/travaux.png",
             "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
@@ -107,15 +111,16 @@
     },
     "16562757822c7bfe90": {
       "type": "brasserie-localisation",
+      "disabled": true,
       "blocks": {
         "70ef34ed-1c7b-4c39-a749-e9499256dfe3": {
           "type": "text",
           "settings": {
-            "titre": "Localistaion",
+            "titre": "Notre taverne",
             "image-carte": "shopify:\/\/shop_images\/carte.png",
-            "adresse": "27 bis rue du progrès",
-            "code-postal": "93100",
-            "ville": "Montreuil",
+            "adresse": "77 route de Montcenis 71200 Le Creusot",
+            "horaires-1": "Du lundi au vendredi de 10h00 à 18h00",
+            "horaires-2": "Le samedi et le dimanche de 9h30 à 19h00",
             "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
           }
         }
@@ -129,11 +134,12 @@
     },
     "1656277792713d9bba": {
       "type": "brasserie-processus-fabrication",
+      "disabled": true,
       "blocks": {
         "939a7582-e081-4dca-8011-542f0bba427b": {
           "type": "text",
           "settings": {
-            "titre": "Notre proccessus",
+            "titre": "Notre proccessus de fabrication",
             "image-1": "shopify:\/\/shop_images\/processus-fabrication.png",
             "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
           }
@@ -141,6 +147,60 @@
       },
       "block_order": [
         "939a7582-e081-4dca-8011-542f0bba427b"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "1656545164f099a98d": {
+      "type": "new-brasserie-complete",
+      "blocks": {
+        "0603ce6e-0611-4cdc-803d-446ca398c952": {
+          "type": "text",
+          "settings": {
+            "titre-1": "Qui sommes nous ?",
+            "image-bg": "shopify:\/\/shop_images\/Group_222.png",
+            "texte": "Amis passionnés de houblons, de malts, de petites levures de tous horizons, de bière artisanale brassée avec amour, préparez vous pour ce grand périple : celui de la Brasserie Artisanale Autre Monde. Cela fait maintenant 2 ans que nous nous préparons pour ce voyage, et nous travaillons chaque jour pour le grand départ !",
+            "founderimage-1": "shopify:\/\/shop_images\/mathieu.png",
+            "foundername-1": "Mathieu PROST",
+            "foundertext-1": "Avant de décider de brasser dans de vraies cuves, Mathieu a fait ses premiers brassins il y a de nombreuses années dans sa cuisine. En 2020 il entreprend une reconversion professionnelle et commence à travailler dans des brasseries artisanales, avec l’idée de monter sa propre brasserie dans les années suivantes : Autre Monde. Quand il ne brasse pas, il met en image l'Autre Monde avec ses talents de linograveur, et s'occupe des réseaux sociaux.",
+            "founderimage-2": "shopify:\/\/shop_images\/baptiste.png",
+            "foundername-2": "Baptiste MELLET",
+            "foundertext-2": "Après 6 années passées à Lille où il développe un goût aiguisé pour les bières artisanales, Baptiste décide de revenir au Creusot et de s’associer à la brasserie Autre Monde. Futur gérant de la taproom, Baptiste est également un authentique barman et notre responsable clientèle. Capable de différencier les IPA en blind test, on le trouve généralement enfermé dans le frigo à houblons.",
+            "founderimage-3": "shopify:\/\/shop_images\/image_12.png",
+            "foundername-3": "Vincent MANIEZ",
+            "foundertext-3": "Originaire du Creusot, Vincent brasse en amateur depuis 2018. En 2020, il se forme au métier d’artisan-brasseur à l’ENILBIO et, après plusieurs expériences dans des brasseries artisanales de la région, il est fier aujourd'hui d'être notre Artisan Brasseur et gérant de la brasserie. Il aime nous partager sa passion pour les lambics et les sours, bières légèrement acidulées, et a toujours une recette prête à être testée !",
+            "brasserie-engagements-container-master-titre": "Nos engagements",
+            "image-1-after-titreafterfoundertext-3": "shopify:\/\/shop_images\/bouclier-verification_1_604b1016-d1a0-4fd1-9f83-0435fcca502f.png",
+            "brasserie-engagements-1-texte": "Des brassages de qualité",
+            "brasserie-engagements-2-image": "shopify:\/\/shop_images\/marqueur-de-carte_1_33802b3f-7251-4b86-8dc2-e18e84e14c69.png",
+            "engagements-2-texte": "Favoriser la maillage artisanal et local",
+            "image-3": "shopify:\/\/shop_images\/bien-etre.png",
+            "engagements-3-texte": "Assurer le bien-être des salariés",
+            "image-4": "shopify:\/\/shop_images\/biere_1_0a2bda21-4a4d-4281-9c1e-ef06e831422a.png",
+            "engagements-4-texte": "Promouvoir la consommation responsable",
+            "image-5": "shopify:\/\/shop_images\/ampoule_1_23991b8f-0264-498c-838b-a0a601c5a28e.png",
+            "engagements-5-texte": "Une production créative et passionnée",
+            "image-6": "shopify:\/\/shop_images\/monde_1_2f89de83-7db4-4543-b545-7a71e5ad0018.png",
+            "engagements-6-texte": "Limiter notre impact environnemental",
+            "brasserie-notrehistoire-container-master-titre": "Notre histoire",
+            "brasserie-notrehistoire-container-1-texte": "Notre aventure commence en 2020 lors de la rencontre entre   Mathieu et Vincent. Baptiste est arrivé ensuite.  En mai 2022, nous brassons et embouteiillons notre première bière chez Two Dudes, un ami brasseur. C’est en juin que nous la présentons pour la première fois : l’Aventurier. C’est une blonde de type pale ale au houblon cascade. Avec ses reflets dorés et ses notes de miel, elle fut idéale pour l’été.   En juillet",
+            "brasserie-notrehistoire-container-1-image-1": "shopify:\/\/shop_images\/team.png",
+            "brasserie-notrehistoire-container-2-texte": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "brasserie-notrehistoire-container-2-image-2": "shopify:\/\/shop_images\/travaux.png",
+            "brasserie-localisation-container-master-titre": "Notre taverne",
+            "image-carte": "shopify:\/\/shop_images\/carte.png",
+            "adresse": "77 route de Montcenis 71200 Le Creusot",
+            "horaires-1": "Du lundi au vendredi de 10h00 à 18h00",
+            "horaires-2": "Le samedi et le dimanche de 9h30 à 19h00",
+            "brasserie-processusfabrication-container-master-titre": "Notre processus de fabrication",
+            "brasserie-processusfabrication": "shopify:\/\/shop_images\/processus-fabrication.png",
+            "image-bg-page": "shopify:\/\/shop_images\/big-big-black-wall-bg.png"
+          }
+        }
+      },
+      "block_order": [
+        "0603ce6e-0611-4cdc-803d-446ca398c952"
       ],
       "settings": {
         "heading": ""
@@ -154,6 +214,7 @@
     "16562535443610698a",
     "1656273062ad40b9b1",
     "16562757822c7bfe90",
-    "1656277792713d9bba"
+    "1656277792713d9bba",
+    "1656545164f099a98d"
   ]
 }

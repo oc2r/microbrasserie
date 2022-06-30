@@ -1,5 +1,50 @@
 {
   "sections": {
+    "165643031697d4a523": {
+      "type": "page-service",
+      "blocks": {
+        "49aa1f25-22bd-4239-a95b-220e4a8b48b4": {
+          "type": "text",
+          "settings": {
+            "bg-page": "shopify:\/\/shop_images\/bg-black-wall.png",
+            "bg-header": "shopify:\/\/shop_images\/Group_246.png",
+            "titre-page": "NOS SERVICES",
+            "sous-titre-page": "Location de tireuses a bière, visite de la brasserie, session de dégustation",
+            "rendre-visite": "nous rendre visite",
+            "img-location": "shopify:\/\/shop_images\/louer-tireuse-img.png",
+            "location-titre": "LoueZ une tireuse à bière",
+            "location-texte": "Pour votre soirée entre amis, vos repas en famille ou tout autre évènements festif, profitez de délicieuses bières pression comme au bar bar, tout en reduisant vos déchets  !",
+            "location-taille-1": "Tireuse 2 têtes 100L servis par heure  2 futs simultanés 100€",
+            "location-taille-2": "Tireuse 2 têtes 70L servis par heure  2 futs simultanés 50€",
+            "location-taille-3": "Tireuse 1 tête 45L servis par heure  Refroidissement air sec 50€",
+            "caution": "Un chèque de caution vous sera demandé lors du prêt",
+            "img-atelier": "shopify:\/\/shop_images\/atelier-brassage_22278d8d-33c2-4f98-aef7-c335c68bb063.png",
+            "titre-atelier": "Atelier de brassage",
+            "text-atelier": "Venez décourir l’univers du brassage et devenez  un pro du houblon en participant à nos ateliers !",
+            "time-atelier": "Durée : 3h",
+            "prix-atelier": "Prix : 25€",
+            "img-visite": "shopify:\/\/shop_images\/visite-brasserie-img.png",
+            "titre-visite": "Visite de la brasserie",
+            "text-visite": "Venez nous rencontrer, pénetrez dans les backstages de la brasserie, et évéillez vos papilles avec un atelier de dégustation de nos meilleures bières",
+            "time-visite": "Durée : 1h30",
+            "prix-visite": "Prix : 20€",
+            "titre-rdv": "Prendre Rendez-Vous",
+            "titre-en-personne": "En personne",
+            "text-en-personne": "77, route de Montcenis 71200 Le Creusot",
+            "titre-tel": "Par téléphone",
+            "text-tel": "+33 (0)6 61 59 28 74",
+            "titre-mail": "Par Email",
+            "text-mail": "brasserie.autremonde@gmail.com"
+          }
+        }
+      },
+      "block_order": [
+        "49aa1f25-22bd-4239-a95b-220e4a8b48b4"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -10,6 +55,7 @@
     },
     "1656335755d6ede27c": {
       "type": "header-banniere",
+      "disabled": true,
       "blocks": {
         "dc967ff8-b129-453e-a96d-3d56d113a006": {
           "type": "text",
@@ -29,11 +75,13 @@
     },
     "16563596598cdb8a31": {
       "type": "service-page-section-left",
+      "disabled": true,
       "blocks": {
         "6de6ec15-5145-4cce-96bb-ec60d6324ad6": {
           "type": "text",
           "settings": {
             "image-service-page-left": "shopify:\/\/shop_images\/page-brasserie-header_d5a171f1-4ef6-479c-b1b4-b12d36fe9b85.png",
+            "bg-section-service-img": "shopify:\/\/shop_images\/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_9.png",
             "title-service-page-left": "Louer une tireuse à bière",
             "description-service-page-left": "Pour votre soirrée entre amis, vos repas en famille ou tout autre evenements festifs, profitez  délicieuses bières pression comme dans un bar tout en reduisant vos déchets  !"
           }
@@ -48,6 +96,7 @@
     },
     "1656360444a5989b7d": {
       "type": "service-page-right",
+      "disabled": true,
       "blocks": {
         "faf116e6-406c-40f9-a534-a4d976ab2268": {
           "type": "text",
@@ -67,25 +116,14 @@
     },
     "1656361137d93271a2": {
       "type": "service-page-section-left",
-      "blocks": {
-        "907e62ec-49f2-427b-b392-6de9a3b68285": {
-          "type": "text",
-          "settings": {
-            "image-service-page-left": "shopify:\/\/shop_images\/houses-g61607ed59_1920.png",
-            "title-service-page-left": "Visite de la brasserie",
-            "description-service-page-left": "Venez nous rencontrer, pénetrez dans les backstages de la brasserie, et évéillez vos papilles avec un atelier de dégustation de nos meilleures bières"
-          }
-        }
-      },
-      "block_order": [
-        "907e62ec-49f2-427b-b392-6de9a3b68285"
-      ],
+      "disabled": true,
       "settings": {
         "heading": ""
       }
     }
   },
   "order": [
+    "165643031697d4a523",
     "main",
     "1656335755d6ede27c",
     "16563596598cdb8a31",

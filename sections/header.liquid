@@ -96,11 +96,11 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+ <header id="site-header" class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} {% if section.settings.transparent_header %}site-header-transparent{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details id="Details-menu-drawer-container" class="menu-drawer-container">
-          <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
+			<summary id="header-menu" class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
             <span>
               {% render 'icon-hamburger' %}
               {% render 'icon-close' %}
@@ -391,26 +391,6 @@
     {%- endif -%}
 
     <div class="header__icons">
-      
-
-      {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          {% render 'icon-account' %}
-          
-        
-         <!--span class="visually-hidden">
-            {%- liquid
-              if customer
-                echo 'customer.account_fallback' | t
-              else
-                echo 'customer.log_in' | t
-              endif
-            -%}
-          </span> -->
-        
-
-        </a>
-      {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
@@ -492,7 +472,7 @@
 
           requestAnimationFrame(this.hide.bind(this));
         }
-      } else if (scrollTop <= this.headerBounds.top) {
+      } else if (scrollTop = this.headerBounds.top) {
         requestAnimationFrame(this.reset.bind(this));
       }
 
@@ -567,6 +547,71 @@
     }
   </script>
 {%- endif -%}
+   
+   {% if template == 'index' and section.settings.transparent_header %}
+{% style %}
+.template-index .site-header-transparent .header__icon, .template-index .site-header-transparent .header__menu-item span, .template-index .site-header-transparent .header__menu-item svg, .template-index .site-header-transparent .header__active-menu-item {
+color: {{ section.settings.content_color }};
+}
+.site-header-transparent {
+background-color: rgba(22, 22, 22, 0.8);
+position: absolute;
+border: none;
+width: 100%;
+left: 50%;
+transform: translateX(-50%);
+}
+.site-header-transition {
+margin-top: var(--header-height);
+}
+{% endstyle %}
+<!--- Coded by jotting.com --->
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+var headerHeight = document.getElementById('site-header').offsetHeight;
+document.getElementById('MainContent').style.setProperty('--header-height', '-'+ headerHeight + 'px');
+});
+window.onscroll = function() {
+var header = document.getElementById('site-header');
+var main = document.getElementById('MainContent');
+var height = document.getElementById('site-header').offsetHeight;
+if ( window.pageYOffset > height ) {
+header.classList.remove('site-header-transparent');
+main.classList.add('site-header-transition');
+} else {
+header.classList.add('site-header-transparent');
+main.classList.remove('site-header-transition');
+}
+}
+document.getElementById("header-menu").addEventListener('click',function () {
+var sideMenu = document.getElementById('Details-menu-drawer-container');
+var header = document.getElementById('site-header');
+var height = document.getElementById('site-header').offsetHeight;
+if ( window.pageYOffset < height ) {
+if (!sideMenu.classList.contains('menu-opening')) {
+header.classList.remove('site-header-transparent');
+} else {
+header.classList.add('site-header-transparent');
+}
+}
+});
+document.getElementById("header-search").addEventListener('click',function () {
+var search = document.getElementById('template-index');
+var header = document.getElementById('site-header');
+var main = document.getElementById('MainContent');
+var height = document.getElementById('site-header').offsetHeight;
+if ( window.pageYOffset < height ) {
+if (search.classList.contains('overflow-hidden')) {
+header.classList.remove('site-header-transparent');
+main.classList.add('site-header-transition');
+} else {
+header.classList.add('site-header-transparent');
+main.classList.remove('site-header-transition');
+}
+}
+});
+</script>
+{% endif %}
 
 {% schema %}
 {
@@ -600,6 +645,25 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
+    },
+   {
+    "type": "header",
+    "content": "Transparent Header"
+    },
+    {
+    "type": "checkbox",
+    "id": "transparent_header",
+    "label": "Enable transparent header",
+    "default": false
+    },
+    {
+    "type": "color",
+    "id": "content_color",
+    "label": "Change icon & text color"
+    },
+    {
+    "type": "header",
+    "content": "Logo"
     },
     {
       "type": "image_picker",

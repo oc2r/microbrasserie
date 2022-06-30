@@ -3,21 +3,30 @@
 
 <div class="service-page-section-left">
     <div class="service-page-section-left-container">
-        <img class ="image-service-page-left" src="{{block.settings.image-service-page-left | img_url:'master'}}"/>
         <div class="title-description-service-page-left">
-            <h2>{{block.settings.title-service-page-left}}</h2>
+            <h2 class="mundane">{{block.settings.title-service-page-left}}</h2>
+          	<span></span>
             <p>{{block.settings.description-service-page-left}}</p>
         </div>
     </div>
+  	<div class="section-service-left-image" style="background-image: url('{{block.settings.image-service-page-left | img_url:'master'}}');" >
+      <p>klnvsobvozb</p>
+  	</div>
 </div>
 
 {%endfor%}
 {% style %}
 
+.service-page-section-left {
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+
 .service-page-section-left-container {
     display: flex;
-    margin-top: 2%;
-    width: 100%;
+	height 400px;
+	width: 60%;
 	gap: 10%;
 	background-color: rgba(70, 70, 70, 0.45);
 }
@@ -31,9 +40,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-	width: 40%;
-	text-align:center;
+	align-items: center;
+	margin: auto;
+	margin-block: 30px;
+	width: 50%;
+	text-align: center;
+	
 }
+
+.title-description-service-page-left h2 {
+	font-size: 64px;
+}
+
+.title-description-service-page-left span {
+	height: 1px;
+	width: 200px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+<!-- .section-service-left-image {
+	width: 60%;
+} -->
 
 {% endstyle %}
 
@@ -58,6 +85,11 @@
                 "type":"image_picker",
                 "label":"image service page left",
                 "id":"image-service-page-left"
+            },
+			{
+                "type":"image_picker",
+                "label":"bg-section-service-img",
+                "id":"bg-section-service-img"
             },
 
             {

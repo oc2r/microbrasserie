@@ -1,6 +1,7 @@
 {%for block in section.blocks %}
 <div class="brasserie-processusfabrication-container-master" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">  
-	<h2 class="brasserie-processusfabrication-container-master-titre" >{{block.settings.titre}}</h2>
+	<h2 class="mundane brasserie-processusfabrication-container-master-titre" >{{block.settings.titre}}</h2>
+  	<span></span>
     <div class="brasserie-processusfabrication-container" >
         <img class="brasserie-processusfabrication" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
     </div>
@@ -17,10 +18,17 @@
 	padding-block: 50px;
 }
 
+.brasserie-processusfabrication-container-master span {
+    height: 1px;
+    width: 30%;
+    background-color: white;
+	margin-top: 12px;
+	margin-bottom: 38px;
+}
+
 .brasserie-processusfabrication-container-master-titre{
-	margin-bottom: 50px;
-	padding-bottom: 20px;
-	border-bottom: 2px solid #ffffff;
+
+	font-size: 64px;
 }
 
 .brasserie-processusfabrication-container{

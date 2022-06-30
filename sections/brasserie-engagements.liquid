@@ -3,19 +3,21 @@
 <div class="founder-engagement">
     <div class="founder-container">
        <div class="founder">
-        <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
         <p class="name-founder mundane">{{block.settings.foundername-1}}</p>
-        <p class="description-founder">{{block.settings.foundertext-1}}</p>
+         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-1}}</p></div>
+        <img src="{{block.settings.founderimage-1 | img_url:'master'}}" alt="">
+
        </div>
        <div class="founder">
-        <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
         <p class="name-founder mundane">{{block.settings.foundername-2}}</p>
-        <p class="description-founder">{{block.settings.foundertext-2}}</p>
+         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-2}}</p></div>
+        <img src="{{block.settings.founderimage-2 | img_url:'master'}}" alt="">
+
        </div>
        <div class="founder">
-        <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
         <p class="name-founder mundane">{{block.settings.foundername-3}}</p>
-        <p class="description-founder">{{block.settings.foundertext-3}}</p>
+         <div class="description-founder"><p class="minion-font">{{block.settings.foundertext-3}}</p></div>
+         <img src="{{block.settings.founderimage-3 | img_url:'master'}}" alt="">
        </div>
     </div>
 
@@ -58,6 +60,11 @@
 
 {% style %}
 
+.founder{
+position: relative;
+width: 390px;
+height:429px;}
+
 .founder-engagement {
 	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
 }
@@ -70,46 +77,69 @@
     margin-inline: auto;
 	width: 80%;
     gap: 15px;
-    background-color: rgb(189, 245, 245);
 }
 
 .founder img {
     width: 390px;
     height: 390px;
-    background-color: antiquewhite;
+    background-color: rgba(115, 115, 115, 0.95);
+	position: relative;
+	
 }
 
+.founder img:hover {display:none;}
+
+
 .name-founder {
-    margin-inline: auto;
-    width: 50%;
+	width: 390px;
+	font-size: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background-color: green;
 }
 
 .description-founder {
-    display: none;
+width: 390px;
+    height: 390px;
+position: absolute;
+display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: rgba(115, 115, 115, 0.5);
+
 }
 
-.brasserie-engagements-container-master{
+.description-founder p {
+	width: 80%;
+	font-weight: 25;
+}
+
+
+
+.brasserie-engagements-container-master {
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	position: relative;
     width: 90%;
+	margin-top: 124px;
 	margin-inline: auto;
+	padding-block: 124px;
 }
 
 
 .brasserie-engagements-container-master span {
     height: 2px;
-    width: 30%;
+    width: 10%;
     margin-inline: auto;
+	margin-top: 8px;
+	margin-bottom: 80px;
+	background: white;
 }
 
 .brasserie-engagements-container-master-titre{
-	margin-bottom: 20px;
+	font-size: 64px;
+	color: white;
 }
 
 .brasserie-engagements-container {

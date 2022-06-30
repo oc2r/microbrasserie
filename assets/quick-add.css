@@ -3,9 +3,9 @@
 /*   grid-row-start: 4; */
   margin: 0 0 1rem;
   z-index: 1;
-  width: 40%;
-  bottom: 50px;
-  left: 25%;
+  max-width: 60%;
+  bottom: 30%;
+  left: 60%;
 }
 
 .card--card .quick-add {
@@ -198,7 +198,11 @@ quick-add-modal .product-form__buttons {
 }
 
 .quick-add__submit {
-  padding: 0.8rem;
-  min-width: 100%;
+  padding: 2%;
   box-sizing: border-box;
+  font-size: 100%;
+    min-height: calc(1.5rem + var(--buttons-border-width) * 2);
+
 }
+
+

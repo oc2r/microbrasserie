@@ -1,0 +1,227 @@
+<div class="page-service">
+    <div class="header-service-container">
+        <h1>{{block.settings.titre-page}}</h1>
+        <p>{{block.settings.sous-titre-page}}</p>
+    </div>
+    <h2>{{block.settings.rendre-visite}}</h2>
+    <div class="louer-tireuse">
+        <h3>{{block.settings.location-titre}}</h3>
+        <span></span>
+        <p>{{block.settings.location-texte}}</p>
+        <ul>
+            <li>{{block.settings.location-taille-1}}</li>
+            <li>{{block.settings.location-taille-2}}</li>
+            <li>{{block.settings.location-taille-3}}</li>
+        </ul>
+        <p class="caution">{{block.settings.caution}}</p>
+    </div>
+
+    <!-- div deja faite avant, la mettre ici -->
+    <div class="visite-brasserie">
+        <div class="img-visite-brasserie">{{block.settings.img-atelier}}</div>
+        <div class="visite-brasserie-text-container">
+            <h3>{{block.settings.titre-atelier}}</h3>
+            <p>{{block.settings.text-atelier}}</p>
+            <div class="time-price">
+                <p>{{block.settings.time-atelier}}</p>
+                <p>{{block.settings.prix-atelier}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="take-rdv">
+        <h2>{{block.settings.titre-rdv}}</h2>
+        <span></span>
+        <ul>
+            <li>
+                <h4>{{block.settings.titre-en-personne}}</h4>
+                <p>{{block.settings.text-en-personne}}</p>
+            </li>
+            <li>
+                <h4>{{block.settings.titre-tel}}</h4>
+                <p>{{block.settings.text-tel}}</p>
+            </li>
+            <li>
+                <h4>{{block.settings.titre-mail}}</h4>
+                <p>{{block.settings.text-mail}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+{% style %}
+
+.page-service {
+    background: green;
+}
+
+.catalog-category_container {
+text-align: center
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "page-service",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"edit-page-service",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"edit-page-service",
+            "settings":[
+                        {
+                            "type":"image_picker",
+                            "label":"bg-header",
+                            "id":"bg-header"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-page",
+                            "id":"titre-page"
+                        },
+                        {
+                            "type":"text",
+                            "label":"sous-titre-page",
+                            "id":"sous-titre-page"
+                        },
+                        {
+                            "type":"text",
+                            "label":"rendre-visite",
+                            "id":"rendre-visite"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"img-location",
+                            "id":"img-location"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-titre",
+                            "id":"location-titre"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-texte",
+                            "id":"location-texte"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-1",
+                            "id":"location-taille-1"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-2",
+                            "id":"location-taille-2"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-3",
+                            "id":"location-taille-3"
+                        },
+                        {
+                            "type":"text",
+                            "label":"caution",
+                            "id":"caution"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"img-atelier",
+                            "id":"img-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-atelier",
+                            "id":"titre-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-atelier",
+                            "id":"text-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"time-atelier",
+                            "id":"time-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"prix-atelier",
+                            "id":"prix-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-visite",
+                            "id":"titre-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-visite",
+                            "id":"text-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"time-visite",
+                            "id":"time-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"prix-visite",
+                            "id":"prix-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-rdv",
+                            "id":"titre-rdv"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-en-personne",
+                            "id":"titre-en-personne"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-en-personne",
+                            "id":"text-en-personne"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-tel",
+                            "id":"titre-tel"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-tel",
+                            "id":"text-tel"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-mail",
+                            "id":"titre-mail"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-mail",
+                            "id":"text-mail"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "page-service" 
+                    }
+                    ]
+
+}
+{% endschema %}
+

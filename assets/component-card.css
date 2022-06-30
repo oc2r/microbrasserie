@@ -1,3 +1,15 @@
+.card--standard .card__inner .circle-bg {
+  position: absolute;
+  left:17%;
+  top:25%;
+}
+
+.circle-bg {
+  width: 65%;}
+
+.circles{
+width:100%;}
+
 .card-wrapper {
   color: inherit;
   height: 100%;
@@ -14,6 +26,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 60%;
+  margin: auto;
 }
 
 .card--card {
@@ -70,6 +84,7 @@
 
 .card .media {
   width: 100%;
+  left: 35%
 }
 
 .card__media {
@@ -103,7 +118,10 @@
 }
 
 .card__information {
-  grid-row-start: 2;
+/*   grid-row-start: 2; */
+/*   position: relative; */
+  bottom: 25%;
+  right: 10%;
   padding: 1.3rem 1rem;
 }
 
@@ -157,10 +175,6 @@
   margin-bottom: 0;
 }
 
-.card__information {
-  Background-color: Blue;
-  
-}
 
 
 

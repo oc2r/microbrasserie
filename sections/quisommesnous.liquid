@@ -1,9 +1,9 @@
 {%for block in section.blocks %}
     <div class="catalog-category_container" >
-      	<div class="quisommesnous-container">
-            <h2 class ="catalog-category_title" >{{block.settings.titre-1}}</h2>
+      	<div style="background-image: url('{{block.settings.image-bg | img_url:'master'}}');" class="quisommesnous-container">
+            <h2 class ="mundane catalog-category_title" >{{block.settings.titre-1}}</h2>
           	<span></span>
-            <p class="presentation_text">{{block.settings.texte}}</p>
+            <p class="presentation_text minion-font">{{block.settings.texte}}</p>
         </div>
 
     </div>
@@ -38,8 +38,7 @@
 }
 
 .quisommesnous-container h2 {
-	font-size: 40px;
-	font-weight: bold;
+	font-size: 64px;
 	color: white;
 }
 
@@ -52,18 +51,23 @@
     text-align: justify;
 	width: 80%;
 	padding: 50px;
+	background-position: center;
+    background-repeat: no-repeat;
 }
 
 .quisommesnous-container span {
     height: 1px;
-    width: 30%;
-    background-color: aqua;
+    width: 25%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 25px;
 }
 
-.presentation_text {
-    font-size: 1.5rem;
-	color: #FFFFFF;
+.quisommesnous-container {
+	font-size: 28px;
 }
+
+
 
 {% endstyle %}
 
@@ -88,6 +92,11 @@
                             "label":"titre-1",
                             "id":"titre-1"
                         },
+						{
+                  	"type":"image_picker",
+                  	"label":"image-bg",
+                  	"id":"image-bg"
+                  },
 						{
                             "type":"text",
                             "label":"texte",

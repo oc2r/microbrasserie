@@ -1,0 +1,557 @@
+{%for block in section.blocks %}
+<div style="background-image: url('{{block.settings.bg-page | img_url:'master'}}');" class="page-service">
+    <div style="background-image: url('{{block.settings.bg-header | img_url:'master'}}');" class="header-service-container">
+        <h1>{{block.settings.titre-page}}</h1>
+      	<span class="separation-sous-titre"></span>
+        <p class="mundane">{{block.settings.sous-titre-page}}</p>
+    </div>
+  <div class="visite-h2">
+      <h2 class="mundane rendre-visite">{{block.settings.rendre-visite}}</h2>
+    	<span class="separation-sous-titre"></span>
+  </div>
+    <div class="louer-tireuse">
+        <div style="background-image: url('{{block.settings.img-location | img_url:'master'}}');" class="img-louer-tireuse">
+      	</div>
+        <div class="louer-tireuse-text-container">
+          <div class="louer-tireuse-text-content">
+            <h3 class="mundane">{{block.settings.location-titre}}</h3>
+            <span class="separation-sous-titreV2"></span>
+            <p class="minion-font">{{block.settings.location-texte}}</p>
+            <ul>
+                <li>
+                  <p class="size-louer-tireuse minion-font">{{block.settings.location-taille-1}}</p>
+              	</li>
+              	<li>
+                  <p class="size-louer-tireuse minion-font">{{block.settings.location-taille-2}}</p>
+              	</li>
+              	<li>
+                  <p class="size-louer-tireuse minion-font">{{block.settings.location-taille-3}}</p>
+              	</li>
+            </ul>
+            <p class="caution minion-font">{{block.settings.caution}}</p>
+          </div>
+        </div>
+    </div>
+  
+  	<div class="atelier-brassage">
+        <div class="atelier-text-container">
+          <div class="atelier-brassage-text-content">
+            <h3 class="mundane">{{block.settings.titre-atelier}}</h3>
+            <span class="separation-sous-titre"></span>
+            <p class="minion-font">{{block.settings.text-atelier}}</p>
+            <div class="time-price">
+                <p class="minion-font">{{block.settings.time-atelier}}</p>
+                <p class="minion-font">{{block.settings.prix-atelier}}</p>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url('{{block.settings.img-atelier | img_url:'master'}}');" class="img-atelier-brasserie">
+          <p>.</p>	
+      </div>
+    </div>
+
+    <div class="visite-brasserie">
+        <div style="background-image: url('{{block.settings.img-visite | img_url:'master'}}');" class="img-visite-brasserie">
+      		<p>.</p>		
+      	</div>
+        <div class="visite-brasserie-text-container">
+          <div class="visite-brasserie-text-content">
+            <h3 class="mundane">{{block.settings.titre-visite}}</h3>
+          	<span class="separation-sous-titreV2"></span>
+            <p class="minion-font">{{block.settings.text-visite}}</p>
+            <div class="time-price">
+                <p class="minion-font">{{block.settings.time-visite}}</p>
+                <p class="minion-font">{{block.settings.prix-visite}}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="take-rdv">
+        <h2 class="mundane">{{block.settings.titre-rdv}}</h2>
+        <span class="separation-sous-titre"></span>
+        <ul>
+            <li>
+                <h4>{{block.settings.titre-en-personne}}</h4>
+                <p class="minion-font">{{block.settings.text-en-personne}}</p>
+            </li>
+            <li>
+                <h4>{{block.settings.titre-tel}}</h4>
+                <p class="minion-font">{{block.settings.text-tel}}</p>
+            </li>
+            <li>
+                <h4>{{block.settings.titre-mail}}</h4>
+                <p class="minion-font">{{block.settings.text-mail}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+
+.page-service {
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.visite-h2,
+.take-rdv h2
+{
+	display: flex;
+	flex-direction: column;
+    position: relative;
+    margin-inline: auto;
+    font-size: 74px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.header-service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 553px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-service-container h1 {
+	font-size: 75px;
+    font-weight: 600;
+}
+
+.header-service-container span {
+	height: 1px;
+	width: 400px;
+	margin-block: 20px;
+	background: white;
+}
+
+.header-service-container p {
+	font-size: 45px;
+    text-align: center;
+}
+
+.visite-h2 {
+	margin-block: 60px;
+}
+
+.louer-tireuse {
+	display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 577px;
+}
+
+
+.img-louer-tireuse {
+	height: 577px;
+	width: 603px;
+}
+
+.visite-brasserie-text-container
+{
+    background: rgba(70, 70, 70, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+<!-- 	width: 80%; -->
+	
+}
+.louer-tireuse-text-container
+{
+    background: rgba(70, 70, 70, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+
+<!-- 	width: 80%; -->
+}
+
+.louer-tireuse-text-content
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 80%;
+	height: 80%;
+}
+
+.visite-brasserie-text-content
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 80%;
+	height: 80%;
+}
+
+.louer-tireuse-text-content {
+	text-align: center;
+}
+
+.louer-tireuse-text-container h3,
+.atelier-brassage-text-content h3,
+.visite-brasserie-text-container h3
+{
+	font-size: 64px;
+	margin-bottom: 10px;
+}
+
+.separation-sous-titre {
+    margin-top: 10px;
+    margin-bottom: 35px;
+	width: 400px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.separation-sous-titreV2 {
+
+	width: 450px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 1);
+	margin-bottom: 20px;
+<!-- 	margin-top: 10px; -->
+<!--     margin-bottom: 35px; -->
+}
+
+
+.louer-tireuse-text-container p,
+.louer-tireuse-text-container li p,
+.atelier-brassage-text-content p,
+.visite-brasserie-text-content p,
+.time-price p,
+.take-rdv li p
+
+{
+	font-size: 24px;
+}
+
+.louer-tireuse-text-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.louer-tireuse-text-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 227px;
+    height: 130px;
+    border: 2px solid rgba(255, 255, 255, 1);
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.size-louer-tireuse {
+	width: 80%;
+}
+
+.caution {
+    padding-top: 30px;
+	font-size: 18px;
+}
+
+.atelier-brassage {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 400px;
+	margin-block: 52px;
+}
+
+.atelier-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 80%;
+	height: 100%;
+	background: rgba(70, 70, 70, 0.45);
+
+}
+
+.atelier-brassage-text-content {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 55%;
+	height: 80%;
+<!-- 	background: red; -->
+}
+
+.atelier-brassage-text-content p {
+	text-align: center;
+}
+
+.atelier-brassage-text-container h3 {
+	font-size: 64px;
+	margin-bottom: 10px;
+}
+
+.time-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+	padding-top: 20px;
+}
+
+.img-atelier-brasserie {
+    width: 600px;
+    height: 400px;
+}
+
+.img-atelier-brasserie p,
+.img-visite-brasserie p {
+	display: none;
+}
+
+
+.visite-brasserie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+	margin-bottom: 120px;
+}
+
+.img-visite-brasserie {
+	width: 600px;
+	height: 400px;
+}
+
+.visite-brasserie-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.take-rdv {
+	margin-inline: auto;
+<!--     background-color: aqua; -->
+    width: 80%;
+}
+
+.take-rdv h2 {
+	margin-bottom: 76px;
+}
+
+
+.take-rdv ul {
+	margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    width: 1152px;
+	padding-bottom: 35px;
+<!--     background-color: goldenrod; -->
+}
+.take-rdv li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.take-rdv h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "page-service",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"edit-page-service",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"edit-page-service",
+            "settings":[
+						{
+                            "type":"image_picker",
+                            "label":"bg-page",
+                            "id":"bg-page"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"bg-header",
+                            "id":"bg-header"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-page",
+                            "id":"titre-page"
+                        },
+                        {
+                            "type":"text",
+                            "label":"sous-titre-page",
+                            "id":"sous-titre-page"
+                        },
+                        {
+                            "type":"text",
+                            "label":"rendre-visite",
+                            "id":"rendre-visite"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"img-location",
+                            "id":"img-location"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-titre",
+                            "id":"location-titre"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-texte",
+                            "id":"location-texte"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-1",
+                            "id":"location-taille-1"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-2",
+                            "id":"location-taille-2"
+                        },
+                        {
+                            "type":"text",
+                            "label":"location-taille-3",
+                            "id":"location-taille-3"
+                        },
+                        {
+                            "type":"text",
+                            "label":"caution",
+                            "id":"caution"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"img-atelier",
+                            "id":"img-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-atelier",
+                            "id":"titre-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-atelier",
+                            "id":"text-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"time-atelier",
+                            "id":"time-atelier"
+                        },
+                        {
+                            "type":"text",
+                            "label":"prix-atelier",
+                            "id":"prix-atelier"
+                        },
+						{
+                            "type":"image_picker",
+                            "label":"img-visite",
+                            "id":"img-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-visite",
+                            "id":"titre-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-visite",
+                            "id":"text-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"time-visite",
+                            "id":"time-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"prix-visite",
+                            "id":"prix-visite"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-rdv",
+                            "id":"titre-rdv"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-en-personne",
+                            "id":"titre-en-personne"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-en-personne",
+                            "id":"text-en-personne"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-tel",
+                            "id":"titre-tel"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-tel",
+                            "id":"text-tel"
+                        },
+                        {
+                            "type":"text",
+                            "label":"titre-mail",
+                            "id":"titre-mail"
+                        },
+                        {
+                            "type":"text",
+                            "label":"text-mail",
+                            "id":"text-mail"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "page-service" 
+                    }
+                    ]
+
+}
+{% endschema %}
+

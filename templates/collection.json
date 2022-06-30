@@ -8,7 +8,7 @@
           "settings": {
             "heading": "NOS BIERES",
             "description": "Nos bières sont brassées dans le respect des méthodes artisanales, de la qualité de nos matières premières, du client et de l’environnement.",
-            "image-fond": "shopify:\/\/shop_images\/nos_bieres_header.png"
+            "image-fond": "shopify:\/\/shop_images\/Group_259_b3936620-068b-41cf-8843-12f9f2a48358.png"
           }
         }
       },
@@ -33,7 +33,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 2,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
@@ -58,7 +58,7 @@
             "description": "Location de tireuses a bière, visite de la brasserie, session de dégustation",
             "bouton-text": "Je découvre",
             "lien-1": "https:\/\/brasserieautremonde-test.myshopify.com\/pages\/nos-services",
-            "image-bg": "shopify:\/\/shop_images\/tireuse.png"
+            "image-bg": "shopify:\/\/shop_images\/Group_222.png"
           }
         }
       },
