@@ -1,4 +1,14 @@
+<div class="brasserie-localisation-container-master">
 <div class="powr-map" id="e6f02747_1656581423"></div><script src="https://www.powr.io/powr.js?platform=shopify"></script>
+<div class="brasserie-localisation-container-coordonnees">
+			<h4>Adresse : </h4>
+            <p class="brasserie-localisation-adresse">{{block.settings.adresse}}</p>
+          	<h4 class="title-horaire">Horaires : </h4>
+            <p class="brasserie-localisation-horaires">{{block.settings.horaires-1}}</p>
+            <p class="brasserie-localisation-tel">{{block.settings.horaires-2}}</p>
+        </div>
+</div>
+
 {% schema %}
 {
     "name": "localisation2",
