@@ -1,14 +1,13 @@
 {%for block in section.blocks %}
 {% comment %}Start automatically added Judge.me widget{% endcomment %}
-  <div class="product__text">
+  <div class="judgme">
     {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
   </div>
 {% comment %}End automatically added Judge.me widget{% endcomment %}
 
 {%endfor%}
-
+.jugme{ background-color: blue;}
 {% style %}
-.product__text{background-color: blue;}
 {% endstyle %}
 
 {% schema %}
