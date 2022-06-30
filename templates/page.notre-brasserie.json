@@ -184,6 +184,7 @@
     },
     "165658330054791301": {
       "type": "localisation2",
+      "disabled": true,
       "blocks": {
         "bc958c19-6808-4508-b2cd-905dd4b6db1f": {
           "type": "text",
