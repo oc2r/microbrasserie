@@ -30,18 +30,12 @@
 
 {% style %}
 
-.product-description-container {
-	position: relative;
-}
 
 .product-description-container h2 {
 	width:fit-content;
     color: black;
 	font-size: 23px;
 	background-color:{{product.metafields.custom.couleur_type_biere}};
-	margin-bottom: 7px;
-    padding-bottom: 30px;
-    position: absolute;
 }
 
 .product-description-container h3 {
@@ -66,8 +60,17 @@
 }
 
 .aromatic-profil-container{
+	position: relative;
 	margin-bottom: 20px;
 }
+
+.aromatic-profil-container h2 {
+	margin-bottom: 7px;
+    padding-bottom: 30px;
+    position: absolute;
+}
+
+	
 
 .ingredients-container {
 	width:30%;
