@@ -1,5 +1,5 @@
 {%for block in section.blocks %}
-<div class="home-scop-section-container" style="background-image:url('https://cdn.shopify.com/s/files/1/0650/7049/8025/files/big-big-black-wall-bg.png?v=1656547568');">
+<div class="home-scop-section-container">
     <div class="home-scop-image">
         <img src="{{block.settings.home-scop-image | img_url:'master'}}">
     </div>
@@ -14,9 +14,9 @@
 {% style %}
 .home-scop-section-container {
 	display:flex;
-
+	margin:7%;
 	border-bottom: 1px solid white;
-	padding: 12%;
+	padding-bottom: 5%;
 
 }
 
@@ -53,7 +53,7 @@ font-family: "Minion-DisplayItalic"
 
 .titre {
 	font-size: 50px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .chapo {
