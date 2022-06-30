@@ -316,6 +316,7 @@
           </localization-form>
         {%- endif -%}
       </div>
+      {% render 'judgeme_widgets', widget_type: 'judgeme_verified_reviews_count_badge', concierge_install: false %}
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
