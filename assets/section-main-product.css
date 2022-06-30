@@ -11,6 +11,8 @@ height:70%;}
 
 
 .type_biere {
+  font-size: 35px;
+  font-family: "MundaneNouveauRegular";
   margin: 1%;
   width: fit-content;
 	padding:2%;}
@@ -317,11 +319,12 @@ fieldset.product-form__input .form__label {
 /* Product info */
 
 .product__info-container > * + * {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .product__info-container .product-form,
-.product__info-container .product__description {
+/* .product__info-container .product__description */
+  {
   margin: 2.5rem 0;
 }
 
