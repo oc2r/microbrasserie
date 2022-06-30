@@ -8,7 +8,9 @@ height:70%;}
 .media{
   height: 470px;
 }
-
+.product-form__buttons button{
+  backgrounde-color: white;
+}
 
 .type_biere {
   font-size: 35px;
@@ -282,7 +284,6 @@ fieldset.product-form__input .form__label {
 
 .product-form__input .select {
   max-width: 25rem;
-  width: 53%;
 }
 
 .product-form__submit {
