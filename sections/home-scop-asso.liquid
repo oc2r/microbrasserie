@@ -1,10 +1,9 @@
 {%for block in section.blocks %}
-<div class="contact-brasserie-container">
-    <div class="contact-adresse-brasserie">
-        <h2 style="margin: 2%;">Adresse</h2>
-        <p>{{block.settings.contact-adresse-brasserie}}</p>
+<div class="home-scop-section-container">
+    <div class="home-scop-image">
+        <img src="{{block.settings.home-scop-image | img_url:'master'}}">
     </div>
-    <div class="contact-tel-brasserie">
+    <div class="home-scop-section-info">
         <h2 style="margin: 2%;">Telephone</h2>
         <p>{{block.settings.contact-tel-brasserie}}</p>
     </div>
@@ -45,6 +44,11 @@
                   	"type":"text",
                   	"label":"home scop chapo",
                   	"id":"home-scop-chapo"
+                  },
+				  {
+                  	"type":"text",
+                  	"label":"home scop text",
+                  	"id":"home-scop-text"
                   }
             ]
      } 
