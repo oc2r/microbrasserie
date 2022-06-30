@@ -1,6 +1,8 @@
 .type_biere {
   width: fit-content;
-	padding:2%;}
+	padding:2%;
+  color: black;
+}
 section {
   background-color: rgba(22, 22, 22, 1);
   margin-left: 0px;
