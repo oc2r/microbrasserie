@@ -27,108 +27,6 @@
         "heading": ""
       }
     },
-    "1656334685eb6b6535": {
-      "type": "quisommesnous",
-      "disabled": true,
-      "blocks": {
-        "8f1739d3-f236-4e75-bc3e-27a177cbbe22": {
-          "type": "text",
-          "settings": {
-            "titre-1": "QUI SOMMES-NOUS ?",
-            "image-bg": "shopify:\/\/shop_images\/bg-black-wall.png",
-            "texte": "Amis passionnés de houblons, de malts, de petites levures de tous horizons, de bière artisanale brassée avec amour, préparez vous pour ce grand périple : celui de la Brasserie Artisanale Autre Monde. Cela fait maintenant 2 ans que nous nous préparons pour ce voyage, et nous travaillons chaque jour pour le grand départ !"
-          }
-        }
-      },
-      "block_order": [
-        "8f1739d3-f236-4e75-bc3e-27a177cbbe22"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
-    "16562535443610698a": {
-      "type": "brasserie-engagements",
-      "disabled": true,
-      "blocks": {
-        "c4d2e39b-b769-46d1-b10f-31f522cf880d": {
-          "type": "text",
-          "settings": {
-            "founderimage-1": "shopify:\/\/shop_images\/mathieu.png",
-            "foundername-1": "Mathieu PROST",
-            "foundertext-1": "Avant de décider de brasser dans de vraies cuves, Mathieu a fait ses premiers brassins il y a de nombreuses années dans sa cuisine. En 2020 il entreprend une reconversion professionnelle et commence à travailler dans des brasseries artisanales, avec l’idée de monter sa propre brasserie dans les années suivantes : Autre Monde. Quand il ne brasse pas, il met en image l'Autre Monde avec ses talents de linograveur, et s'occupe des réseaux sociaux.",
-            "founderimage-2": "shopify:\/\/shop_images\/baptiste.png",
-            "foundername-2": "Baptiste MELLET",
-            "foundertext-2": "Après 6 années passées à Lille où il développe un goût aiguisé pour les bières artisanales, Baptiste décide de revenir au Creusot et de s’associer à la brasserie Autre Monde. Futur gérant de la taproom, Baptiste est également un authentique barman et notre responsable clientèle. Capable de différencier les IPA en blind test, on le trouve généralement enfermé dans le frigo à houblons.",
-            "founderimage-3": "shopify:\/\/shop_images\/image_12_2767d604-fbde-455e-9df8-16ba9c933d27.png",
-            "foundername-3": "Vincent MANIEZ",
-            "foundertext-3": "Originaire du Creusot, Vincent brasse en amateur depuis 2018. En 2020, il se forme au métier d’artisan-brasseur à l’ENILBIO et, après plusieurs expériences dans des brasseries artisanales de la région, il est fier aujourd'hui d'être notre Artisan Brasseur et gérant de la brasserie. Il aime nous partager sa passion pour les lambics et les sours, bières légèrement acidulées, et a toujours une recette prête à être testée !",
-            "titre": "NOS ENGAGEMENTS",
-            "image-1": "shopify:\/\/shop_images\/bouclier-verification_1.png",
-            "text-1": "Des brassages de qualité",
-            "image-2": "shopify:\/\/shop_images\/ampoule_1.png",
-            "engagements-2-texte": "Favoriser la maillage artisanal et local",
-            "image-3": "shopify:\/\/shop_images\/Vector.png",
-            "engagements-3-texte": "Assurer le bien-être des salariés",
-            "image-4": "shopify:\/\/shop_images\/monde_1.png",
-            "engagements-4-texte": "Promouvoir la consommation responsable",
-            "image-5": "shopify:\/\/shop_images\/marqueur-de-carte_1.png",
-            "engagements-5-texte": "Une production créative et passionnée",
-            "image-6": "shopify:\/\/shop_images\/biere_1.png",
-            "engagements-6-texte": "Limiter notre impact environnemental"
-          }
-        }
-      },
-      "block_order": [
-        "c4d2e39b-b769-46d1-b10f-31f522cf880d"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
-    "1656273062ad40b9b1": {
-      "type": "brasserie-notrehistoire",
-      "disabled": true,
-      "blocks": {
-        "bd6c3404-fca5-49ad-8ee1-49e0352b8685": {
-          "type": "text",
-          "settings": {
-            "titre": "Notre histoire",
-            "texte-1": "Tous trois originaires de la région, nous nous sommes rencontrés autour d’un feu de camp aux Scouts et Guides de France du Creusot. Nous partagions déjà un intérêt commun pour la bière. Une amitié est vite née entre nous. Nous avons donc mis en commun nos expériences de buveurs de bières et de brasseurs amateurs. Petit à petit, l’envie de bâtir un projet commun autour de cette passion nous a poussé à nous former au métier de brasseur.  Courant 2021, nous avons tous trois entrepris de quitter nos emplois respectifs dans les villes où nous habitions et de nous lancer dans cette reconversion professionnelle : la création de notre brasserie. C’est assez naturellement que, après étude de marché, nous avons choisi de nous implanter au Creusot, ville qui nous a rassemblés.",
-            "image-1": "shopify:\/\/shop_images\/team.png",
-            "texte-2": "Souhaitant mettre l’accent sur nos valeurs, nous avons choisi d’être une SCOP, c’est à dire une société coopérative et solidaire qui appartient à ses salariés.   Un nom et un imaginaire ont vite émergé, évoquant une autre passion commune autour des univers fantastiques. La Brasserie Artisanale Autre Monde était née, prête à faire goûter des bières artisanales de qualité et à raconter les histoires accompagnant de celles-ci.  Des bières et des jeux !   L’année 2021 et le début de l’année 2022 ont donc été consacrés, entre autres choses, à tester nos recettes, trouver un local, faire des travaux, chercher des soutiens, commander notre matériel, créer nos premiers designs… bref ! Vivre pleinement l’entreprenariat et ce qu’il peut comporter comme émotions et rebondissements !  Nous serons ravis de vous accueillir en fin d’année 2022 pour vous faire visiter les lieux, déguster nos bières et vous partager notre passion !",
-            "image-2": "shopify:\/\/shop_images\/travaux.png",
-            "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
-          }
-        }
-      },
-      "block_order": [
-        "bd6c3404-fca5-49ad-8ee1-49e0352b8685"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
-    "1656277792713d9bba": {
-      "type": "brasserie-processus-fabrication",
-      "disabled": true,
-      "blocks": {
-        "939a7582-e081-4dca-8011-542f0bba427b": {
-          "type": "text",
-          "settings": {
-            "titre": "Notre proccessus de fabrication",
-            "image-1": "shopify:\/\/shop_images\/processus-fabrication.png",
-            "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
-          }
-        }
-      },
-      "block_order": [
-        "939a7582-e081-4dca-8011-542f0bba427b"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
     "1656545164f099a98d": {
       "type": "new-brasserie-complete",
       "blocks": {
@@ -207,10 +105,6 @@
   "order": [
     "main",
     "1656335755d6ede27c",
-    "1656334685eb6b6535",
-    "16562535443610698a",
-    "1656273062ad40b9b1",
-    "1656277792713d9bba",
     "1656545164f099a98d",
     "165658330054791301"
   ]
