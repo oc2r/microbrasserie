@@ -234,6 +234,12 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "1656584603dfb2a65a": {
+      "type": "jugeme",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -243,6 +249,7 @@
     "1656403428aec5e5fe",
     "16563583452814a91e",
     "product-recommendations",
-    "16565819298c463558"
+    "16565819298c463558",
+    "1656584603dfb2a65a"
   ]
 }
