@@ -1,0 +1,118 @@
+{%for block in section.blocks %}
+    <div class="catalog-category_container" >
+      	<div style="background-image: url('{{block.settings.image-bg | img_url:'master'}}');" class="quisommesnous-container">
+            <h2 class ="mundane catalog-category_title" >{{block.settings.titre-1}}</h2>
+          	<span></span>
+            <p class="presentation_text minion-font">{{block.settings.texte}}</p>
+        </div>
+
+    </div>
+{%endfor%}
+
+{% style %}
+
+.catalog-category_container {
+	position: relative;
+	width: 100%;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+
+}
+
+.header-notre-brasserie {
+    position: relative;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding: 100px;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/page-brasserie-header_ba49d3cc-6232-438d-ace3-1b6827d6b35e.png?v=1656084922");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-notre-brasserie h1 {
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+.quisommesnous-container h2 {
+	font-size: 64px;
+	color: white;
+}
+
+.quisommesnous-container {
+	margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 	align-items: center;
+    text-align: justify;
+	width: 80%;
+	padding: 50px;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quisommesnous-container span {
+    height: 1px;
+    width: 25%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 25px;
+}
+
+.quisommesnous-container {
+	font-size: 28px;
+}
+
+
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "qui sommes nous",
+    "class" : "quisommesnous",
+    "settings": [
+        {
+            "type":"text",
+            "label":"titre",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"qui sommes nous",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"titre-1",
+                            "id":"titre-1"
+                        },
+						{
+                  	"type":"image_picker",
+                  	"label":"image-bg",
+                  	"id":"image-bg"
+                  },
+						{
+                            "type":"text",
+                            "label":"texte",
+                            "id":"texte"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "qui sommes nous" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

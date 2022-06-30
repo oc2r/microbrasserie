@@ -1,0 +1,89 @@
+{%for block in section.blocks %}
+<div class="brasserie-processusfabrication-container-master" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">  
+	<h2 class="mundane brasserie-processusfabrication-container-master-titre" >{{block.settings.titre}}</h2>
+  	<span></span>
+    <div class="brasserie-processusfabrication-container" >
+        <img class="brasserie-processusfabrication" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+
+.brasserie-processusfabrication-container-master{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	padding-inline: 150px;
+	padding-block: 50px;
+}
+
+.brasserie-processusfabrication-container-master span {
+    height: 1px;
+    width: 30%;
+    background-color: white;
+	margin-top: 12px;
+	margin-bottom: 38px;
+}
+
+.brasserie-processusfabrication-container-master-titre{
+
+	font-size: 64px;
+}
+
+.brasserie-processusfabrication-container{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+}
+
+.brasserie-processusfabrication{
+	width:100%;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "processus fabrication",
+    "class" : "processus-fabrication",
+    "settings": [
+        {
+            "type":"text",
+            "label":"processus fabrication",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"processusfabrication",
+            "settings":[                  
+				{
+                  	"type":"text",
+                  	"label":"titre",
+                  	"id":"titre"
+                  },
+				{
+                    "type":"image_picker",
+                    "label":"image-1",
+                    "id":"image-1"
+                },
+				{
+                    "type":"image_picker",
+                    "label":"image-fond",
+                    "id":"image-fond"
+                }
+            ]
+     } 
+],
+"presets" : [
+    {
+    "category":"image",
+    "name": "processus fabrication" 
+    }
+]
+
+}
+{% endschema %}

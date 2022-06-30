@@ -1,0 +1,162 @@
+{%for block in section.blocks %}
+    <div class="coeur-bourgogne_container" >
+        <div class="coeur-bourgogne_text">
+            <h2 class ="titre-bourgogne" >{{block.settings.titre-bourgogne}}</h2>
+            <h3 class ="sous-titre-bourgogne">{{block.settings.sous-titre-bourgogne}}</h3>
+            <p class ="p_bourgogne">{{block.settings.p_bourgogne}}</p>
+          	<button class="bourgogne_btn" onclick="window.location.href = '{{block.settings.lien-1}}'" type="button" >{{block.settings.bouton-text}}</button>
+        </div>
+
+      <img class ="bourgogne-ble_img" src="{{block.settings.image-title | img_url:'master'}}"/>
+      <img class ="bourgogne-village_img" src="{{block.settings.image-catalog | img_url:'master'}}"/>
+
+    </div>
+{%endfor%}
+
+{% style %}
+.coeur-bourgogne_container{
+	position: relative;
+	width: 100%;
+	background-image: url("https://cdn.shopify.com/s/files/1/0650/7049/8025/files/Background2_home.png?v=1656155138");
+
+}
+
+.coeur-bourgogne_container {
+	position: relative;
+    width: fit-content;
+    height: fit-content;
+	box-sizing: border-box;
+	
+
+}
+.coeur-bourgogne_text {
+	position: relative;
+	width: 41%;
+	left: 673px;
+	top: 580px;
+	z-index: 3;
+	color: white;
+
+}
+
+.bourgogne-ble_img {
+	width: 57%;
+	height: 730px;
+	position: relative;
+	bottom: 280px;
+	left: 12%;
+	z-index: 1;
+
+}
+.bourgogne-village_img {
+	width: fit-content;
+	height: auto;
+	position: relative;
+	top: -600px;
+	z-index: 2;
+}
+
+.coeur-bourgogne_text h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	margin-top: 0px;
+}
+
+.coeur-bourgogne_text h3 {
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.coeur-bourgogne_text p {
+	font-size: 15px;
+	font-style: italic;
+	color: white;
+	margin-top: 0 px;
+}
+.bourgogne_btn {
+	margin-top : 30px;
+	width: 206.87px;
+	height: 57px;
+	font-size: 20px;
+	font-family: "League spartan", sans-serif;
+	color: white;
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "coeur-bourgogne",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"title catalog",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"title catalog",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"titre-bourgogne",
+                            "id":"titre-bourgogne"
+                        },
+
+                        {
+                            "type":"text",
+                            "label":"sous-titre-bourgogne",
+                            "id":"sous-titre-bourgogne"
+
+                        },
+
+                        {
+                            "type":"text",
+                            "label":"text-bourgogne",
+                            "id":"p_bourgogne"
+
+                        },
+
+                        {
+                            "type":"image_picker",
+                            "label":"main image",
+                            "id":"image-title"
+                        },
+
+                        {
+                            "type":"image_picker",
+                            "label":"second image",
+                            "id":"image-catalog"
+                        },
+						{
+                    		"type": "text",            
+                    		"label": "bouton-text",
+                    		"id": "bouton-text"
+                		},
+						{
+                    		"type": "url",            
+                    		"label": "lien-1",
+                    		"id": "lien-1"
+                		}
+
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "coeur-bourgogne" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

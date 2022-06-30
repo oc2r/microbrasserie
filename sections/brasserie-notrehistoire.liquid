@@ -1,0 +1,129 @@
+{%for block in section.blocks %}
+<div class="brasserie-notrehistoire-container-master" style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');">  
+	<h2 class="mundane brasserie-notrehistoire-container-master-titre" >{{block.settings.titre}}</h2>
+  	<span></span>
+    <div class="brasserie-notrehistoire-container" >
+        <div class="brasserie-notrehistoire-container-1">
+            <div class="brasserie-notrehistoire-container-1-texte">{{block.settings.texte-1}}</div>
+            <div class="brasserie-notrehistoire-container-1-image">
+            	<img class="brasserie-notrehistoire-container-1-image-1" src="{{block.settings.image-1 | img_url:'master'}}" alt="">
+            </div>
+        </div>
+        <div class="brasserie-notrehistoire-container-2">
+            <div class="brasserie-notrehistoire-container-2-image">
+            	<img class="brasserie-notrehistoire-container-2-image-2" src="{{block.settings.image-2 | img_url:'master'}}" alt="">
+            </div>
+            <div class="brasserie-notrehistoire-container-2-texte">{{block.settings.texte-2}}</div>
+        </div>
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+
+.brasserie-notrehistoire-container-master{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.brasserie-notrehistoire-container-master-titre{
+	margin-top: 15px;
+	font-size: 64px;
+
+<!-- 	margin-bottom: 50px; -->
+<!-- 	padding-bottom: 20px; -->
+<!-- 	border-bottom: 1px solid #ffffff; -->
+}
+
+.brasserie-notrehistoire-container-master span {
+    height: 1px;
+    width: 10%;
+    background-color: white;
+	margin-top: 8px;
+	margin-bottom: 40px;
+}
+
+.brasserie-notrehistoire-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.brasserie-notrehistoire-container-1, .brasserie-notrehistoire-container-2{
+	width: 50%;
+}
+
+.brasserie-notrehistoire-container-1-texte, .brasserie-notrehistoire-container-2-texte {
+	font-size: 28px;
+	font-weight: 500;
+	padding: 20px;
+}
+
+.brasserie-notrehistoire-container-1-image, .brasserie-notrehistoire-container-2-image{
+}
+
+.brasserie-notrehistoire-container-1-image-1, .brasserie-notrehistoire-container-2-image-2{
+	width:100%;
+	object-fit: cover;    
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "notre histoire",
+    "class" : "notre-histoire",
+    "settings": [
+        {
+            "type":"text",
+            "label":"notre histoire",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"notre histoire",
+            "settings":[                  
+				{
+                  	"type":"text",
+                  	"label":"titre",
+                  	"id":"titre"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"texte-1",
+                  	"id":"texte-1"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-1",
+                  	"id":"image-1"
+                  },
+				{
+                  	"type":"text",
+                  	"label":"texte-2",
+                  	"id":"texte-2"
+                  },				
+				{
+                  	"type":"image_picker",
+                  	"label":"image-2",
+                  	"id":"image-2"
+                  },
+				{
+                  	"type":"image_picker",
+                  	"label":"image-fond",
+                  	"id":"image-fond"
+                  }
+            ]
+     } 
+],
+"presets" : [
+    {
+    "category":"image",
+    "name": "notre histoire" 
+    }
+]
+
+}
+{% endschema %}

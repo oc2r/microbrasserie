@@ -1,0 +1,97 @@
+{%for block in section.blocks %}
+    <div style="background-image: url('{{block.settings.image-fond | img_url:'master'}}');" class="header-banniere-container-master" >
+        <div class="header-banniere-container">
+            <h1 class ="header-banniere-titre" >{{block.settings.heading}}</h1>
+            <span class="separation-sous-titre"></span>
+            <h3 class="header-banniere-description">{{block.settings.description}}</h3>
+        </div>
+    </div>
+{%endfor%}
+
+{% style %}
+
+.header-banniere-container-master{
+	position: relative;
+	width: 100%;
+    background-size: cover;
+	height: 550px;
+}
+
+.header-banniere-container{
+	   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 551px;
+}
+
+
+.header-banniere-container h1 {
+	color: #FFFFFF;
+	font-size: 75px;
+    font-weight: 600;
+}
+
+.separation-sous-titre {
+	width: 400px;
+    height: 1px;
+	margin-block: 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+.header-banniere-description{
+	font-family: "MundaneNouveauRegular"!important;
+    font-size: 45px;
+    text-align: center;
+	color: #FFFFFF;
+	width: 70%;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "header banniere",
+    "class" : "header-banniere",
+    "settings": [
+        {
+            "type":"text",
+            "label":"titre",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"header banniere",
+            "settings":[
+                {
+                "type":"text",
+                "label":"heading",
+                "id":"heading"
+                },
+                {
+                "type":"text",
+                "label":"description",
+                "id":"description"
+                },
+                {
+                "type":"image_picker",
+                "label":"image-fond",
+                "id":"image-fond"
+                }
+		]
+	}
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "header banniere" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

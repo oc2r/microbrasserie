@@ -1,3 +1,15 @@
+.card--standard .card__inner .circle-bg {
+  position: absolute;
+  left:17%;
+  top:25%;
+}
+
+.circle-bg {
+  width: 65%;}
+
+.circles{
+width:100%;}
+
 .card-wrapper {
   color: inherit;
   height: 100%;
@@ -14,6 +26,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 60%;
+  margin: auto;
 }
 
 .card--card {
@@ -54,7 +68,7 @@
 }
 
 .card--standard.card--text {
-  background-color: transparent;
+/*   background-color: transparent; */
 }
 
 .card-information {
@@ -70,6 +84,7 @@
 
 .card .media {
   width: 100%;
+  left: 35%
 }
 
 .card__media {
@@ -91,8 +106,8 @@
 }
 
 .card__content {
-  display: grid;
-  grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr);
+/*   display: grid;
+  grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr); */
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
@@ -103,7 +118,10 @@
 }
 
 .card__information {
-  grid-row-start: 2;
+/*   grid-row-start: 2; */
+/*   position: relative; */
+  bottom: 25%;
+  right: 10%;
   padding: 1.3rem 1rem;
 }
 
@@ -156,6 +174,15 @@
 .card__heading:last-child {
   margin-bottom: 0;
 }
+
+
+
+
+
+#product-grid{width: 80%;
+margin-inline: auto;}
+
+
 
 .card--card.card--media > .card__content {
   margin-top: calc(0rem - var(--card-image-padding));

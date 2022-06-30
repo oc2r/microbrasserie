@@ -1,3 +1,8 @@
+.contact {
+  max-width: 36%;
+  margin-right: 0px ;
+  margin-left: 14%;
+}
 .contact img {
   max-width: 100%;
 }
@@ -24,6 +29,10 @@
   margin-top: 3rem;
 }
 
+.contact__button button {
+    width: 100%;
+}
+
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
@@ -41,3 +50,5 @@
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+

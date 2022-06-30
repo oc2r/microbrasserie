@@ -1,0 +1,97 @@
+{%for block in section.blocks %}
+
+
+<div class="servicepage-right">
+    <div class="servicepage-right-container">  
+        <div class="title-description-servicepage-right">
+            <h2>{{block.settings.title-servicepage-right}}</h2>
+            <p>{{block.settings.description-servicepage-right}}</p>
+        </div>
+        <img class ="image-servicepage-right" src="{{block.settings.image-servicepage-right | img_url:'master'}}"/>
+    </div>
+</div>
+
+{%endfor%}
+{% style %}
+
+.servicepage-right-container {
+    display: flex;
+    margin-top: 2%;
+	gap: 10%;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+	background-color: rgba(70, 70, 70, 0.45);
+}
+
+.image-servicepage-right {	
+    width: 600px;
+	height: 400px;
+}
+
+.servicepage-right {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.title-description-servicepage-right {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width: 40%;
+	text-align:center;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "service  page right",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"service  page right",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"service  page right",
+            "settings":[
+
+            {
+                "type":"image_picker",
+                "label":"image service page right",
+                "id":"image-servicepage-right"
+           },
+
+            {
+                "type": "text",
+                "label": "title service page right",
+                "id": "title-servicepage-right"
+           },
+            
+            {
+                "type": "text",
+                "label": "description service page right",
+                "id": "description-servicepage-right"
+           }
+        ]
+    } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "service page right" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

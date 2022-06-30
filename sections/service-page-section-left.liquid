@@ -1,0 +1,119 @@
+{%for block in section.blocks %}
+
+
+<div class="service-page-section-left">
+    <div class="service-page-section-left-container">
+        <div class="title-description-service-page-left">
+            <h2 class="mundane">{{block.settings.title-service-page-left}}</h2>
+          	<span></span>
+            <p>{{block.settings.description-service-page-left}}</p>
+        </div>
+    </div>
+  	<div class="section-service-left-image" style="background-image: url('{{block.settings.image-service-page-left | img_url:'master'}}');" >
+      <p>klnvsobvozb</p>
+  	</div>
+</div>
+
+{%endfor%}
+{% style %}
+
+.service-page-section-left {
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+
+.service-page-section-left-container {
+    display: flex;
+	height 400px;
+	width: 60%;
+	gap: 10%;
+	background-color: rgba(70, 70, 70, 0.45);
+}
+
+.image-service-page-left {
+	width: 600px;
+	height: 400px;
+}
+
+.title-description-service-page-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-block: 30px;
+	width: 50%;
+	text-align: center;
+	
+}
+
+.title-description-service-page-left h2 {
+	font-size: 64px;
+}
+
+.title-description-service-page-left span {
+	height: 1px;
+	width: 200px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+<!-- .section-service-left-image {
+	width: 60%;
+} -->
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "service section page left",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"service section page left",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"service section page left",
+            "settings":[
+
+            {
+                "type":"image_picker",
+                "label":"image service page left",
+                "id":"image-service-page-left"
+            },
+			{
+                "type":"image_picker",
+                "label":"bg-section-service-img",
+                "id":"bg-section-service-img"
+            },
+
+            {
+                "type": "text",
+                "label": "title service page left",
+                "id": "title-service-page-left"
+            },
+            
+            {
+                "type": "text",
+                "label": "description service page left",
+                "id": "description-service-page-left"
+            }
+        ]
+    } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "service section page left" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+

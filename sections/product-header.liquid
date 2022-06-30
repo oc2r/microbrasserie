@@ -1,0 +1,788 @@
+{%for block in section.blocks %}
+<div class="product-header-container">
+    <div class="product-container">
+        <div class="product-image-container corner-border bottom-corner">
+            <div class="type-beer">
+                <p class="name-type-beer mundane">{{ product.metafields.custom.sous_titre}}</p>
+            </div>
+            <div class="img-beer-container">
+                <img src="{{block.settings.illustration-beer-name | img_url:'master'}}" alt="">
+            </div>
+        </div>
+        <div class="info-product-container">
+            <h1 class="mundane">{{product.title}}</h1>
+            <h2 class="mundane">{{product.metafields.custom.sous_titre_biere}}</h2>
+            <p>{{ product.metafields.custom.chapo2}}</p>
+            <div class="degre-litre-prix">
+                <div class="degre-litre">
+                    <p class="degre">{{block.settings.beer-degre}}</p>
+                    <span></span>
+                    <p class="litre">{{block.settings.beer-size}}</p>
+                </div>
+                <p class="prix">{{block.settings.beer-price}}</p>
+            </div>
+            <div class="choose-quantity">
+                <div class="choice-variant">
+                    <select name="choice-variant" id="choice-variant">
+                        <option value="Bières individuelles">Bières individuelles</option>
+                        <option value="Bières pack">Bières pack</option>
+                    </select>
+                    <div class="quantity-product">
+                        <select name="choice-quantity" id="choice-quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="add-basket">
+                <button type="submit" name="add" class="product-form__submit button button--full-width button--secondary">
+                        <span>Ajouter au panier
+						</span>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                    </button>
+              ::before
+              <span>Ajouter au panier
+              </span>
+            </div>
+            <div class="info-take-container">
+                <div class="click-collect-container">
+                    <span>
+                        <img src="{{block.settings.icone-click-collect | img_url:'master'}}" alt="">
+                    </span>
+                    <p class="info-take">{{block.settings.txt-click-collect}}</p>
+                </div>
+                <div class="livraison-container">
+                    <span>
+                        <img src="{{block.settings.icone-livraison | img_url:'master'}}" alt="">
+                    </span>
+                    <p class="info-take">{{block.settings.txt-livraison}}</p>
+                </div>
+            </div>
+        </div>
+          <img class="illustration-beer-name" src="{{product.metafields.custom.image_name_biere | img_url:'master'}}" alt="image de la créature">
+    </div>
+</div>
+
+        {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                  <div class="product-form__buttons">
+                    <button
+                      type="submit"
+                      name="add"
+                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                    >
+                        <span>
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            {{ 'products.product.add_to_cart' | t }}
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
+                        </span>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                    </button>
+                    {%- if block.settings.show_dynamic_checkout -%}
+                      {{ form | payment_button }}
+                    {%- endif -%}
+                  </div>
+                {%- endform -%}
+
+
+{%endfor%}
+
+{% style %}
+
+
+    .product-header-container {
+		position: relative;
+        background: rgba(22, 22, 22, 1);
+    }
+
+	.product-container {
+		display: flex;
+		flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .product-image-container {
+		position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		align-items: center;
+		left: 10%;
+		width: 320px;
+		height: 530px;
+		border: 1px solid {{product.metafields.custom.couleur_type_biere}};
+
+<!--  background-image:
+        linear-gradient(0deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // left
+        linear-gradient(90deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // top
+        linear-gradient(180deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // right
+        linear-gradient(270deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%) // bottom
+    ; -->
+
+    }
+
+    .type-beer {
+		position: absolute;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+		left: 0px;
+		top: 50px;
+		height: fit-content;
+        background: rgba(252, 220, 92, 1);
+    }
+
+	.type-beer p {
+		margin: 0px;
+		padding-inline: 20px;
+        font-size: 35px;
+		color: rgba(0, 0, 0, 1);
+    }
+
+	.name-type-beer {
+		background-color:{{product.metafields.custom.couleur_type_biere}};
+}
+
+    .info-product-container {
+		position: relative;
+        display: flex;
+        flex-direction: column;
+		width: 30vw;
+		left: 15%;
+		background: rebeccapurple;
+    }
+
+	.info-product-container h1 {
+		margin: 0;
+		height: fit-content;
+        font-size: 100px;
+    }
+
+    .info-product-container h2 {
+		margin: 0;
+		font-size: 60px;
+        color: rgba(252, 220, 92, 1);
+    }
+
+    .degre-litre-prix {
+        display: flex;
+        align-items: center;
+    }
+
+    .degre-litre {
+		display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 13vw;
+		margin-block: 20px;
+        padding: 10px;
+        margin-right: 30px;
+		font-size: 30px;
+        background-color: rgba(112, 112, 112, 0.6);
+    }
+
+    .degre-litre span {
+        width: 1px;
+        height: 15px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+	.prix {
+		font-size: 40px;
+	}
+
+	.choose-quantity {
+        display: flex;
+    }
+
+	.choice-variant {
+		position: relative;
+		display: flex;
+		background-color: green;
+
+	}
+
+	.choice-variant select {
+		padding: 5px;
+		margin-right: 8px;
+		font-family: 'League Spartan', sans-serif;
+		border-radius: 0px;
+		border: 0px;
+	}
+
+	.quantity-product {
+		font-family: 'League Spartan', sans-serif;
+	}
+
+	.add-basket input {
+		padding: 5px;
+		margin-block: 15px;
+		font-family: 'League Spartan', sans-serif;
+	    border-radius: 0px;
+		border: 1px solid black;
+	}
+
+	.info-take-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+	.click-collect-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .click-collect-container span {
+        margin: 10px;
+    }
+
+    .livraison-container {
+        display: flex;
+        align-items: center;
+    }
+
+	.livraison-container span {
+        margin: 10px;
+    }
+
+	.illustration-beer-name {
+		margin-left: 200px;
+		top: 10px
+		width: 300px;
+	}
+
+
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "product-header",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"edit product",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"edit product",
+            "settings":[
+                        {
+                            "type":"text",
+                            "label":"your beer type",
+                            "id":"your-beer-type"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"your-beer-type-img",
+                            "id":"your-beer-type-img"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-name",
+                            "id":"beer-name"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-name-second",
+                            "id":"beer-name-second"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-description",
+                            "id":"beer-description"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-degre",
+                            "id":"beer-degre"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-size",
+                            "id":"beer-size"
+                        },
+                        {
+                            "type":"text",
+                            "label":"beer-price",
+                            "id":"beer-price"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"icone-click-collect",
+                            "id":"icone-click-collect"
+                        },
+                        {
+                            "type":"text",
+                            "label":"txt-click-collect",
+                            "id":"txt-click-collect"
+                        },
+                        {
+                            "type":"image_picker",
+                            "label":"icone-livraison",
+                            "id":"icone-livraison"
+                        },
+                        {
+                            "type":"text",
+                            "label":"txt-livraison",
+                            "id":"txt-livraison"
+                        },
+
+                        {
+                            "type":"image_picker",
+                            "label":"illustration-beer-name",
+                            "id":"illustration-beer-name"
+                        }
+                    ]
+     } 
+],
+"presets" : [
+                    {
+                        "category":"image",
+                        "name": "product-header" 
+                    }
+                    ]
+
+}
+{% endschema %}
+
+<!-- ddtd -->
+<!-- hdndgndn -->
+
+<!-- 
+<!-- {
+  "name": "t:sections.main-product.name",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "text",
+      "name": "t:sections.main-product.blocks.text.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Text block",
+          "label": "t:sections.main-product.blocks.text.settings.text.label"
+        },
+        {
+          
+    {
+      "type": "buy_buttons",
+      "name": "t:sections.main-product.blocks.buy_buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "default": true,
+          "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
+          "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+        }
+      ]
+    },
+    {
+    
+      "type": "share",
+      "name": "t:sections.main-product.blocks.share.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "share_label",
+          "label": "t:sections.main-product.blocks.share.settings.text.label",
+          "default": "Share"
+        },
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.share.settings.featured_image_info.content"
+        },
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.share.settings.title_info.content"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid",
+      "name": "t:sections.main-product.blocks.custom_liquid.name",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
+          "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "collapsible_tab",
+      "name": "t:sections.main-product.blocks.collapsible_tab.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Collapsible row",
+          "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+            },
+            {
+              "value": "apple",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+            },
+            {
+              "value": "banana",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+            },
+            {
+              "value": "bottle",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+            },
+            {
+              "value": "box",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+            },
+            {
+              "value": "carrot",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+            },
+            {
+              "value": "check_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+            },
+            {
+              "value": "clipboard",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+            },
+            {
+              "value": "dairy",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+            },
+            {
+              "value": "dairy_free",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+            },
+            {
+              "value": "fire",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+            },
+            {
+              "value": "gluten_free",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+            },
+            {
+              "value": "heart",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+            },
+            {
+              "value": "iron",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__18.label"
+            },
+            {
+              "value": "leather",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+            },
+            {
+              "value": "lightning_bolt",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+            },
+            {
+              "value": "lipstick",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+            },
+            {
+              "value": "lock",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+            },
+            {
+              "value": "map_pin",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+            },
+            {
+              "value": "nut_free",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+            },
+            {
+              "value": "pants",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__25.label"
+            },
+            {
+              "value": "paw_print",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__26.label"
+            },
+            {
+              "value": "pepper",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__27.label"
+            },
+            {
+              "value": "perfume",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__28.label"
+            },
+            {
+              "value": "plane",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__29.label"
+            },
+            {
+              "value": "plant",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__30.label"
+            },
+            {
+              "value": "price_tag",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__31.label"
+            },
+            {
+              "value": "question_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__32.label"
+            },
+            {
+              "value": "recycle",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__33.label"
+            },
+            {
+              "value": "return",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__34.label"
+            },
+            {
+              "value": "ruler",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__35.label"
+            },
+            {
+              "value": "serving_dish",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__36.label"
+            },
+            {
+              "value": "shirt",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__37.label"
+            },
+            {
+              "value": "shoe",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__38.label"
+            },
+            {
+              "value": "silhouette",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__39.label"
+            },
+            {
+              "value": "snowflake",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__40.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__41.label"
+            },
+            {
+              "value": "stopwatch",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__42.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__43.label"
+            },
+            {
+              "value": "washing",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__44.label"
+            }
+          ],
+          "default": "check_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "popup",
+      "name": "t:sections.main-product.blocks.popup.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Pop-up link text",
+          "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
+        },
+        {
+          "id": "page",
+          "type": "page",
+          "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "rating",
+      "name": "t:sections.main-product.blocks.rating.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_info",
+      "default": true,
+      "label": "t:sections.main-product.settings.enable_sticky_info.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.settings.header.content",
+      "info": "t:sections.main-product.settings.header.info"
+    },
+    {
+      "type": "select",
+      "id": "gallery_layout",
+      "options": [
+        {
+          "value": "stacked",
+          "label": "t:sections.main-product.settings.gallery_layout.options__1.label"
+        },
+        {
+          "value": "thumbnail",
+          "label": "t:sections.main-product.settings.gallery_layout.options__2.label"
+        },
+        {
+          "value": "thumbnail_slider",
+          "label": "t:sections.main-product.settings.gallery_layout.options__3.label"
+        }
+      ],
+      "default": "stacked",
+      "label": "t:sections.main-product.settings.gallery_layout.label"
+    },
+    {
+      "type": "select",
+      "id": "media_size",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.main-product.settings.media_size.options__1.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-product.settings.media_size.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-product.settings.media_size.options__3.label"
+        }
+      ],
+      "default": "large",
+      "label": "t:sections.main-product.settings.media_size.label",
+      "info": "t:sections.main-product.settings.media_size.info"
+    },
+    {
+      "type": "select",
+      "id": "mobile_thumbnails",
+      "options": [
+        {
+          "value": "show",
+          "label": "t:sections.main-product.settings.mobile_thumbnails.options__1.label"
+        },
+        {
+          "value": "hide",
+          "label": "t:sections.main-product.settings.mobile_thumbnails.options__2.label"
+        }
+      ],
+      "default": "hide",
+      "label": "t:sections.main-product.settings.mobile_thumbnails.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_variants",
+      "default": false,
+      "label": "t:sections.main-product.settings.hide_variants.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "default": false,
+      "label": "t:sections.main-product.settings.enable_video_looping.label"
+ 
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ] 
+} -->
+
+
+
