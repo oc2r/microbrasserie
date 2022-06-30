@@ -4,9 +4,9 @@
         <img src="{{block.settings.home-scop-image | img_url:'master'}}">
     </div>
     <div class="home-scop-section-info">
-        <h2>{{block.settings.home-scop-titre}}</h2>
-        <h3>{{block.settings.home-scop-chapo}}</h3>
-      <p>{{block.settings.home-scop-text}}</p>	
+        <h2 class="titre">{{block.settings.home-scop-titre}}</h2>
+        <h3 class="chapo">{{block.settings.home-scop-chapo}}</h3>
+      <p class="texte">{{block.settings.home-scop-text}}</p>	
     </div>
 </div>
 {%endfor%}
@@ -29,7 +29,7 @@
 	
 }
 
-.home-scop-section-info h2{
+.home-scop-section-info .titre{
 	margin: 2%;
 	font-size: 200%;
 	border-bottom: 1px solid white;
@@ -37,14 +37,14 @@
 	
 }
 
-.home-scop-section-info h3{
+.home-scop-section-info .chapo{
 	margin: 2%;
 	font-size: 100%;
 	text-transform: uppercase;
 	font-family: "MundaneNouveauRegular";
 }
 
-.home-scop-section-info p{
+.home-scop-section-info .texte{
 	margin: 2%;
 	font-size: 80%;
 font-family: "Minion-DisplayItalic"
