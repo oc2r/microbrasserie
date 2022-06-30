@@ -30,12 +30,18 @@
 
 {% style %}
 
-.product-description-container h2, .product-description-container h3 {
+.product-description-container h2 {
 	width:fit-content;
     color: black;
 	font-size: 23px;
 	background-color:{{product.metafields.custom.couleur_type_biere}};
 }
+
+.product-description-container h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 
 .product-description-container {
     display: flex;
@@ -57,6 +63,31 @@
 
 .ingredients-container {
 	width:30%;
+}
+
+
+.description-aromatic-profil,
+.description-suggestion-food,
+.description-composition-seed,
+.description-composition-hops,
+.description-composition-yeast {
+    font-family: "Minion-DisplayItalic";
+}
+
+.histoire-personnage-nom {
+    font-size: 60px;
+    font-family: "MundaneNouveauRegular";
+}
+
+.histoire-personnage-description {
+    font-size: 30px;
+    font-family: "Minion-DisplayItalic";
+}
+
+.reassurance-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
 }
 
 
