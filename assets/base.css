@@ -1731,7 +1731,7 @@ details[open] > .share-button__fallback {
 .select {
   display: flex;
   position: relative;
-  width: 100%;
+  width: fit-content;
 }
 
 /* Select */
