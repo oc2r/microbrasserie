@@ -1,4 +1,5 @@
 .container_input_product{
+  width:fit-content;
   display: flex;
   gap: 10px
   background-color: blue;};
