@@ -109,39 +109,6 @@
         "heading": ""
       }
     },
-    "16562757822c7bfe90": {
-      "type": "brasserie-localisation",
-      "disabled": true,
-      "blocks": {
-        "70ef34ed-1c7b-4c39-a749-e9499256dfe3": {
-          "type": "text",
-          "settings": {
-            "titre": "Notre taverne",
-            "image-carte": "shopify:\/\/shop_images\/carte.png",
-            "adresse": "77 route de Montcenis 71200 Le Creusot",
-            "horaires-1": "Du lundi au vendredi de 10h00 à 18h00",
-            "horaires-2": "Le samedi et le dimanche de 9h30 à 19h00",
-            "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
-          }
-        },
-        "fe0a9b2c-7783-41e7-990c-fa52677f81b1": {
-          "type": "text",
-          "settings": {
-            "titre": "",
-            "adresse": "",
-            "horaires-1": "",
-            "horaires-2": ""
-          }
-        }
-      },
-      "block_order": [
-        "70ef34ed-1c7b-4c39-a749-e9499256dfe3",
-        "fe0a9b2c-7783-41e7-990c-fa52677f81b1"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
     "1656277792713d9bba": {
       "type": "brasserie-processus-fabrication",
       "disabled": true,
@@ -243,7 +210,6 @@
     "1656334685eb6b6535",
     "16562535443610698a",
     "1656273062ad40b9b1",
-    "16562757822c7bfe90",
     "1656277792713d9bba",
     "1656545164f099a98d",
     "165658330054791301"
