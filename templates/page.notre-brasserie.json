@@ -123,10 +123,20 @@
             "horaires-2": "Le samedi et le dimanche de 9h30 à 19h00",
             "image-fond": "shopify:\/\/shop_images\/Background2_home.png"
           }
+        },
+        "fe0a9b2c-7783-41e7-990c-fa52677f81b1": {
+          "type": "text",
+          "settings": {
+            "titre": "",
+            "adresse": "",
+            "horaires-1": "",
+            "horaires-2": ""
+          }
         }
       },
       "block_order": [
-        "70ef34ed-1c7b-4c39-a749-e9499256dfe3"
+        "70ef34ed-1c7b-4c39-a749-e9499256dfe3",
+        "fe0a9b2c-7783-41e7-990c-fa52677f81b1"
       ],
       "settings": {
         "heading": ""
