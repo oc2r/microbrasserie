@@ -213,7 +213,7 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-    {% render 'judgeme_core' %}
+   
   </head>
 
   <body class="gradient">
@@ -225,7 +225,9 @@
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
+       {% render 'judgeme_core' %}
     </main>
+    
 
     {% section 'footer' %}
 
