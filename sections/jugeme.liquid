@@ -1,10 +1,11 @@
 {%for block in section.blocks %}
 <div class ="avis_container">
+  coucou
   {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
 </div>
 {%endfor%}
 {% style %}
-.jugme{ background-color: blue;}
+.avis_container{ background-color: blue;}
 
 {% endstyle %}
 
