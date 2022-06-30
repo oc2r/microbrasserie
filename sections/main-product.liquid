@@ -693,6 +693,11 @@
   </script>
     
     
+
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+    
 {% comment %}Start automatically added Judge.me widget{% endcomment %}
   <div class="product__text">
     {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
