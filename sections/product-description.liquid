@@ -30,11 +30,18 @@
 
 {% style %}
 
+.product-description-container {
+	position: relative;
+}
+
 .product-description-container h2 {
 	width:fit-content;
     color: black;
 	font-size: 23px;
 	background-color:{{product.metafields.custom.couleur_type_biere}};
+	margin-bottom: 7px;
+    padding-bottom: 30px;
+    position: absolute;
 }
 
 .product-description-container h3 {
