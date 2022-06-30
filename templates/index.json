@@ -168,6 +168,29 @@
       "settings": {
         "heading": ""
       }
+    },
+    "16565906360560da57": {
+      "type": "multicolonne-reassurance",
+      "blocks": {
+        "c944115f-88b9-4fb8-a830-e3ab76795e0d": {
+          "type": "text",
+          "settings": {
+            "reassurance-1-image": "shopify:\/\/shop_images\/monde_1_2f89de83-7db4-4543-b545-7a71e5ad0018.png",
+            "heading-1": "premier élément",
+            "description-1": "explication de ce logo",
+            "heading-2": "",
+            "description-2": "",
+            "heading-3": "",
+            "description-3": ""
+          }
+        }
+      },
+      "block_order": [
+        "c944115f-88b9-4fb8-a830-e3ab76795e0d"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -178,6 +201,7 @@
     "16560778072b054bdb",
     "1656168897bc476cf1",
     "16561708686a030ac1",
-    "16562470292811ad81"
+    "16562470292811ad81",
+    "16565906360560da57"
   ]
 }
