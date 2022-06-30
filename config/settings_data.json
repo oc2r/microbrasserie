@@ -172,7 +172,7 @@
         "settings": {
           "color_scheme": "accent-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Inscriver-vous à la newsletter",
+          "newsletter_heading": "Inscrivez-vous à la newsletter",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
