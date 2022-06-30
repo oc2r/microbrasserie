@@ -192,7 +192,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "1892562240530925112": {
+        "type": "shopify:\/\/apps\/gdpr-ccpa-compliance-manager\/blocks\/app-embed\/e2ac5ac3-1765-477b-ac58-d792f9a65f3a",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
