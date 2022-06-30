@@ -1,10 +1,16 @@
-
+<div class="reviews-container">
   {% comment %}Start automatically added Judge.me widget{% endcomment %}
   {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
 {% comment %}End automatically added Judge.me widget{% endcomment %}
+</div>
 
+{% style %}
 
+.reviews-container {
+	width:50%;
+}
 
+{% endstyle %}
 {% schema %}
 {
     "name": "judgeme2",
