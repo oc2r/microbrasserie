@@ -91,8 +91,16 @@
     {%- endform -%}
   </div>
   <div class="adresse_info">
-    	{{ 'adresse.liquid' | asset_url | stylesheet_tag }}
-
+	<div class="contact-brasserie-container">
+    <div class="contact-adresse-brasserie">
+        <h2 style="margin: 2%;">Adresse</h2>
+        <p>{{block.settings.contact-adresse-brasserie}}</p>
+    </div>
+    <div class="contact-tel-brasserie">
+        <h2 style="margin: 2%;">Telephone</h2>
+        <p>{{block.settings.contact-tel-brasserie}}</p>
+    </div>
+</div>
   </div>
 </div>
 
