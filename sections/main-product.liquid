@@ -74,7 +74,7 @@
     <div class="grid__item product__media-wrapper">
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
        
-        <div class="type_biere" style="background-color: {{product.metafields.custom.couleur_type_biere}};" >
+        <div class="type_biere" style="background-color: {{product.metafields.custom.couleur_type_biere}}; color:black;" >
     <p>{{product.metafields.custom.sous_titre}}</p>
   </div>
         <svg class="cadre_image" width="322" height="532" viewBox="0 0 322 532" fill="none" xmlns="http://www.w3.org/2000/svg">
