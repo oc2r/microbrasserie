@@ -1,3 +1,6 @@
+.cart__checkout-button{ color: blue;}
+
+
 .jdgm-rev-widg.jdgm-rev-widg {
   witdh: 50%;
 }
@@ -1415,7 +1418,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button--full-width {
   display: flex;
-  width: 10%;
+  width: 100%;
 }
 
 .button.loading {
