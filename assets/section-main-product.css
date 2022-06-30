@@ -1,10 +1,12 @@
-/* .container_input_product{
-  display: flex;
-  background-color: blue;};
- */
 .cadre_image{
   position: absolute;
   top: 120px;
+}
+.image_product{
+height:80%}
+
+.media{
+  height: 470px;
 }
 
 
