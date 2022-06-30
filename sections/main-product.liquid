@@ -60,6 +60,13 @@
   .main_product_container {
   	display: flex;}
   
+  
+  .alcool h4 {
+  	font-size: 1.3rem;
+    line-height: calc(1 + .5 / var(--font-body-scale));
+    letter-spacing: .04rem;
+  }
+  
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -274,7 +281,7 @@
           
             {%- endif -%}
         <div class ="alcool">
-          <h4>Alcool</h4>
+          <h4>Taux d'alcool</h4>
       		{{product.metafields.taux.alcool}}
   			</div>
             <div {{ block.shopify_attributes }}>
