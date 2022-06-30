@@ -12,13 +12,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
-.contact-brasserie-container {
-<!--     position: absolute; -->
-<!--     right: 10%;
-    bottom: -50%;
-    font-size: 150%; -->
-    width: 15%;
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -96,18 +89,6 @@
         </button>
       </div>
     {%- endform -%}
-  </div>
-  <div class="adresse_info">
-	<div class="contact-brasserie-container">
-    <div class="contact-adresse-brasserie">
-        <h2 style="margin: 2%;">Adresse</h2>
-        <p>{{block.settings.contact-adresse-brasserie}}</p>
-    </div>
-    <div class="contact-tel-brasserie">
-        <h2 style="margin: 2%;">Telephone</h2>
-        <p>{{block.settings.contact-tel-brasserie}}</p>
-    </div>
-</div>
   </div>
 </div>
 
