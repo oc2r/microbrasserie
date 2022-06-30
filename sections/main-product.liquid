@@ -68,6 +68,10 @@
   	color: rgb(255 255 255 / 70%);
   }
   
+  .alcool p {
+  	 color: white;
+ 	}
+  
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -283,7 +287,7 @@
             {%- endif -%}
         <div class ="alcool">
           <h4>Taux d'alcool</h4>
-      		{{product.metafields.taux.alcool}}
+          <p>{{product.metafields.taux.alcool}}</p>
   			</div>
             <div {{ block.shopify_attributes }}>
               {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
