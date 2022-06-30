@@ -1,12 +1,60 @@
+{%for block in section.blocks %}
+<div class="contact-brasserie-container">
+    <div class="contact-adresse-brasserie">
+        <h2 style="margin: 2%;">Adresse</h2>
+        <p>{{block.settings.contact-adresse-brasserie}}</p>
+    </div>
+    <div class="contact-tel-brasserie">
+        <h2 style="margin: 2%;">Telephone</h2>
+        <p>{{block.settings.contact-tel-brasserie}}</p>
+    </div>
+</div>
+{%endfor%}
+
+{% style %}
+
+{% endstyle %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "home-scop-section",
+    "class" : "section",
+    "settings": [
+        {
+            "type":"text",
+            "label":"home scop section",
+            "id":"heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type":"text",
+            "name":"home scop section",
+            "settings":[                  
+				{
+                  	"type":"image_picker",
+                  	"label":"home scop image",
+                  	"id":"home-scop-image"
+                  },
+				{
+                    "type":"text",
+                    "label":"home scop titre",
+                    "id":"home-scop-titre"
+                },
+				{
+                  	"type":"text",
+                  	"label":"home scop chapo",
+                  	"id":"home-scop-chapo"
+                  }
+            ]
+     } 
+],
+"presets" : [
+    {
+    "category":"image",
+    "name": "home scop section" 
+    }
+]
+
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
